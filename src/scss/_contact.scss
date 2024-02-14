@@ -1,0 +1,68 @@
+.contact {
+    font-family: 'Baloo Bhai 2', cursive;
+
+    .contact-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .contact-box {
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            padding: 30px 0;
+
+            .address {
+                width: 50%;
+
+                h4{
+                    text-transform: uppercase;
+                }
+
+                h6{
+                    font-size: 16px;
+                    color: #929292;
+                    text-transform: uppercase;
+                    padding: 0;
+                    margin: 0;
+                }
+
+                p{
+                    font-size: 16px;
+                    color: #929292;
+                    text-transform: uppercase;
+                    padding: 0;
+                    margin: 4px 0;
+                    font-weight: 500;
+
+                    span{
+                        text-transform: lowercase;
+                        font-weight: normal;
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .map {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:878px) {
+
+    .contact-box {
+        flex-direction: column;
+
+        .address {
+            width: 100% !important;
+        }
+
+        .map {
+            width: 100% !important;
+        }
+    }
+
+}

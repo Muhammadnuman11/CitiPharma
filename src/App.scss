@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+// Bootstrap
+@import "./scss/bootstrap";
+// Components
+@import './scss/header';
+@import './scss/footer';
+@import './scss/pages';
+@import './scss/card';
+@import './scss/dataBox';
+// Pages
+@import "./scss/home";
+@import './scss/about';
+@import './scss/contact';
+@import './scss/services';
+
+// font-family: 'Roboto', sans-serif;
+
+.active {
+  color: #000 !important;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #15a0c7;
+}
