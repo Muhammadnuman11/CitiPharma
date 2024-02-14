@@ -180,17 +180,19 @@ export default function Home() {
         </div>
 
         <div className="brands">
-          <div className="brandContent">
-            <h3>Discover</h3>
-            <h1>Our Brands</h1>
-            <p>Our dual expertise - pharmaceutical and dermo-cosmetics - helps us offer a holistic approach to care: prevent, treat and support.</p>
-            <button className="btn btn-primary">Learn more about our brands </button>
-          </div>
-          <div className="images">
+          <div className="brandsDetail">
+            <div className="brandContent">
+              <h3>Discover</h3>
+              <h1>Our Brands</h1>
+              <p>Our dual expertise - pharmaceutical and dermo-cosmetics - helps us offer a holistic approach to care: prevent, treat and support.</p>
+              <button className="btn">Learn more about our brands </button>
+            </div>
+            <div className="images">
 
-          </div>
-          <div className="clients">
+            </div>
+            <div className="clients">
 
+            </div>
           </div>
         </div>
 

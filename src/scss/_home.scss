@@ -109,11 +109,98 @@
         }
     }
 
-    .brands{
-        background: #f8f8f8;
+    .brands {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
         margin: 40px 0;
-        width: 80%; 
-        text-align: center;
+
+        .brandsDetail {
+            background: #f8f8f8;
+            width: 80%;
+            text-align: center;
+
+            .brandContent {
+                padding: 40px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                h3 {
+                    color: #3db5e6;
+                    font-weight: 300;
+                    margin: 3px 0;
+                    padding: 0;
+                }
+
+                h1 {
+                    color: #004b96;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-weight: 350;
+                    font-size: 20px;
+                    color: #535353;
+                    margin: 24px 0;
+                    padding: 0;
+                    width: 50%;
+                }
+
+                .btn {
+                    border-radius: 0;
+                    padding: 15px 30px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 400;
+                    background: #3db5e6;
+                    border: none;
+                    color: #fff;
+
+                    &:hover {
+                        background: #03a8e9;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+
+        .quoteText {
+            width: 96% !important;
+            font-size: 22px;
+            font-weight: 400;
+
+            h1 {
+                width: 60px;
+                height: 60px;
+            }
+
+            p {
+                margin: 24px 0;
+            }
+        }
+
+        .brands {
+            margin: 30px 0;
+
+            .brandsDetail {
+                width: 90%;
+
+                .brandContent {
+                    p {
+                        width: 98%;
+                    }
+
+                    .btn {
+                        padding: 12px 18px;
+                    }
+                }
+            }
+        }
     }
 
     .products-client-list {
