@@ -27,8 +27,8 @@ export default function Layout({ children, title, description, keywords, author 
 };
 
 Layout.defaultProps = {
-    title: 'Lahore Plastic',
-    description: 'LAHORE PLASTIC is a leading manufacturer of quality plastic packaging material in Pakistan.',
+    title: 'Citi Pharma',
+    description: 'Citi Pharma is a leading manufacturer of quality plastic packaging material in Pakistan.',
     keywords: 'pvc, bopp, ldped, pof, ziplock',
     author: 'Numan Irshad',
 }

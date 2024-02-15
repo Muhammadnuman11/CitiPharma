@@ -41,6 +41,7 @@
         padding: 30px 0;
     }
 
+    // Quote
     .quote {
         background: linear-gradient(0deg, rgba(197, 197, 197, .16), rgba(197, 197, 197, .16)), linear-gradient(270deg, rgba(0, 75, 150, .4608) 14.13%, rgba(0, 75, 150, .72) 50.76%, rgba(0, 75, 150, .4608) 71.84%, rgba(255, 255, 255, .72) 100%);
         position: relative;
@@ -109,6 +110,7 @@
         }
     }
 
+    // Brands
     .brands {
         display: flex;
         align-items: center;
@@ -164,6 +166,264 @@
                     }
                 }
             }
+
+            .images {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                padding: 30px 0;
+
+                .img {
+                    width: 235px;
+                    height: 235px;
+                    border-radius: 6px;
+                    box-sizing: border-box;
+                    overflow: hidden;
+                    position: relative;
+                    background: #000000de;
+                    margin: 20px 0;
+                    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px 15px, rgba(0, 0, 0, 0.3) -10px 10px 15px, rgba(0, 0, 0, 0.2) -15px 15px 15px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0.7;
+                        z-index: -1;
+                        -webkit-transition: all 1s ease;
+                        -moz-transition: all 1s ease;
+                        -o-transition: all 1s ease;
+                        transition: all 1s ease;
+                        cursor: pointer;
+
+                        &:hover {
+                            transform: scale(1.2);
+                            -webkit-transform: scale(1.2);
+                            -moz-transform: scale(1.2);
+                            -ms-transform: scale(1.2);
+                            -o-transform: scale(1.2);
+                            transform: scale(1.2);
+                        }
+                    }
+
+                    h1 {
+                        position: absolute;
+                        bottom: 10px;
+                        right: 20px;
+                        padding: 0 20px;
+                        font-size: 23px;
+                        z-index: 2;
+                        color: #fff;
+                        text-align: left;
+                    }
+                }
+            }
+
+            .clients {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                padding: 30px 0;
+
+                .img {
+                    width: 180px;
+                    height: 100px;
+                    margin: 20px 10px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        filter: invert(30%);
+                        cursor: pointer;
+
+                        &:hover {
+                            filter: invert(0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Commitments
+    .commitments {
+        background: #f8f8fb;
+        width: 100%;
+        text-align: center;
+
+        .commitmentsContent {
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            h3 {
+                color: #3db5e6;
+                font-weight: 300;
+                margin: 3px 0;
+                padding: 0;
+            }
+
+            h1 {
+                color: #004b96;
+                font-weight: 700;
+            }
+
+            p {
+                font-weight: 350;
+                font-size: 20px;
+                color: #535353;
+                margin: 24px 0;
+                padding: 0;
+                width: 80%;
+            }
+
+            .btn {
+                border-radius: 0;
+                padding: 15px 30px;
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 400;
+                background: #3db5e6;
+                border: none;
+                color: #fff;
+
+                &:hover {
+                    background: #03a8e9;
+                }
+            }
+        }
+    }
+
+    // jobs
+    .jobs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+        text-align: left;
+
+        .video {
+            width: 42%;
+            height: 468px;
+        }
+
+        .jobDetail {
+            background: #f8f8f8;
+            width: 42%;
+
+            .jobContent {
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    color: #3db5e6;
+                    font-weight: 300;
+                    margin: 3px 0;
+                    padding: 0;
+                }
+
+                h1 {
+                    color: #004b96;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-weight: 350;
+                    font-size: 20px;
+                    color: #535353;
+                    margin: 24px 0;
+                    padding: 0;
+                }
+
+                .btn {
+                    border-radius: 0;
+                    padding: 15px 30px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 400;
+                    background: #3db5e6;
+                    border: none;
+                    color: #fff;
+                    width: 220px;
+
+                    &:hover {
+                        background: #03a8e9;
+                    }
+                }
+            }
+        }
+    }
+
+    // News
+    .news {
+        margin: 40px 0;
+        text-align: left;
+        background: #f0f4f9;
+        position: relative;
+        display: flex;
+        height: 450px;
+        
+        .cards {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            overflow: hidden;
+            border: 1px solid red;
+            position: absolute;
+            width: 60%;
+            bottom: -40px;
+            right: 0;
+        }
+
+        .newsDetail {
+            width: 40%;
+
+            .newsContent {
+                padding: 40px;
+                display: flex;
+                flex-direction: column;
+
+                h3 {
+                    color: #3db5e6;
+                    font-weight: 300;
+                    margin: 3px 0;
+                    padding: 0;
+                }
+
+                h1 {
+                    color: #004b96;
+                    font-weight: 700;
+                }
+
+                p {
+                    font-weight: 350;
+                    font-size: 20px;
+                    color: #535353;
+                    margin: 24px 0;
+                    padding: 0;
+                }
+
+                .btn {
+                    border-radius: 0;
+                    padding: 15px 30px;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    font-weight: 400;
+                    background: #3db5e6;
+                    border: none;
+                    color: #fff;
+                    width: 220px;
+
+                    &:hover {
+                        background: #03a8e9;
+                    }
+                }
+            }
         }
     }
 
@@ -201,6 +461,7 @@
                 }
             }
         }
+
     }
 
     .products-client-list {
