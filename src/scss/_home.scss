@@ -2,16 +2,17 @@
 
     .carousel {
         margin-top: 50px;
+        cursor: pointer;
 
         .img {
             background: #000;
             width: 100%;
-            height: 90vh;
+            height: 76vh;
 
             img {
                 width: 100%;
                 height: 100%;
-                opacity: 0.5;
+                opacity: 0.7;
             }
         }
 
@@ -366,14 +367,13 @@
         position: relative;
         display: flex;
         height: 450px;
-        
+
         .cards {
             display: flex;
             align-items: center;
             justify-content: center;
             box-sizing: border-box;
             overflow: hidden;
-            border: 1px solid red;
             position: absolute;
             width: 60%;
             bottom: -40px;
@@ -462,7 +462,43 @@
             }
         }
 
+        .jobs {
+            flex-direction: column !important;
+
+            .video {
+                width: 90%;
+            }
+
+            .jobDetail {
+                width: 90%;
+
+                .jobContent {
+                    padding: 10px;
+                }
+            }
+        }
+
+        .news {
+            flex-direction: column;
+            height: 820px;
+
+            .cards {
+                width: 100%;
+                bottom: -4px;
+                right: 0;
+            }
+
+            .newsDetail {
+                width: 80%;
+
+                .newsContent {
+                    padding: 20px;
+                }
+            }
+        }
+
     }
+
 
     .products-client-list {
         padding: 50px 0;

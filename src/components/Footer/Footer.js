@@ -1,4 +1,5 @@
 import React from 'react'
+import TopFooter from './TopFooter'
 // import { FaFacebookMessenger } from "react-icons/fa";
 
 export default function Footer() {
@@ -20,6 +21,11 @@ export default function Footer() {
             </div> */}
             <footer className='footer'>
                 <div className="container">
+                    <div className="row">
+                        <div className="col">
+                            <TopFooter />
+                        </div>
+                    </div>
                     <div className="row">
                         <div className="col">
                             <p>&copy; {year} Citi Pharma | All Rights Reserved.</p>

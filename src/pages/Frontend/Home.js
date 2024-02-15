@@ -6,8 +6,17 @@ import Layout from './Layout';
 import DataBoxs from '../../components/HomeComponents/DataBoxs';
 // import Card from '../../components/Card';
 import { FaQuoteLeft } from "react-icons/fa";
+import CardContainer from '../../components/Card/CardContainer';
+import { NavLink } from 'react-router-dom';
 
 export default function Home() {
+
+  const cardsData = [
+    { id: 1, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO. 🌿✨', imgUrl: 'https://unsplash.it/200/203' },
+    { id: 2, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO. 🌿✨', imgUrl: 'https://unsplash.it/200/202' },
+    { id: 3, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO. 🌿✨', imgUrl: 'https://unsplash.it/200/201' },
+    // More card data...
+  ];
 
   return (
     <Layout title={'Citi Pharma'}>
@@ -15,24 +24,16 @@ export default function Home() {
         {/* Carousel */}
         <div className='carousel'>
           <Carousel fade interval={2000}>
-            <Carousel.Item>
-              <div className="img">
-                <img
-                  src="https://media.istockphoto.com/id/1468555309/photo/doctor-hand-using-mobile-healthcare-technology-app-to-consult-patient-online-remotely-in.webp?b=1&s=170667a&w=0&k=20&c=GhId5midLU83WiOG64tOCAUY86TuKA8tLawpfNMMLJ4="
-                  alt=""
-                />
-              </div>
-              <Carousel.Caption>
-                <section className="slider_section">
-                  <div className="detail-box">
-                    <h1>
-                      API
-                    </h1>
-                  </div>
-                </section>
-
-              </Carousel.Caption>
-            </Carousel.Item>
+              <Carousel.Item>
+            <NavLink to="/api">
+                <div className="img">
+                  <img
+                    src="images/apiBanner.jpg"
+                    alt=""
+                  />
+                </div>
+            </NavLink>
+              </Carousel.Item>
 
             <Carousel.Item>
               <div className="img">
@@ -123,8 +124,8 @@ export default function Home() {
             <h1>
               <FaQuoteLeft className='quote-icon' />
             </h1>
-            <p>We develop tomorrow's prescription drugs and products with the inexhaustible resources of our imagination. There is no task more exciting than this!</p>
-            <p>M. Pierre Fabre, founder of the Group</p>
+            <p>It is our mission to develop, license and manufacture safe, effective, reliable and affordable pharmaceutical products.</p>
+            {/* <p>M. Pierre Fabre, founder of the Group</p> */}
           </div>
         </div>
 
@@ -201,7 +202,7 @@ export default function Home() {
           <div className="commitmentsContent">
             <h3>Focus on</h3>
             <h1>Our Commitments</h1>
-            <p>Green Mission Pierre Fabre is the eco-socio-responsible commitment from the Pierre Fabre Group, awarded the Committed to CSR by AFNOR Certification at the Exemplary level. Thanks to our conviction and drive, we use sustainable innovation to benefit Nature and People, focusing on 5 pillars</p>
+            <p>Green Mission Citi Pharma is the eco-socio-responsible commitment from the Citi Pharma Group, awarded the Committed to CSR by AFNOR Certification at the Exemplary level. Thanks to our conviction and drive, we use sustainable innovation to benefit Nature and People, focusing on 5 pillars</p>
             <button className="btn">Discover all our commitments</button>
           </div>
         </div>
@@ -215,7 +216,7 @@ export default function Home() {
             <div className="jobContent">
               <h3>Looking for a company</h3>
               <h1>that is in line with your values?</h1>
-              <p>Joining the Pierre Fabre Group means entering a company with a history overflowing with values, innovation and expertise for patients and consumers. Don't wait! Look at our offers, apply and embark on a human adventure !</p>
+              <p>Joining the Citi Pharma Group means entering a company with a history overflowing with values, innovation and expertise for patients and consumers. Don't wait! Look at our offers, apply and embark on a human adventure !</p>
               <button className="btn">Discover our job offer</button>
             </div>
           </div>
@@ -231,14 +232,11 @@ export default function Home() {
               <button className="btn">All our news</button>
             </div>
           </div>
-          {/* <div className="cards">
-            <Card title={"PVC Shrink Films"} link={"images/shrinkFilm.jpg"} href={"/pvcshrink"} />
-            <Card title={"PVC Shrink Films"} link={"images/shrinkFilm.jpg"} href={"/pvcshrink"} />
-            <Card title={"PVC Shrink Films"} link={"images/shrinkFilm.jpg"} href={"/pvcshrink"} />
-            <Card title={"PVC Shrink Films"} link={"images/shrinkFilm.jpg"} href={"/pvcshrink"} />
-            <Card title={"PVC Shrink Films"} link={"images/shrinkFilm.jpg"} href={"/pvcshrink"} />
-            <Card title={"PVC Shrink Films"} link={"images/shrinkFilm.jpg"} href={"/pvcshrink"} />
-          </div> */}
+          <div className="cards">
+            <div className="container">
+              <CardContainer cards={cardsData} />
+            </div>
+          </div>
         </div>
 
 
