@@ -1,0 +1,77 @@
+.api {
+    background: #f8f8fb;
+
+    .api-text {
+        width: 70%;
+        padding: 0 30px;
+
+        .para {
+            font-size: 22px;
+            font-weight: 300;
+            margin: 40px 0 20px 0;
+            width: 100%;
+
+            p {
+                margin: 24px 0;
+            }
+
+            &>:nth-child(2) {
+                font-weight: 400;
+            }
+        }
+    }
+
+    .api-details {
+        width: 70%;
+        padding: 0 30px;
+
+        .api-table {
+            padding: 50px 0;
+            
+            h1 {
+                font-size: 28px;
+                color: #15a0c7;
+                margin: 20px 0;
+                font-weight: 700;
+            }
+            
+            .table {
+                width: 100%;
+                border-top: 1px solid #15a0c7;
+                border-bottom: 1px solid #15a0c7;
+
+                th,
+                td {
+                    background: none !important;
+                    text-align: center;
+                }
+
+                td {
+                    width: 250px;
+                    height: 120px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .quantity {
+                    display: flex;
+                    flex-direction: column;
+                    border-bottom: 1px solid #15a0c7;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width:1000px) {
+        .api-text {
+            width: 100%;
+        }
+
+        .api-details {
+            width: 100%;
+        }
+    }
+}

@@ -8,7 +8,7 @@ const items = [
     {
         key: '1',
         label: (
-            <NavLink to="/apis" className="nav-link text-dark">API's</NavLink>
+            <NavLink to="/api" className="nav-link text-dark">API's</NavLink>
         ),
     },
     // {
@@ -95,10 +95,10 @@ export default function Navbar() {
                                         <NavLink to="/citinatural" className="nav-link text-white ">Citi Natural</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/biotech" className="nav-link text-white">Biotech</NavLink>
+                                        <NavLink to="/biotech" className="nav-link text-white">orthotics & Biotech</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/rd" className="nav-link text-white">R & D</NavLink>
+                                        <NavLink to="/rd" className="nav-link text-white">Research & Devlopment</NavLink>
                                     </li>
                                 </ul>
                             </div>

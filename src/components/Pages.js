@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Pages({title}) {
+export default function Pages({title, link}) {
     return (
         <>
             <div className="pages">
-                <img src="images/page.jpg" alt="" />
+                <img src={link} alt="" />
                 <div className="pages-detail">
                     <h1>{title}</h1>
                 </div>

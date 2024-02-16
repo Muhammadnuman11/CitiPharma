@@ -15,6 +15,7 @@ import Home from '../src/pages/Frontend/Home'
 // import POFShrinkFilms from '../src/pages/Frontend/Services/POFShrinkFilms'
 import { useEffect, useState } from 'react';
 import Loader from './components/Loader';
+import Api from './pages/Frontend/Api';
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -28,6 +29,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/api" element={<Api />} />
         {/* <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} /> */}

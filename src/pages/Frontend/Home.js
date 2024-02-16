@@ -80,7 +80,7 @@ export default function Home() {
                 <section className="slider_section">
                   <div className="detail-box">
                     <h1>
-                      R & D
+                      Research & Development
                     </h1>
                   </div></section>
               </Carousel.Caption>
@@ -97,7 +97,7 @@ export default function Home() {
                 <section className="slider_section">
                   <div className="detail-box">
                     <h1>
-                      Biotech
+                    Oncology & Biotech
                     </h1>
                   </div></section>
               </Carousel.Caption>
