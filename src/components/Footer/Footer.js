@@ -14,28 +14,21 @@ export default function Footer() {
     //     window.open('https://nomi-portfolio69.surge.sh/', '_blank');
     // }
 
+    const webLink = () => {
+        window.open('https:www.markoverment.com/', '_blank');
+    }
+
     return (
         <>
             {/* <div className="messenger" onClick={openMessenger}>
                 <FaFacebookMessenger className='mIcon' />
             </div> */}
             <footer className='footer'>
-                <div className="container">
-                    <div className="row">
-                        <div className="col">
-                            <TopFooter />
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="col">
-                            <p>&copy; {year} Citi Pharma | All Rights Reserved.</p>
-                        </div>
-                    </div>
-                    {/* <div className="row">
-                        <div className="col">
-                            <p>Design & Develop By <span onClick={portfolio}>Numan Irshad</span></p>
-                        </div>
-                    </div> */}
+                <TopFooter />
+                <div className="footerPara">
+                    <p>&copy; {year} Citi Pharma</p>
+                    <p>Powered By <span onClick={webLink}>Markoverment</span></p>
+                    {/* <p>Design & Develop By <span>Numan Irshad</span></p> */}
                 </div>
             </footer>
         </>

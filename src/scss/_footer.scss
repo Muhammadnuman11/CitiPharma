@@ -1,114 +1,85 @@
 .footer {
+    background: #15a0c7;
     padding: 12px 0;
     font-weight: 300;
-    background: #fff;
-
-    // Top Footer
-    .topFooter {
-        border-bottom: 1px solid #15a0c7;
-        margin: 20px 0;
+    
+    .footerPara {
         display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
-        .topFooterCol1 {
-            border-right: 1px solid #15a0c7;
-            width: 20%;
+
+        p {
+            color: #fff;
             margin: 0;
-            padding: 10px;
+            padding: 12px 50px 0 50px;
+            font-size: 14px;
+            font-weight: 400;
 
-            .img {
-                width: 70px;
-                height: 70px;
-                margin: 0 0 20px 0;
+            span {
+                text-decoration: underline;
+                cursor: pointer;
+                color: #000;
 
-                img {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 8px;
-                }
-            }
-
-            .links {
-
-                ul {
-                    margin: 0;
-                    padding: 0;
-
-                    li {
-                        list-style: none;
-                        font-size: 20px;
-                        font-weight: 400;
-
-                        .nav-link {
-                            margin: 4px 0;
-                            color: #15a0c7 !important;
-                            text-decoration: none;
-
-                            &:hover {
-                                color: green !important;
-                            }
-                        }
-                    }
+                &:hover {
+                    color: #fff;
                 }
             }
         }
+    }
 
-        .topFooterCol2 {
-            border-right: 1px solid #15a0c7;
-            width: 60%;
-            margin: 0;
-            padding: 10px;
+    // Top Footer
+    .topFooter {
+        padding: 30px 50px;
+        border-bottom: 1px solid #fff;
 
-            .links {
-                border-bottom: 1px solid #15a0c7;
-                margin: 0 20px;
-                padding: 16px 0;
+        .topFooterLogo {
+            width: 60px;
+            height: 60px;
 
-                ul {
-                    margin: 0;
-                    padding: 0;
-                    display: flex;
-                    // align-items: center;
-                    justify-content: space-between;
-
-                    li {
-                        list-style: none;
-                        font-size: 16px;
-                        font-weight: 350;
-
-                        .nav-link {
-                            color: #15a0c7 !important;
-                            text-decoration: none;
-
-                            &:hover {
-                                color: green !important;
-                                text-decoration: underline;
-                            }
-                        }
-                    }
-                }
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
             }
+        }
 
-            .usefulLinks {
+        .topFooterRow {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 0;
+
+            .topFooterCol {
+                padding: 20px 0;
+                width: 300px;
+                height: 270px;
+                position: relative;
 
                 h1 {
-                    margin: 12px 20px;
-                    color: #000;
+                    margin: 12px 0;
+                    color: #fff;
                     font-weight: 700;
-                    font-size: 24px;
+                    font-size: 14px;
                     text-transform: uppercase;
                 }
 
-                .links {
-                    border: 0;
+                ul {
+                    padding: 0;
+                    position: absolute;
+                    
+                    li {
+                        margin: 6px 0;
+                        list-style: none;
+                        
+                        .nav-link {
+                            color: #fff !important;
+                            font-size: 14px;
+                            font-weight: 300;
+                            text-decoration: underline;
 
-                    ul {
-                        flex-wrap: wrap;
-
-                        li {
-                            width: 50%;
-                            margin: 4px 0;
-
-                            .nav-link {
+                            &:hover {
                                 color: #000 !important;
                             }
                         }
@@ -117,129 +88,24 @@
             }
         }
 
-        .topFooterCol3 {
-            width: 20%;
+        .topFooterIcons {
             display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            flex-direction: column;
-            padding-left: 30px;
+            align-items: center;
+            justify-content: space-between;
+            width: 280px;
 
-            h1 {
-                color: #000;
-                font-weight: 700;
-                font-size: 24px;
-                text-transform: uppercase;
-            }
-
-            .links {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-                margin: 12px 0;
-
-                div {
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    cursor: pointer;
-                    font-size: 24px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    &:hover {
-                        background: #15a0c7;
-                        color: #fff;
-                    }
-                }
-
-            }
-
-            .btn {
-                border: 1px solid #000;
-                padding: 12px 58px;
-                text-transform: uppercase;
-                font-size: 12px;
-                font-weight: 400;
-                border-radius: 0;
-                margin: 12px 0;
+            .icons {
+                font-size: 21px;
+                color: #fff;
+                cursor: pointer;
 
                 &:hover {
-                    background: #15a0c7;
-                    border: 1px solid #15a0c7;
-                    color: #fff;
+                    color: #000;
                 }
             }
         }
 
-    }
-
-    // Fooetr
-    p {
-        text-align: center;
-        color: #15a0c7;
-        margin: 0;
-        padding: 0;
-
-        span {
-            text-decoration: underline;
-            cursor: pointer;
-            color: #000;
-
-            &:hover {
-                color: #fff;
-            }
-        }
     }
 }
 
-@media only screen and (max-width:1000px) {
-
-    .topFooter {
-        flex-direction: column;
-        width: 100%;
-
-        .topFooterCol1 {
-            border: none !important;
-            border-bottom: 1px solid #15a0c7 !important;
-            width: 100% !important;
-            padding: 0 30px !important;
-        }
-
-        .topFooterCol2 {
-            border: none !important;
-            border-bottom: 1px solid #15a0c7 !important;
-            width: 100% !important;
-            margin: 0;
-            padding: 10px;
-
-            .links {
-                border: none !important;
-
-                ul {
-                    justify-content: flex-start !important;
-                    flex-direction: column !important;
-                }
-            }
-
-            .usefulLinks {
-
-                .links {
-
-                    ul {
-                        li {
-                            width: 100% !important;
-                        }
-                    }
-                }
-            }
-        }
-
-        .topFooterCol3 {
-            margin: 20px 0;
-            width: 100% !important;
-        }
-    }
-}
+// @media only screen and (max-width:1000px) {}

@@ -1,67 +1,65 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { NavLink } from 'react-router-dom'
 
 export default function TopFooter() {
     return (
         <>
             <div className='topFooter'>
-                <div className="topFooterCol1">
+                <div className="topFooterLogo">
                     <div className="img">
                         <img src="https://citipharma.com.pk/images/logo-img.png" alt="" />
                     </div>
-                    <div className="links">
-                        <ul>
-                            <li><NavLink to="/" className="nav-link">API</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Citi Natural</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">R & D</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Bioteck</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Finish Products</NavLink></li>
-                        </ul>
-                    </div>
                 </div>
-                <div className="topFooterCol2">
-                    <div className="links">
+                <div className="topFooterRow">
+                    <div className="topFooterCol">
+                        <h1>Working together</h1>
                         <ul>
+                            <li><NavLink to="/" className="nav-link">Patients and caregivers</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Healthcare professionals</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Researchers</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Job seekers</NavLink></li>
                             <li><NavLink to="/" className="nav-link">Journalists</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Applications</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Partners</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Health Care Professionals</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Investors</NavLink></li>
                         </ul>
                     </div>
-                    <div className="usefulLinks">
-                        <h1>Useful Links</h1>
-                        <div className="links">
-                            <ul>
-                                <li><NavLink to="/" className="nav-link">Disclosure of Payments to Healthcare Professionals</NavLink></li>
-                                <li><NavLink to="/" className="nav-link">Disclosure of Payments to Patient Organisations</NavLink></li>
-                                <li><NavLink to="/" className="nav-link">Websites aimed at health care professionals</NavLink></li>
-                                <li><NavLink to="/" className="nav-link">Charters</NavLink></li>
-                                <li><NavLink to="/" className="nav-link">Group websites</NavLink></li>
-                            </ul>
-                        </div>
+                    <div className="topFooterCol">
+                        <h1>Topics</h1>
+                        <ul>
+                            <li><NavLink to="/" className="nav-link">Full year/Q4 2023</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Our next era</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Access</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Diversity</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">ESG</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">SpeakUp</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className="topFooterCol">
+                        <h1>Explore</h1>
+                        <ul>
+                            <li><NavLink to="/" className="nav-link">Pipeline</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Products</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Clinical trials</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Partnering</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Stories</NavLink></li>
+                        </ul>
+                    </div>
+                    <div className="topFooterCol">
+                        <h1>Therapeutic areas</h1>
+                        <ul>
+                            <li><NavLink to="/" className="nav-link">Cardiovascular, renal and metabolic</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Immunology</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Neuroscience</NavLink></li>
+                            <li><NavLink to="/" className="nav-link">Oncology</NavLink></li>
+                        </ul>
                     </div>
                 </div>
-                <div className="topFooterCol3">
-                    <h1>Follow Us</h1>
-                    <div className="links">
-                        <div>
-                            <FaTwitter />
-                        </div>
-                        <div>
-                            <FaFacebook />
-                        </div>
-                        <div>
-                            <FaYoutube />
-                        </div>
-                        <div>
-                            <FaLinkedin />
-                        </div>
-                        <div>
-                            <FaInstagram />
-                        </div>
-                    </div>
-                    <button className='btn'>Contact Us</button>
+                <div className="topFooterIcons">
+                    <FaLinkedin className='icons'/>
+                    <FaFacebook className='icons'/>
+                    <FaTwitter className='icons'/>
+                    <FaInstagram className='icons'/>
+                    <FaYoutube className='icons'/>
                 </div>
             </div>
         </>
