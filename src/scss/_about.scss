@@ -4,45 +4,82 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-family: 'Baloo Bhai 2', cursive;
 
-    .about-box {
-        background: #fff;
-        width: 80%;
-        padding: 30px 0;
-        margin: 20px 0;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+    .aboutBox {
+        padding: 30px;
 
+        .aboutDetails {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 0;
 
-        h1{
-            font-weight: 700;
-            margin: 21px 0;
-        }
-        p{
-            font-size: 21px;
-            margin: 10px 0;
-            text-align: justify;
-            width: 86%;
+            h1 {
+                font-size: 32px;
+                color: #15a0c7;
+                font-weight: 900;
+                text-transform: uppercase;
+                width: 100%;
+
+                &:after {
+                    content: '';
+                    width: 100px;
+                    height: 4px;
+                    border-radius: 4px;
+                    background: #15a0c7;
+                    display: block;
+                    transition: 2s;
+                    margin: 12px 0;
+                    animation: line 2s ease-in-out;
+                }
+
+                @keyframes line {
+                    0% {
+                        width: 0px;
+                    }
+                    100% {
+                        width: 100px;
+                    }
+                }
+            }
+
+            p {
+                font-weight: 350;
+                font-size: 16px;
+                color: #535353;
+                width: 100%;
+                margin: 24px 0;
+            }
+
+            .img {
+                width: 50%;
+                height: 400px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .signImg {
+                width: 130px;
+                height: 130px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
     }
-    .about-box1 {
-        width: 100%;
-        padding: 30px;
-        margin: 20px 0;
-        text-align: center;
+}
 
-        h1{
-            font-weight: 700;
-            margin: 24px 0;
-        }
-        img{
-            width: 90%;
-            border: 30px solid #fff;
-            box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+@media only screen and (max-width:1000px) {
+
+    .aboutDetails {
+        flex-direction: column;
+
+        div {
+            width: 100% !important;
         }
     }
 }

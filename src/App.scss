@@ -26,6 +26,7 @@
   min-height: 100vh;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -38,5 +39,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #15a0c7;
+  flex-direction: column;
+
+  img{
+    margin: 10px;
+  }
 }

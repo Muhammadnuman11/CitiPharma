@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.scss';
 import Home from '../src/pages/Frontend/Home'
-// import About from '../src/pages/Frontend/About'
+import About from '../src/pages/Frontend/About'
 // import Contact from '../src/pages/Frontend/Contact'
 // import Blog from '../src/pages/Frontend/Blog'
 // // Services
@@ -30,8 +30,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/api" element={<Api />} />
-        {/* <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
+        {/*  <Route path="/contact" element={<Contact />} />
         <Route path="/blog" element={<Blog />} /> */}
         {/* <Route path='/*' element={<Page404 />} /> */}
         {/* <Route path="/services" element={<Services />} /> */}

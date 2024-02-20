@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 export default function TopFooter() {
     return (
@@ -55,11 +55,16 @@ export default function TopFooter() {
                     </div>
                 </div>
                 <div className="topFooterIcons">
-                    <FaLinkedin className='icons'/>
-                    <FaFacebook className='icons'/>
-                    <FaTwitter className='icons'/>
-                    <FaInstagram className='icons'/>
-                    <FaYoutube className='icons'/>
+                    <div className='footerIcons'>
+                        <FaLinkedin className='icons' />
+                        <FaFacebook className='icons' />
+                        <FaTwitter className='icons' />
+                        <FaInstagram className='icons' />
+                        <FaYoutube className='icons' />
+                    </div>
+                    <div className="contactBtn">
+                        <Link to="/contact" className='btn'>Contact Us</Link>
+                    </div>
                 </div>
             </div>
         </>

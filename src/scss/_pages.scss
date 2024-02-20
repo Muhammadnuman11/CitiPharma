@@ -1,7 +1,7 @@
 .pages {
     background: #000;
     width: 100%;
-    height: 76vh;
+    height: 52vh;
     position: relative;
     margin-top: 50px;
 
@@ -15,13 +15,14 @@
     .pages-detail {
         position: absolute;
         width: 100%;
-        bottom: 30px;
+        bottom: 10px;
 
         h1 {
-            text-align: center;
+            padding-left: 30px;
             font-size: 48px;
             font-weight: 700;
             color: #15a0c7;
+            text-shadow: 1px 1px 2px #000, 0 0 1em #fff, 0 0 0.2em #15a0c7;
         }
     }
 }

@@ -129,14 +129,14 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Brands and Clients */}
-        <div className="brands">
-          <div className="brandsDetail">
-            <div className="brandContent">
+        {/* collaborations and Clients */}
+        <div className="collaborations">
+          <div className="collaborationsDetail">
+            <div className="collaborationsContent">
               <h3>Discover</h3>
-              <h1>Our Colaborations</h1>
+              <h1>Our Collaborations</h1>
               <p>Our dual expertise - pharmaceutical and dermo-cosmetics - helps us offer a holistic approach to care: prevent, treat and support.</p>
-              <button className="btn">Learn more about our brands </button>
+              <button className="btn">Learn more about our collaborations </button>
             </div>
             <div className="images">
               <div className="img">

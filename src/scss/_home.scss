@@ -111,20 +111,20 @@
         }
     }
 
-    // Brands
-    .brands {
+    // collaborations
+    .collaborations {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         margin: 40px 0;
 
-        .brandsDetail {
+        .collaborationsDetail {
             background: #f8f8f8;
             width: 80%;
             text-align: center;
 
-            .brandContent {
+            .collaborationsContent {
                 padding: 40px 0;
                 display: flex;
                 align-items: center;
@@ -444,13 +444,13 @@
             }
         }
 
-        .brands {
+        .collaborations {
             margin: 30px 0;
 
-            .brandsDetail {
+            .collaborationssDetail {
                 width: 90%;
 
-                .brandContent {
+                .collaborationsContent {
                     p {
                         width: 98%;
                     }

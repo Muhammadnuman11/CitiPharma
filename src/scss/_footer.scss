@@ -2,7 +2,7 @@
     background: #15a0c7;
     padding: 12px 0;
     font-weight: 300;
-    
+
     .footerPara {
         display: flex;
         align-items: center;
@@ -52,13 +52,13 @@
             padding: 0;
 
             .topFooterCol {
-                padding: 20px 0;
+                padding: 16px 0;
                 width: 300px;
-                height: 270px;
+                height: 240px;
                 position: relative;
 
                 h1 {
-                    margin: 12px 0;
+                    margin: 10px 0;
                     color: #fff;
                     font-weight: 700;
                     font-size: 14px;
@@ -68,16 +68,15 @@
                 ul {
                     padding: 0;
                     position: absolute;
-                    
+
                     li {
                         margin: 6px 0;
                         list-style: none;
-                        
+
                         .nav-link {
                             color: #fff !important;
                             font-size: 14px;
                             font-weight: 300;
-                            text-decoration: underline;
 
                             &:hover {
                                 color: #000 !important;
@@ -92,15 +91,46 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 280px;
+            flex-wrap: wrap;
 
-            .icons {
-                font-size: 21px;
-                color: #fff;
-                cursor: pointer;
+            .footerIcons {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 260px;
+                margin: 10px 0;
 
-                &:hover {
-                    color: #000;
+                .icons {
+                    font-size: 24px;
+                    color: #fff;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #000;
+                    }
+                }
+            }
+            .contactBtn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 260px;
+
+                .btn {
+                    font-size: 13px;
+                    width: 100%;
+                    color: #fff;
+                    border: 1px solid #fff;
+                    font-weight: 500;
+                    border-radius: 0;
+                    padding: 12px 0;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    
+                    &:hover {
+                        color: #000;
+                        border: 1px solid #000;
+                    }
                 }
             }
         }

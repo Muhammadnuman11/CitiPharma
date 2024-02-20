@@ -79,6 +79,12 @@ export default function Navbar() {
                                         <NavLink to="/" className="nav-link text-white">Home</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
+                                        <NavLink to="/about" className="nav-link text-white">About</NavLink>
+                                    </li>
+                                    <li className="nav-item mx-2">
+                                        <NavLink to="/contact" className="nav-link text-white">Contact</NavLink>
+                                    </li>
+                                    <li className="nav-item mx-2">
                                         <Dropdown menu={{ items }}>
                                             <span onClick={(e) => e.preventDefault()} className='nav-link'>
                                                 <Space>
