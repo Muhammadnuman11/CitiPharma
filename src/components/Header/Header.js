@@ -8,7 +8,7 @@ const items = [
     {
         key: '1',
         label: (
-            <NavLink to="/api" className="nav-link text-dark">API's</NavLink>
+            <NavLink to="/finishproduct" className="nav-link text-dark">Products</NavLink>
         ),
     },
     // {
@@ -85,17 +85,17 @@ export default function Navbar() {
                                         <NavLink to="/contact" className="nav-link text-white">Contact</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
+                                        <NavLink to="/api" className="nav-link text-white ">Api
+                                        </NavLink>
+                                    </li>
+                                    <li className="nav-item mx-2">
                                         <Dropdown menu={{ items }}>
                                             <span onClick={(e) => e.preventDefault()} className='nav-link'>
                                                 <Space>
-                                                    Api
+                                                    Finish Products
                                                 </Space>
                                             </span>
                                         </Dropdown>
-                                    </li>
-                                    <li className="nav-item mx-2">
-                                        <NavLink to="/finishproduct" className="nav-link text-white ">Finish Products
-                                        </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
                                         <NavLink to="/citinatural" className="nav-link text-white ">Citi Natural</NavLink>

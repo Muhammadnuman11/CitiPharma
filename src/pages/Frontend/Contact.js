@@ -1,62 +1,98 @@
 import React from 'react'
 import Pages from '../../components/Pages'
 import Layout from './Layout'
-
+import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { TbWorld } from "react-icons/tb"
+import { IoMdMail } from "react-icons/io";
+import { FaLocationDot } from "react-icons/fa6";
 export default function Contact() {
+
+  const handlePhone = () => {
+    window.open('tel:924235316587');
+  }
+  const handleMail = () => {
+    window.open('mailto:info@citipharma.com.pk');
+  }
+  const handleWeb = () => {
+    window.open('https://citipharma.com.pk', '_blank');
+  }
+
   return (
-    <Layout title={'Contact - Lahore Plastic'}>
+    <Layout title={'Contact - Citi Pharma'}>
       <div className="contact">
-        <Pages title={"Contact Us"} />
+        <Pages title={"Contact Us"} link={"images/apiBanner.jpg"} />
         <div className="contact-details">
-          <div className="contact-box">
-            <div className="address">
-              <h4>Head Office</h4>
-              <h6>Lahore House:</h6>
-              <p>8-Annand road, upper mall, Lahore - Pakistan</p>
-              <p>Tell: <span>+92 42 358 76 100</span></p>
-              <p>Fax: <span>+92 42 358 76 100</span></p>
-              <p>Cell: <span>+92 300 84 66 555</span></p>
-              <p>Email: <span>lahorehouse786@gmail.com</span></p>
-              <p>Website: <span>www.lahorehouse.com</span></p>
-            </div>
-            <div className="map">
-              <iframe title='Lahore Plastic' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.331398730467!2d74.35525707463646!3d31.542518546049266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904dfdfe7dbc7%3A0xb8514b87175c29e!2sLahore%20Plastic!5e0!3m2!1sen!2s!4v1707736786245!5m2!1sen!2s" width="100%" height="350" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+          <div className="map">
+            <iframe title='Lahore Plastic' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.7600346124627!2d73.90621807462088!3d31.199666262918488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39185de50beac6d7%3A0x905c41e507064bc!2sCITI%20Pharma%20Limited!5e0!3m2!1sen!2s!4v1708507019216!5m2!1sen!2s" width="100%" height="500" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div className="contact-box">
             <div className="address">
-              <h4>Karachi Office</h4>
-              <h6>Lahore Plastic, Karachi:</h6>
-              <p>4-e mezzanine floor,17th commerial street, phase II, ext D.H.A Karachi - Pakistan.</p>
-              <p>Tell: <span>+92 21 3538 5308</span></p>
-              <p>Tell: <span>+92 21 3538 9212</span></p>
+              <h1>Head Office</h1>
+              <p>
+                <div className="contactIcon">
+                  <FaLocationDot />
+                </div>
+                <span>Bhai Pheru - Head Balloki Road, Phool Nagar, Kasur, Punjab, Pakistan</span>
+              </p>
+              <p>
+                <div className="contactIcon">
+                  <FaPhoneAlt />
+                </div>
+                <span onClick={handlePhone}>(+92) 42 353-16587</span></p>
+              <p>
+                <div className="contactIcon">
+                  <IoMdMail />
+                </div>
+                <span onClick={handleMail}>info@citipharma.com.pk</span>
+              </p>
+              <p>
+                <div className="contactIcon">
+                  <TbWorld />
+                </div>
+                <span onClick={handleWeb}>https://citipharma.com.pk</span>
+              </p>
+              <div className='footerIcons'>
+                <div className="contactIcon">
+                  <FaLinkedin className='icons' />
+                </div>
+                <div className="contactIcon">
+                  <FaFacebook className='icons' />
+                </div>
+                <div className="contactIcon">
+                  <FaTwitter className='icons' />
+                </div>
+                <div className="contactIcon">
+                  <FaInstagram className='icons' />
+                </div>
+                <div className="contactIcon">
+                  <FaYoutube className='icons' />
+                </div>
+              </div>
             </div>
-            <div className="map">
-              <iframe title='Lahore Plastic, Karachi' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.900506725235!2d67.06709049279748!3d24.8330758679262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33d5006d5c589%3A0x21c80923cc63fb90!2sLahore%20Plastic%20Karachi%20Office!5e0!3m2!1sen!2s!4v1707741690824!5m2!1sen!2s" width="100%" height="350" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <div className="contactForm">
+              <h1>Contact Us</h1>
+              <form className="row g-3 needs-validation" noValidate>
+                <div className="col-12 col-md-6">
+                  <input type="text" name='name' className="form-control" placeholder='Your Name' required />
+                </div>
+                <div className="col-12 col-md-6">
+                  <input type="email" name='email' className="form-control" placeholder='Your Email' required />
+                </div>
+                <div className="col-12 col-md-6">
+                  <input type="phone" name='phone' className="form-control" placeholder='Phone Number' required />
+                </div>
+                <div className="col-12 col-md-6">
+                  <input type="text" name='subject' className="form-control" placeholder='Subject' required />
+                </div>
+                <div className="col-12">
+                  <textarea name="message" className='form-control' placeholder='Message' rows="6"></textarea>
+                </div>
+                <div className="col-12 text-end">
+                  <button className="btn">Send Message</button>
+                </div>
+              </form>
             </div>
           </div>
-          <div className="contact-box">
-            <div className="address">
-              <h4>Regional Office</h4>
-              <h6>Suffah Enterprises:</h6>
-              <p>Office# 5, 1 Floor United Center Shamsabad, Murree Road, Rawalpindi. Pakistan.</p>
-              <p>Tell: <span>051 48 54 017</span></p>
-              <p>Cell: <span>+92 306 50 00 656</span></p>
-              <p>Email: <span>suffahenterprises@gmail.com</span></p>
-            </div>
-            <div className="map">
-              <iframe title='Lahore Plastic, Murree' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d830.2885169510098!2d73.0803949695483!3d33.653169614677594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95a83e506af5%3A0xfc41b1674e0ee955!2sUnited%20Center!5e0!3m2!1sen!2s!4v1707742364133!5m2!1sen!2s" width="100%" height="350" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-          </div>
-          {/* <div className="contact-box">
-            <div className="address">
-              <h4>Plant</h4>
-              <p>20-Km sheikhupura road, Lahore - Pakistan</p>
-            </div>
-             <div className="map">
-              <iframe title='Lahore Plastic, Murree' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d830.2885169510098!2d73.0803949695483!3d33.653169614677594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95a83e506af5%3A0xfc41b1674e0ee955!2sUnited%20Center!5e0!3m2!1sen!2s!4v1707742364133!5m2!1sen!2s" width="100%" height="350" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
-            </div> 
-          </div> */}
         </div>
       </div>
     </Layout>
