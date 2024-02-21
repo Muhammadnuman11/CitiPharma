@@ -210,7 +210,7 @@ export default function Home() {
         {/* job section */}
         <div className="jobs">
           <div className="video">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RyweJ8F83Os?si=O9XMJbcimyDmqIKf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RyweJ8F83Os?si=O9XMJbcimyDmqIKf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
           </div>
           <div className="jobDetail">
             <div className="jobContent">

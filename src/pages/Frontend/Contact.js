@@ -29,26 +29,26 @@ export default function Contact() {
             <div className="address">
               <h1>Head Office</h1>
               <p>
-                <div className="contactIcon">
+                <span className="contactIcon">
                   <FaLocationDot />
-                </div>
+                </span>
                 <span>Bhai Pheru - Head Balloki Road, Phool Nagar, Kasur, Punjab, Pakistan</span>
               </p>
               <p>
-                <div className="contactIcon">
+                <span className="contactIcon">
                   <FaPhoneAlt />
-                </div>
+                </span>
                 <span onClick={handlePhone}>(+92) 42 353-16587</span></p>
               <p>
-                <div className="contactIcon">
+                <span className="contactIcon">
                   <IoMdMail />
-                </div>
+                </span>
                 <span onClick={handleMail}>info@citipharma.com.pk</span>
               </p>
               <p>
-                <div className="contactIcon">
+                <span className="contactIcon">
                   <TbWorld />
-                </div>
+                </span>
                 <span onClick={handleWeb}>https://citipharma.com.pk</span>
               </p>
               <div className='footerIcons'>
