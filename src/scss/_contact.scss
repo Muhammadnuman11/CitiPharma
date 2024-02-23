@@ -61,7 +61,7 @@
                     align-items: center;
 
                     span {
-                        padding: 10px;
+                        padding: 0 10px;
                         font-size: 16px !important;
                         cursor: pointer;
                         width: 260px;
@@ -84,7 +84,7 @@
                     align-items: center;
                     justify-content: space-between;
                     width: 280px;
-                    padding: 24px 0;
+                    padding: 16px 0;
 
                     .icons {
                         font-size: 21px;
@@ -133,7 +133,7 @@
                 }
 
                 form {
-                    padding: 30px 0;
+                    padding: 50px 0;
 
                     .form-control {
                         outline: none;
@@ -141,6 +141,7 @@
                         border: 1px solid #15a0c7;
                         border-radius: 0;
                         padding: 8px;
+                        margin: 12px 0;
 
                         &::placeholder {
                             color: #9c9c9c;

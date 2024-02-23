@@ -108,10 +108,9 @@ export default function Home() {
         {/* Data Boxses */}
         <div className="d-flex align-items-center justify-content-center">
           <div className="dataBoxs">
-            <DataBoxs icon={"https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-03/HP%20V2%20Picto%20Revenus%20Pierre%20Fabre.svg"} title={"Revenue in 2022"} number={"2,"} countNumber={"7"} suffix={"BN€"} />
-            <DataBoxs icon={"https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-03/HP%20V2%20Picto%20Investissement%20Pierre%20Fabre.svg"} title={"Invested in R&D"} countNumber={"171"} suffix={"M€"} />
-            <DataBoxs icon={"https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-03/HP%20V2%20Picto%20collaborateurs%20Pierre%20Fabre.svg"} title={"Employees"} number={"+"} countNumber={"9600"} />
-            {/* <DataBoxs icon={"https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-03/HP%20V2%20Picto%20Implantations%20Pierre%20Fabre.svg"} title={"Locations"} countNumber={"43"} /> */}
+            <DataBoxs icon={"images/revenue.png"} title={"Revenue in 2023"} number={"44."} countNumber={"27"} suffix={"M $"} />
+            <DataBoxs icon={"https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-03/HP%20V2%20Picto%20Investissement%20Pierre%20Fabre.svg"} title={"Invested in R&D"} number={"2."} countNumber={"5"} suffix={"M $"} />
+            <DataBoxs icon={"https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-03/HP%20V2%20Picto%20collaborateurs%20Pierre%20Fabre.svg"} title={"Employees"} number={"+"} countNumber={"800"} />
           </div>
         </div>
 
@@ -158,40 +157,31 @@ export default function Home() {
             </div>
             <div className="clients">
               <div className="img">
-                <img src="https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-04/Av%C3%A8ne.svg" alt="" />
+                <img src="images/clients/abbott.png" alt="" />
               </div>
               <div className="img">
-                <img src="https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-04/Ducray.svg" alt="" />
+                <img src="images/clients/martinDow.svg" alt="" />
               </div>
               <div className="img">
-                <img src="https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-04/Klorane.svg" alt="" />
+                <img src="images/clients/lci.png" alt="" />
               </div>
               <div className="img">
-                <img src="https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-04/Aderma.svg" alt="" />
+                <img src="images/clients/tabros.png" alt="" />
               </div>
               <div className="img">
-                <img src="https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-04/Furterer.svg" alt="" />
+                <img src="images/clients/ferozsons.png" alt="" />
               </div>
               <div className="img">
-                <img src="https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-04/Oral%20care.svg" alt="" />
+                <img src="images/clients/searle.png" alt="" />
               </div>
               <div className="img">
-                <img src="https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-04/Darrow.svg" alt="" />
+                <img src="images/clients/haleon.svg" alt="" />
               </div>
               <div className="img">
-                <img src="https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-04/Glytone.svg" alt="" />
+                <img src="images/clients/bayer.svg" alt="" />
               </div>
               <div className="img">
-                <img src="https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-04/Pharmaceutical%20care.svg" alt="" />
-              </div>
-              <div className="img">
-                <img src="https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-04/Innovative%20Oncology.svg" alt="" />
-              </div>
-              <div className="img">
-                <img src="https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-04/Medical%20dermatology.svg" alt="" />
-              </div>
-              <div className="img">
-                <img src="https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-04/Naturactive.svg" alt="" />
+                <img src="images/clients/ccl.png" alt="" />
               </div>
             </div>
           </div>
@@ -210,7 +200,8 @@ export default function Home() {
         {/* job section */}
         <div className="jobs">
           <div className="video">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/RyweJ8F83Os?si=O9XMJbcimyDmqIKf" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+            {/* <iframe width="100%" height="100%" src="images/citiPharma.mp4" title="Citi Pharma" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
+            <video src="images/citiPharma.mp4" controls className='w-100 h-100'></video>
           </div>
           <div className="jobDetail">
             <div className="jobContent">

@@ -2,9 +2,9 @@ import React from 'react'
 import Pages from '../../components/Pages'
 import Layout from './Layout'
 import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter, FaYoutube } from 'react-icons/fa'
-import { TbWorld } from "react-icons/tb"
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
+import { MdFax } from "react-icons/md";
 export default function Contact() {
 
   const handlePhone = () => {
@@ -13,9 +13,6 @@ export default function Contact() {
   const handleMail = () => {
     window.open('mailto:info@citipharma.com.pk');
   }
-  const handleWeb = () => {
-    window.open('https://citipharma.com.pk', '_blank');
-  }
 
   return (
     <Layout title={'Contact - Citi Pharma'}>
@@ -23,7 +20,7 @@ export default function Contact() {
         <Pages title={"Contact Us"} link={"images/apiBanner.jpg"} />
         <div className="contact-details">
           <div className="map">
-            <iframe title='Lahore Plastic' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.7600346124627!2d73.90621807462088!3d31.199666262918488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39185de50beac6d7%3A0x905c41e507064bc!2sCITI%20Pharma%20Limited!5e0!3m2!1sen!2s!4v1708507019216!5m2!1sen!2s" width="100%" height="500" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe title='Citi Pharma' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.7600346124627!2d73.90621807462088!3d31.199666262918488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39185de50beac6d7%3A0x905c41e507064bc!2sCITI%20Pharma%20Limited!5e0!3m2!1sen!2s!4v1708507019216!5m2!1sen!2s" width="100%" height="500" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div className="contact-box">
             <div className="address">
@@ -32,24 +29,44 @@ export default function Contact() {
                 <span className="contactIcon">
                   <FaLocationDot />
                 </span>
-                <span>Bhai Pheru - Head Balloki Road, Phool Nagar, Kasur, Punjab, Pakistan</span>
+                <span>588-Q Block, M.A., Johar Town, Lahore Punjab, Pakistan</span>
               </p>
               <p>
                 <span className="contactIcon">
                   <FaPhoneAlt />
                 </span>
-                <span onClick={handlePhone}>(+92) 42 353-16587</span></p>
+                <span onClick={handlePhone}>+92 42 353-16587</span>
+              </p>
+              <h1>Registered Office</h1>
+              <p>
+                <span className="contactIcon">
+                  <FaLocationDot />
+                </span>
+                <span>3-KM, Head Balloki Road, Bhai Pheru, Distt Kasur</span>
+              </p>
+              <p>
+                <span className="contactIcon">
+                  <FaPhoneAlt />
+                </span>
+                <span onClick={handlePhone}> +92 49 4510189</span>
+              </p>
+              <p>
+                <span className="contactIcon">
+                  <FaPhoneAlt />
+                </span>
+                <span onClick={handlePhone}> +92 49 4513392</span>
+              </p>
               <p>
                 <span className="contactIcon">
                   <IoMdMail />
                 </span>
-                <span onClick={handleMail}>info@citipharma.com.pk</span>
+                <span onClick={handleMail}>corporate@citipharma.com.pk</span>
               </p>
               <p>
                 <span className="contactIcon">
-                  <TbWorld />
+                <MdFax />
                 </span>
-                <span onClick={handleWeb}>https://citipharma.com.pk</span>
+                <span onClick={handleMail}>+92 49 4510191</span>
               </p>
               <div className='footerIcons'>
                 <div className="contactIcon">

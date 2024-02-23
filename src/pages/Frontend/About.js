@@ -1,7 +1,6 @@
 import React from 'react'
 import Pages from '../../components/Pages'
 import Layout from './Layout'
-import DataBoxs from '../../components/HomeComponents/DataBoxs'
 
 export default function About() {
   return (
@@ -19,7 +18,7 @@ export default function About() {
               <p>Citi Pharma mission is to dedicate itself top adding exceptional value through creation of innovative and cost effective Pharma products and develop a corporate culture that rewards initiative, enthusiasm and ethical practices.</p>
             </div>
             <div className="img">
-              <img src="https://images.unsplash.com/photo-1605692024639-04377ef2fd90?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+              <img src="images/citiPharma.png" alt="" />
             </div>
           </div>
 
@@ -27,33 +26,95 @@ export default function About() {
           <div className="aboutDetails">
             <div className='w-50'>
               <h1>Our Mission</h1>
-              <p>It is our mission to develop, license and manufacture safe, effective, reliable and affordable pharmaceutical products.</p>
+              <p>Citi Pharma’s mission is to
+                dedicate itself exceptional value
+                through creation of innovative &
+                cost-effective pharma products
+                and develop a corporate
+                culture that rewards initiative,
+                enthusiasm and ethical practices.</p>
               <h1>Our Vision</h1>
-              <p>Recognized as a provider of specialty patient-care pharmaceuticals and hospitals products, we offer global solutions to improve the quality of life.</p>
+              <p>We aim to be among the top
+                pharmaceutical companies in
+                Pakistan by constantly evolving
+                and bringing home innovative
+                products in healthcare segment.</p>
             </div>
             <div className="img">
               <img src="https://www.metropharmaceuticals.com.pk/wp-content/uploads/sites/9/2016/10/inner_large_2a.png" alt="" />
             </div>
           </div>
 
-          {/* Data Boxses */}
-          <div className="d-flex align-items-center justify-content-between w-100 flex-wrap">
-            <DataBoxs icon={"https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-03/HP%20V2%20Picto%20Revenus%20Pierre%20Fabre.svg"} title={"Revenue in 2022"} number={"2,"} countNumber={"7"} suffix={"BN€"} />
-            <DataBoxs icon={"https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-03/HP%20V2%20Picto%20Investissement%20Pierre%20Fabre.svg"} title={"Invested in R&D"} countNumber={"171"} suffix={"M€"} />
-            <DataBoxs icon={"https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-03/HP%20V2%20Picto%20collaborateurs%20Pierre%20Fabre.svg"} title={"Employees"} number={"+"} countNumber={"9600"} />
-            {/* <DataBoxs icon={"https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-03/HP%20V2%20Picto%20Implantations%20Pierre%20Fabre.svg"} title={"Locations"} countNumber={"43"} /> */}
-          </div>
-
           {/* CEO Message */}
           <div className="aboutDetails">
             <div className='w-50'>
               <h1>CEO message</h1>
-              <p>Citi Pharma is a future oriented & progressive pharmaceutical company. Citi Pharma vision is based on quality and professionalism. Our people and resources are dedicated to provide quality products and ethical services to meet the needs of customers in a responsible manner.</p>
-              <p>There is an emphasis on employee pride, meticulous quality control and optimum resources utilization to achieve and maintain a leadership position in the healthcare industry, to grow thorough aggressive but ethical marketing, and to maintain synergy in our business. We are also conscious of our social responsibility to improve the quality of life of our customers, our staff and the society we inhabit; and every step taken at Citi Pharma is geared towards a better & healthier life for all, as we practice.</p>
-              <div className='signImg'>
+              <p>I am delighted to address you all as we reflect
+                on another year of significant achievements
+                at Citi Pharma Limited. During the year under
+                review the world and Pakistan in particular faced
+                challenges as a result of significant geopolitical
+                and macroeconomic uncertainty.</p>
+              <p>Despite the tumultuous landscape marked
+                by political uncertainty and economic crises,
+                our various business segments have not only
+                weathered the storms but have also delivered
+                exceptional results. This past year has indeed been
+                fraught with challenges, yet we remain resolute in
+                upholding our promises and commitments to all
+                our valued stakeholders.</p>
+              <p>Looking ahead to the coming year, it is expected
+                to remain a challenging one for the country and
+                it strives to achieve fiscal stabilization and regain
+                macroeconomic stability. Needless to say, we have
+                ambitious plans to embark on the establishment
+                of a cutting-edge facility encompassing both
+                forward and backward integration. Additionally,
+                we are in the process of obtaining approval for a
+                state-of-the-art healthcare facility, featuring a
+                200-bed hospital, alongside a research-based
+                medical science teaching university equipped with
+                practical training facilities.</p>
+              <p>We recognize that our investors, partners, and
+                dedicated employees rely on us to safeguard their
+                investments and generate the returns necessary
+                to meet their financial obligations. Through a
+                culture that prioritizes risk management, we strive
+                to protect capital and enhance shareholder value.
+                Our management team is deeply committed
+                to upholding the highest standards of integrity,
+                emphasizing the importance of doing the right
+                things and doing them right. We take great pride in
+                the recognition we’ve received from our peers and
+                competitors, both locally and on the global stage,
+                as we continue to build a remarkable company.</p>
+              <p>Our investments in upgrading our manufacturing
+                facilities, including the addition of a state-of-the-art sterile area, exemplify our steadfast
+                commitment to our long-term strategy. In the
+                face of political and economic uncertainties, we
+                have steadfastly supported a skilled workforce,
+                a team of highly trained professionals, and an
+                exceptional management team. Together, we’ve
+                achieved operational synergies and expanded our
+                regional presence, all while maintaining a forward-thinking approach to strengthen our investments
+                and increase our equity value.</p>
+              <p>At Citi Pharma Limited, we always have our eyes
+                on the future, anticipating shifts in customer
+                needs and shaping our business strategy to lead
+                the industry towards new possibilities.</p>
+              <p>In closing, I want to extend my heartfelt
+                appreciation to our Citi family for their invaluable
+                contributions to our organization. I also extend
+                my gratitude to all our stakeholders, including
+                shareholders and customers, for their unwavering
+                trust and support during these challenging times.
+                Together, let us embrace the opportunities of
+                the year ahead and work towards yet another
+                successful chapter in our journey.</p>
+              {/* <div className='signImg'>
                 <img src="https://s3-alpha.figma.com/hub/file/1648758856/530543c0-644d-4369-9314-97c5eb197d37-cover.png" alt="Sign" />
-              </div>
-              <p className='p-1 m-0'>Person Name</p>
+              </div> */}
+              <p className='p-1 m-0'>Rizwan Ahmad</p>
               <p className='p-1 m-0'>C.E.O</p>
             </div>
             <div className="img">
