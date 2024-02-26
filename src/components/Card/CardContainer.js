@@ -7,6 +7,7 @@ const CardContainer = ({ cards }) => (
             <Card
                 key={card.id}
                 title={card.title}
+                job={card.job}
                 content={card.content}
                 imgUrl={card.imgUrl}
             />

@@ -16,6 +16,7 @@ import Contact from '../src/pages/Frontend/Contact'
 import { useEffect, useState } from 'react';
 import Loader from './components/Loader';
 import Api from './pages/Frontend/Api';
+import Products from './pages/Frontend/Products';
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -32,6 +33,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/api" element={<Api />} />
+        <Route path="/finishproducts" element={<Products />} />
         {/* <Route path="/blog" element={<Blog />} /> */}
         {/* <Route path='/*' element={<Page404 />} /> */}
         {/* <Route path="/services" element={<Services />} /> */}
