@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 // Bootstrap
 @import "./scss/bootstrap";
+// Slick
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
 // Components
 @import './scss/header';
 @import './scss/footer';
 @import './scss/pages';
 @import './scss/card';
 @import './scss/dataBox';
+@import './scss/ourValues';
 // Pages
 @import "./scss/home";
 @import "./scss/api";
 @import './scss/about';
 @import './scss/contact';
-@import './scss/services';
 @import './scss/prodects';
+@import './scss/common';
 
 // font-family: 'Roboto', sans-serif;
 
@@ -42,7 +46,7 @@ main {
   justify-content: center;
   flex-direction: column;
 
-  img{
+  img {
     margin: 10px;
   }
 }

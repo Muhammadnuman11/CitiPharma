@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Pages from '../../components/Pages'
 import Layout from './Layout'
 import CardContainer from '../../components/Card/CardContainer';
+import directorData from '../../data/directorData';
 
 export default function About() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -10,18 +11,6 @@ export default function About() {
     setIsExpanded(!isExpanded);
   };
 
-  const cardsData = [
-    { id: 1, title: 'Mr. Nadeem Amjad', job: "Chairman", content: 'Mr. Amjad is also an early age entrepreneur with over 3 decades of profession business experience. He expanded the family business into the Hong Kong Real Estate business as well as hospitality.He holds an MBA from University of London.', imgUrl: 'images/members/nadeem.jpg' },
-    { id: 2, title: 'Mr. Rizwan Ahmad', job: 'CEO', content: 'Mr. Rizwan Sheikh is the Chief Executive Officer of the Company. He is widely recognized as one of the leading thought leaders, entrepreneurs and Chief Executives in Pakistan’s pharma sector. Mr. Sheikh entered into the world of business at an early age, when he joined the family telecommunications business under the name of Citi Phones (Pvt.) ', imgUrl: 'images/members/rizwan.jpg' },
-    { id: 3, title: 'Mr. Abdul Jaleel Sheikh', job: "Independent Director", content: 'Mr. Jaleel is serving as Chief Risk Officer of Pak Brunei Investment Company and also holds nominee directorship in Nimir Industrial Chemicals Liamited, Awwal Modaraba Management Limited, Primus Leasing Limited and Awwal Corporate Restructuring Company Limited. ', imgUrl: 'images/members/jaleel.jpg' },
-    { id: 4, title: 'Ms. Farzin Khan', job: "Independent Director", content: 'Farzin Khan is presently serving as National Consultant – Programme Management and Stakeholder Coordination Expert at United Nations Office on Drugs & Crime (UNODC) Pakistan. Previously, she has served as National Programme Manager - AML and FATF Support for Pakistan with UNODC from 2019 till 2021.', imgUrl: 'images/members/farzin.jpg' },
-    { id: 5, title: 'Mrs. Saira Aslam', job: "Non-Executive Director", content: 'Mrs. Saira Aslam is an Bsc from Lahore Garrison College and is associated with CPHL as a Director. She actively participates in the philanthropy in the city of Lahore and is considered to be one of the active philanthropists city.', imgUrl: 'images/members/saira.jpg' },
-    { id: 6, title: 'Dr. Zameer Ul Hassan', job: "Director", content: 'Dr. Shah is an experienced pharmaceutical sector professional with over 2 decades of experience in leading local and MNC companies. He is currently working as Director Operations of CPHL and is in charge of all production related matters. Prior to joining CPHL in 2002, Dr. Shah was involved with leading pharma sector players such as Global Pharmaceuticals (Pvt.)', imgUrl: 'images/members/zameer.jpg' },
-    { id: 7, title: 'Mr. Muhammad Naeem', job: "Non-Executive Director", content: 'He has more than 25 years of experience in retail sector, covering mostly electronic items and mobile phones. He serves as the Director of Citi Pharma Limited.', imgUrl: 'images/members/naeem.jpg' },
-    { id: 8, title: 'Mr. Asif Iqbal', job: "Chief Financial Officer", content: 'Mr. Asif Iqbal has been serving as the Chief Financial Officer at CPHL for the past four years. He has more than 13 years experience which spans various financial matters including raising debt and equity financing, financial reporting, corporate and taxation laws.', imgUrl: 'images/members/asif.jpg' },
-    { id: 9, title: 'Mr. Muhammad Riaz', job: "Company Secretary & Head of Legal", content: 'Mr. Muhammad Riaz is working at Citi Pharma Limited since 2020 and successfully completed the conversion process of Citi pharma (Pvt.) Limited to Public unlisted and subsequently accomplish the process of listing and met with all the pre & post listing requirements with SECP, CDC and PSX. ', imgUrl: 'images/members/riaz.jpg' },
-    // More card data...
-  ];
   return (
     <Layout title={"About - Citi Pharma"}>
       <div className="about">
@@ -32,7 +21,7 @@ export default function About() {
           {/* Intro */}
           <div className="aboutDetails">
             <div className='w-50'>
-              <h1>Welcome to Citi Pharma!</h1>
+              <h1 className='mainHeadings'>Welcome to Citi Pharma!</h1>
               <p>The factory is located at 3km Head Balloki road, Kasur. It has a land of 47 acres and have more than 800,000 Sq. Feet covered area. Citi Pharma got its first project in 1990 by AWT. Then the major plant erection period started in 1993 and ended somewhere in 1996. Production commenced in 1996 and formulation established in 2003.</p>
               <p>Citi Pharma mission is to dedicate itself top adding exceptional value through creation of innovative and cost effective Pharma products and develop a corporate culture that rewards initiative, enthusiasm and ethical practices.</p>
             </div>
@@ -44,7 +33,7 @@ export default function About() {
           {/* Mission and Vision */}
           <div className="aboutDetails">
             <div className='w-50'>
-              <h1>Our Mission</h1>
+              <h1 className='mainHeadings'>Our Mission</h1>
               <p>Citi Pharma's mission is to
                 dedicate itself exceptional value
                 through creation of innovative &
@@ -52,7 +41,7 @@ export default function About() {
                 and develop a corporate
                 culture that rewards initiative,
                 enthusiasm and ethical practices.</p>
-              <h1>Our Vision</h1>
+              <h1 className='mainHeadings'>Our Vision</h1>
               <p>We aim to be among the top
                 pharmaceutical companies in
                 Pakistan by constantly evolving
@@ -67,7 +56,7 @@ export default function About() {
           {/* CEO Message */}
           <div className="aboutDetails">
             <div className='w-50'>
-              <h1>CEO message</h1>
+              <h1 className='mainHeadings'>CEO message</h1>
               <p>I am delighted to address you all as we reflect
                 on another year of significant achievements
                 at Citi Pharma Limited. During the year under
@@ -148,11 +137,11 @@ export default function About() {
 
           {/* DIRECTOR’S REPORT */}
           <div className="aboutCards">
-            <h1>Board of Directors</h1>
+            <h1 className='mainHeadings'>Board of Directors</h1>
             <div className="cardData">
               <div className="cards">
                 <div className="w-100">
-                  <CardContainer cards={cardsData} />
+                  <CardContainer cards={directorData} />
                 </div>
               </div>
             </div>

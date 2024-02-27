@@ -24,7 +24,7 @@ export default function Contact() {
           </div>
           <div className="contact-box">
             <div className="address">
-              <h1>Head Office</h1>
+              <h1 className='mainHeadings'>Head Office</h1>
               <p>
                 <span className="contactIcon">
                   <FaLocationDot />
@@ -37,7 +37,7 @@ export default function Contact() {
                 </span>
                 <span onClick={handlePhone}>+92 42 353-16587</span>
               </p>
-              <h1>Registered Office</h1>
+              <h1 className='mainHeadings'>Registered Office</h1>
               <p>
                 <span className="contactIcon">
                   <FaLocationDot />
@@ -64,7 +64,7 @@ export default function Contact() {
               </p>
               <p>
                 <span className="contactIcon">
-                <MdFax />
+                  <MdFax />
                 </span>
                 <span onClick={handleMail}>+92 49 4510191</span>
               </p>
@@ -87,7 +87,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="contactForm">
-              <h1>Contact Us</h1>
+              <h1 className='mainHeadings'>Contact Us</h1>
               <form className="row g-3 needs-validation" noValidate>
                 <div className="col-12 col-md-6">
                   <input type="text" name='name' className="form-control" placeholder='Your Name' required />

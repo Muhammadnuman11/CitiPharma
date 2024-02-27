@@ -1,13 +1,11 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-// import Card from '../../components/Card';
-// import ClientCard from '../../components/ClientCard';
 import Layout from './Layout';
 import DataBoxs from '../../components/HomeComponents/DataBoxs';
-// import Card from '../../components/Card';
 import { FaQuoteLeft } from "react-icons/fa";
 import CardContainer from '../../components/Card/CardContainer';
 import { NavLink } from 'react-router-dom';
+import OurValues from '../../components/HomeComponents/OurValues';
 
 export default function Home() {
 
@@ -15,7 +13,6 @@ export default function Home() {
     { id: 1, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO. 🌿✨', imgUrl: 'https://unsplash.it/200/203' },
     { id: 2, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO. 🌿✨', imgUrl: 'https://unsplash.it/200/202' },
     { id: 3, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO. 🌿✨', imgUrl: 'https://unsplash.it/200/201' },
-    // More card data...
   ];
 
   return (
@@ -183,6 +180,9 @@ export default function Home() {
               <div className="img">
                 <img src="images/clients/ccl.png" alt="" />
               </div>
+              <div className="img">
+                <img src="images/clients/gsk.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
@@ -198,20 +198,7 @@ export default function Home() {
         </div>
 
         {/* job section */}
-        <div className="jobs">
-          <div className="video">
-            {/* <iframe width="100%" height="100%" src="images/citiPharma.mp4" title="Citi Pharma" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
-            <video src="images/citiPharma.mp4" controls className='w-100 h-100'></video>
-          </div>
-          <div className="jobDetail">
-            <div className="jobContent">
-              <h3>Looking for a company</h3>
-              <h1>that is in line with your values?</h1>
-              <p>Joining the Citi Pharma Group means entering a company with a history overflowing with values, innovation and expertise for patients and consumers. Don't wait! Look at our offers, apply and embark on a human adventure !</p>
-              <button className="btn">Discover our job offer</button>
-            </div>
-          </div>
-        </div>
+        <OurValues />
 
         {/* News section */}
         <div className="news">

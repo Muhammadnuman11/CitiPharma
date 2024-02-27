@@ -21,7 +21,7 @@ export default function Api() {
 
                     <div className="api-details">
                         <div className="api-table table-responsive">
-                            <h1>PBDs & Intermediates</h1>
+                            <h1 className='mainHeadings'>PBDs & Intermediates</h1>
                             <table className="table">
                                 <thead>
                                     <tr>
@@ -93,7 +93,7 @@ export default function Api() {
                             </table>
                         </div>
                         <div className="api-table table-responsive">
-                            <h1>Duocarmycins & Intermediates</h1>
+                            <h1 className='mainHeadings'>Duocarmycins & Intermediates</h1>
                             <table className="table">
                                 <thead>
                                     <tr>
@@ -165,7 +165,7 @@ export default function Api() {
                             </table>
                         </div>
                         <div className="api-table table-responsive">
-                            <h1>Auristatin Intermediates</h1>
+                            <h1 className='mainHeadings'>Auristatin Intermediates</h1>
                             <table className="table">
                                 <thead>
                                     <tr>

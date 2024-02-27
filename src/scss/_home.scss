@@ -298,67 +298,6 @@
         }
     }
 
-    // jobs
-    .jobs {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 40px 0;
-        text-align: left;
-
-        .video {
-            width: 42%;
-            height: 320px;
-        }
-
-        .jobDetail {
-            background: #f8f8f8;
-            width: 42%;
-
-            .jobContent {
-                padding: 40px;
-                display: flex;
-                flex-direction: column;
-
-                h3 {
-                    color: #3db5e6;
-                    font-weight: 300;
-                    margin: 3px 0;
-                    padding: 0;
-                }
-
-                h1 {
-                    color: #004b96;
-                    font-weight: 700;
-                }
-
-                p {
-                    font-weight: 350;
-                    font-size: 20px;
-                    color: #535353;
-                    margin: 24px 0;
-                    padding: 0;
-                }
-
-                .btn {
-                    border-radius: 0;
-                    padding: 15px 30px;
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    font-weight: 400;
-                    background: #3db5e6;
-                    border: none;
-                    color: #fff;
-                    width: 220px;
-
-                    &:hover {
-                        background: #03a8e9;
-                    }
-                }
-            }
-        }
-    }
-
     // News
     .news {
         margin: 40px 0;
@@ -458,23 +397,6 @@
                     .btn {
                         padding: 12px 18px;
                     }
-                }
-            }
-        }
-
-        .jobs {
-            flex-direction: column !important;
-
-            .video {
-                width: 90%;
-                height: 200px;
-            }
-
-            .jobDetail {
-                width: 90%;
-
-                .jobContent {
-                    padding: 10px;
                 }
             }
         }
