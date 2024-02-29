@@ -1,10 +1,15 @@
 import React from 'react'
 import NumberCounter from './NumberCounter'
+import { useInView } from 'react-intersection-observer';
+
 
 export default function DataBoxs({ icon, title, number, countNumber, suffix }) {
+    const [ref, inView] = useInView({
+        triggerOnce: true,
+    });
     return (
         <>
-            <div className="dataBox">
+            <div ref={ref} className={`dataBox animate__animated ${inView ? 'animate__fadeInRight' : ''}`}>
                 <div className="icon">
                     <img src={icon} alt="" />
                 </div>

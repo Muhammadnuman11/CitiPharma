@@ -36,26 +36,27 @@ export default function Navbar() {
                 <nav className="navbar fixed-top custom_nav-container p-0">
                     <div className="container">
                         <Link to="/" className="navbar-brand fs-2 fw-bold text-white">
-                            <img src="https://citipharma.com.pk/images/logo-img.png" alt="" />
+                            <img src="images/logo.png" alt="" />
                         </Link>
                         <button className="navbar-toggler shadow-none border-0 navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <div className="d-flex w-100">
-                                <ul className="navbar-nav d-flex align-items-center justify-content-center me-auto w-100 mb-2 mb-lg-0">
+                                <ul className="navbar-nav mb-2 mb-lg-0">
                                     <li className="nav-item mx-2">
                                         <NavLink to="/" className="nav-link text-white">Home</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        {/* <NavLink to="/about" className="nav-link text-white">About</NavLink> */}
-                                        <Dropdown menu={{ items }}>
-                                            <span onClick={(e) => e.preventDefault()} className='nav-link'>
-                                                <Space>
-                                                    About Us
-                                                </Space>
-                                            </span>
-                                        </Dropdown>
+                                        <NavLink to="/about" className="nav-link text-white">
+                                            <Dropdown menu={{ items }}>
+                                                <span onClick={(e) => e.preventDefault()}>
+                                                    <Space>
+                                                        About Us
+                                                    </Space>
+                                                </span>
+                                            </Dropdown>
+                                        </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
                                         <NavLink to="/contact" className="nav-link text-white">Contact</NavLink>

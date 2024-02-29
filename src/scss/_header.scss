@@ -1,6 +1,7 @@
 .navbar {
     background: #15a0c7;
 
+
     .navbar-brand {
         border-radius: 8px;
         height: 60px;
@@ -26,19 +27,27 @@
         top: 70px;
         left: 0;
         width: 100%;
+        transition: 1s;
+        border-top: 1px solid #fff;
+        border-bottom-right-radius: 150px;
+        text-align: left;
+        padding: 0 0 0 118px;
 
         .navbar-nav {
-            width: 100%;
+            // width: 100%;
+            width: 240px;
 
+            ul {
 
-            .nav-item {
+                .nav-item {
 
-                .nav-link {
-                    color: #ffffff;
-                    font-size: 18px;
+                    .nav-link {
+                        color: #ffffff;
+                        font-size: 18px;
 
-                    &:hover {
-                        color: #000 !important;
+                        &:hover {
+                            color: #000 !important;
+                        }
                     }
                 }
             }
@@ -151,6 +160,10 @@
         width: 100% !important;
         justify-content: center !important;
         align-items: center !important;
+    }
+
+    .navbar-collapse {
+        padding: 0 0 0 12px !important;
     }
 
 }

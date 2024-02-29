@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import TopFooter from './TopFooter'
-// import { BiSolidUpArrow } from "react-icons/bi";
+import { TiArrowSortedUp } from "react-icons/ti";
 
 export default function Footer() {
 
@@ -39,14 +39,15 @@ export default function Footer() {
         <>
             <footer className='footer'>
                 <div className="arrow" onClick={scrollTop} style={{ display: isVisible ? 'flex' : 'none' }}>
-                    <lord-icon
+                    {/* <lord-icon
                         src="https://cdn.lordicon.com/vvflvbfj.json"
                         trigger="loop"
                         stroke="bold"
                         state="loop-slide"
                         colors="primary:#4be1ec,secondary:#104891"
                         style={{ width: "70px", height: "70px", }}>
-                    </lord-icon>
+                    </lord-icon> */}
+                    <TiArrowSortedUp />
                 </div>
                 <TopFooter />
                 <div className="footerPara">

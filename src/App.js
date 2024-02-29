@@ -17,7 +17,7 @@ import { useEffect, useState } from 'react';
 import Loader from './components/Loader';
 import Api from './pages/Frontend/Api';
 import Products from './pages/Frontend/Products';
-import OurValues from './components/HomeComponents/OurValues';
+import PageNotFound from './pages/Frontend/PageNotFound';
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -35,9 +35,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/api" element={<Api />} />
         <Route path="/finishproducts" element={<Products />} />
-        <Route path="/values" element={<OurValues />} />
+        <Route path='/*' element={<PageNotFound />} />
         {/* <Route path="/blog" element={<Blog />} /> */}
-        {/* <Route path='/*' element={<Page404 />} /> */}
         {/* <Route path="/services" element={<Services />} /> */}
         {/* <Route path="/pvcshrink" element={<PVCShrink />} />
         <Route path="/boppbags" element={<BOPPBags />} />

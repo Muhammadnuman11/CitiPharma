@@ -6,6 +6,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 import CardContainer from '../../components/Card/CardContainer';
 import { NavLink } from 'react-router-dom';
 import OurValues from '../../components/HomeComponents/OurValues';
+import Animation from '../../components/Animation';
 
 export default function Home() {
 
@@ -14,6 +15,7 @@ export default function Home() {
     { id: 2, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO. 🌿✨', imgUrl: 'https://unsplash.it/200/202' },
     { id: 3, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO. 🌿✨', imgUrl: 'https://unsplash.it/200/201' },
   ];
+
 
   return (
     <Layout title={'Citi Pharma'}>
@@ -103,7 +105,7 @@ export default function Home() {
         </div>
 
         {/* Data Boxses */}
-        <div className="d-flex align-items-center justify-content-center">
+        <div className="d-flex align-items-center justify-content-center overflow-hidden">
           <div className="dataBoxs">
             <DataBoxs icon={"images/revenue.png"} title={"Revenue in 2023"} number={"44."} countNumber={"27"} suffix={"M $"} />
             <DataBoxs icon={"https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-03/HP%20V2%20Picto%20Investissement%20Pierre%20Fabre.svg"} title={"Invested in R&D"} number={"2."} countNumber={"5"} suffix={"M $"} />
@@ -117,84 +119,96 @@ export default function Home() {
             <img src="https://static.pierre-fabre.com/corpo/sites/pierre-fabre.com/files/2023-03/Pierre%20Fabre%20HP%20V2%20Quote.png" alt="" />
           </div>
           <div className="quoteText">
-            <h1>
-              <FaQuoteLeft className='quote-icon' />
-            </h1>
-            <p>It is our mission to develop, license and manufacture safe, effective, reliable and affordable pharmaceutical products.</p>
-            {/* <p>M. Pierre Fabre, founder of the Group</p> */}
+            <Animation name={"animate__fadeInDown"}>
+              <h1>
+                <span className="quote-box">
+                  <FaQuoteLeft className='quote-icon' />
+                </span>
+              </h1>
+              <p>It is our mission to develop, license and manufacture safe, effective, reliable and affordable pharmaceutical products.</p>
+              {/* <p>M. Pierre Fabre, founder of the Group</p> */}
+            </Animation>
           </div>
         </div>
 
         {/* collaborations and Clients */}
-        <div className="collaborations">
+        <div className="collaborations overflow-hidden">
           <div className="collaborationsDetail">
-            <div className="collaborationsContent">
-              <h3>Discover</h3>
-              <h1>Our Collaborations</h1>
-              <p>Our dual expertise - pharmaceutical and dermo-cosmetics - helps us offer a holistic approach to care: prevent, treat and support.</p>
-              <button className="btn">Learn more about our collaborations </button>
-            </div>
-            <div className="images">
-              <div className="img">
-                <img src="https://images.unsplash.com/photo-1556229165-8aa0ceaa93a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGFrZSUyMGNhcmUlMjBoZXIlMjBoYWlyfGVufDB8fDB8fHww" alt="" />
-                <h1>Take care of your skin, hair and oral health.</h1>
+            <Animation name={"animate__fadeInDown"}>
+              <div className="collaborationsContent">
+                <h3>Discover</h3>
+                <h1>Our Collaborations</h1>
+                <p>Our dual expertise - pharmaceutical and dermo-cosmetics - helps us offer a holistic approach to care: prevent, treat and support.</p>
+                <button className="btn">Learn more about our collaborations </button>
               </div>
-              <div className="img">
-                <img src="https://images.unsplash.com/photo-1630959305790-4c956ce6c0b6?q=80&w=1493&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                <h1>Treating cancer</h1>
+            </Animation>
+            <Animation name={"animate__fadeInRight"}>
+              <div className='images'>
+                <div className="img">
+                  <img src="https://images.unsplash.com/photo-1556229165-8aa0ceaa93a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGFrZSUyMGNhcmUlMjBoZXIlMjBoYWlyfGVufDB8fDB8fHww" alt="" />
+                  <h1>Take care of your skin, hair and oral health.</h1>
+                </div>
+                <div className="img">
+                  <img src="https://images.unsplash.com/photo-1630959305790-4c956ce6c0b6?q=80&w=1493&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                  <h1>Treating cancer</h1>
+                </div>
+                <div className="img">
+                  <img src="https://images.unsplash.com/photo-1683208529938-8a7fb89c855f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                  <h1>Treating chronic diseases</h1>
+                </div>
+                <div className="img">
+                  <img src="https://media.istockphoto.com/id/1344413214/photo/doctor-listening-to-little-boys-heart.jpg?s=1024x1024&w=is&k=20&c=ppxfnKq-Myx8xuds8ZvtnreoWRoV0bd35PrU-JhhJyc=" alt="" />
+                  <h1>Treating everyday ailments</h1>
+                </div>
               </div>
-              <div className="img">
-                <img src="https://images.unsplash.com/photo-1683208529938-8a7fb89c855f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                <h1>Treating chronic diseases</h1>
+            </Animation>
+            <Animation name={"animate__fadeInUp"}>
+              <div className="clients">
+                <div className="img">
+                  <img src="images/clients/abbott.png" alt="" />
+                </div>
+                <div className="img">
+                  <img src="images/clients/martinDow.svg" alt="" />
+                </div>
+                <div className="img">
+                  <img src="images/clients/lci.png" alt="" />
+                </div>
+                <div className="img">
+                  <img src="images/clients/tabros.png" alt="" />
+                </div>
+                <div className="img">
+                  <img src="images/clients/ferozsons.png" alt="" />
+                </div>
+                <div className="img">
+                  <img src="images/clients/searle.png" alt="" />
+                </div>
+                <div className="img">
+                  <img src="images/clients/haleon.svg" alt="" />
+                </div>
+                <div className="img">
+                  <img src="images/clients/bayer.svg" alt="" />
+                </div>
+                <div className="img">
+                  <img src="images/clients/ccl.png" alt="" />
+                </div>
+                <div className="img">
+                  <img src="images/clients/gsk.png" alt="" />
+                </div>
               </div>
-              <div className="img">
-                <img src="https://media.istockphoto.com/id/1344413214/photo/doctor-listening-to-little-boys-heart.jpg?s=1024x1024&w=is&k=20&c=ppxfnKq-Myx8xuds8ZvtnreoWRoV0bd35PrU-JhhJyc=" alt="" />
-                <h1>Treating everyday ailments</h1>
-              </div>
-            </div>
-            <div className="clients">
-              <div className="img">
-                <img src="images/clients/abbott.png" alt="" />
-              </div>
-              <div className="img">
-                <img src="images/clients/martinDow.svg" alt="" />
-              </div>
-              <div className="img">
-                <img src="images/clients/lci.png" alt="" />
-              </div>
-              <div className="img">
-                <img src="images/clients/tabros.png" alt="" />
-              </div>
-              <div className="img">
-                <img src="images/clients/ferozsons.png" alt="" />
-              </div>
-              <div className="img">
-                <img src="images/clients/searle.png" alt="" />
-              </div>
-              <div className="img">
-                <img src="images/clients/haleon.svg" alt="" />
-              </div>
-              <div className="img">
-                <img src="images/clients/bayer.svg" alt="" />
-              </div>
-              <div className="img">
-                <img src="images/clients/ccl.png" alt="" />
-              </div>
-              <div className="img">
-                <img src="images/clients/gsk.png" alt="" />
-              </div>
-            </div>
+            </Animation>
           </div>
         </div>
 
         {/* Commitments */}
         <div className="commitments">
-          <div className="commitmentsContent">
-            <h3>Focus on</h3>
-            <h1>Our Commitments</h1>
-            <p>Green Mission Citi Pharma is the eco-socio-responsible commitment from the Citi Pharma Group, awarded the Committed to CSR by AFNOR Certification at the Exemplary level. Thanks to our conviction and drive, we use sustainable innovation to benefit Nature and People, focusing on 5 pillars</p>
-            <button className="btn">Discover all our commitments</button>
-          </div>
+          <Animation name={"animate__fadeInUp"}>
+            <div className="commitmentsContent">
+              <h3>Focus on</h3>
+              <h1>Our Commitments</h1>
+              <p>Green Mission Citi Pharma is the eco-socio-responsible commitment from the Citi Pharma Group, awarded the Committed to CSR by AFNOR Certification at the Exemplary level. Thanks to our conviction and drive, we use sustainable innovation to benefit Nature and People, focusing on 5 pillars</p>
+              <button className="btn">Discover all our commitments</button>
+            </div>
+          </Animation>
         </div>
 
         {/* job section */}

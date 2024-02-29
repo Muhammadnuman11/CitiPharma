@@ -8,24 +8,31 @@
         position: fixed;
         bottom: 30px;
         right: 30px;
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
         animation: fade 2s infinite ease-in-out;
         cursor: pointer;
-        z-index: 10;
+        z-index: 100;
+        background: #fff;
+        color: #15a0c7;
+        font-size: 42px;
+        border-radius: 6px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
 
     @keyframes fade {
-        0%{
+        0% {
             bottom: 30px;
         }
-        50%{
+
+        50% {
             bottom: 40px;
         }
-        100%{
+
+        100% {
             bottom: 30px;
         }
     }
@@ -53,7 +60,7 @@
                 }
             }
         }
-          
+
     }
 
     // Top Footer
