@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import 'react-toastify/dist/ReactToastify.css';
 // Bootstrap
 @import "./scss/bootstrap";
 // Slick
@@ -12,14 +13,16 @@
 @import './scss/card';
 @import './scss/dataBox';
 @import './scss/ourValues';
+@import './scss/common';
 // Pages
 @import "./scss/home";
 @import "./scss/api";
 @import './scss/about';
 @import './scss/contact';
 @import './scss/prodects';
-@import './scss/common';
+@import './scss/pdf';
 @import './scss/page404';
+@import './scss/auth';
 
 // font-family: 'Roboto', sans-serif;
 

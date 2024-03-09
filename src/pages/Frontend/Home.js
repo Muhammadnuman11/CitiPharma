@@ -142,7 +142,7 @@ export default function Home() {
                 <button className="btn">Learn more about our collaborations </button>
               </div>
             </Animation>
-            <Animation name={"animate__fadeInRight"}>
+            {/* <Animation name={"animate__fadeInRight"}>
               <div className='images'>
                 <div className="img">
                   <img src="https://images.unsplash.com/photo-1556229165-8aa0ceaa93a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGFrZSUyMGNhcmUlMjBoZXIlMjBoYWlyfGVufDB8fDB8fHww" alt="" />
@@ -161,7 +161,7 @@ export default function Home() {
                   <h1>Treating everyday ailments</h1>
                 </div>
               </div>
-            </Animation>
+            </Animation> */}
             <Animation name={"animate__fadeInUp"}>
               <div className="clients">
                 <div className="img">
