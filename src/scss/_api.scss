@@ -22,16 +22,18 @@
     }
 
     .api-details {
-        width: 70%;
+        width: 100%;
         padding: 0 30px;
+        display: flex;
 
         .api-table {
             margin: 100px 0;
-            
+            width: 86%;
+
             h1 {
                 font-size: 28px;
             }
-            
+
             .table {
                 width: 100%;
                 border-top: 1px solid #15a0c7;
@@ -60,6 +62,34 @@
                 }
             }
         }
+
+        .question {
+            margin: 100px 0;
+
+            input[type="text"] {
+                margin-bottom: -1px;
+                border-bottom-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+
+            input[type="email"] {
+                margin-bottom: -1px;
+                border-radius: 0;
+                border-radius: 0;
+            }
+
+            textarea {
+                margin-bottom: -1px;
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+            }
+
+            .btn {
+                margin-top: 20px;
+                width: 50%;
+            }
+        }
+
     }
 
     @media only screen and (max-width:1000px) {
@@ -68,7 +98,16 @@
         }
 
         .api-details {
-            width: 100%;
+            flex-direction: column;
+
+            .api-table {
+                width: 100%;
+            }
+
+            .question {
+                width: 100%;
+            }
         }
+
     }
 }
