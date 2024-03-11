@@ -59,7 +59,7 @@ export default function Api() {
         <>
             <Layout title={"Api - Citi Pharma"}>
                 <div className="api">
-                    <Pages title={"Highly Potent API Toxins"} link={"images/apiBanner.jpg"} />
+                    <Pages title={"Highly Potent API Toxins"} link={"images/api.png"} />
                     <Animation name={"animate__fadeInUp"}>
                         <div className="api-text">
                             <div className='para'>
@@ -75,7 +75,7 @@ export default function Api() {
 
                     <div className="api-details">
                         <div>
-                            <Animation name={"animate__fadeInUp"}>
+                            {/* <Animation name={"animate__fadeInUp"}>
                                 <div className="api-table table-responsive">
                                     <h1 className='mainHeadings'>PBDs & Intermediates</h1>
                                     <table className="table">
@@ -262,6 +262,172 @@ export default function Api() {
                                                     <span>1g</span>
                                                     <span>5g</span>
                                                 </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </Animation> */}
+
+                            <Animation name={"animate__fadeInUp"}>
+                                <div className="api-table table-responsive">
+                                    <h1 className='mainHeadings'>LIST OF PRODUCTS</h1>
+                                    <table className="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Products</th>
+                                                <th>Specifications</th>
+                                                <th>Therapeutic Class</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Paracetamol</td>
+                                                <td>USP & BP</td>
+                                                <td>Anti-Inflammatory/Anti-Pyretic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ciprofloxacin HCL</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ciprofloxacin Taste Mask</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Levofloxacin</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Norfloxacin</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Azithromycin</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Azithromycin Taste Mask</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ibuprofen</td>
+                                                <td>USP & BP</td>
+                                                <td>Analgesic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Aspirin</td>
+                                                <td>USP & BP</td>
+                                                <td>Penicillin</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Hydrocholoroquine</td>
+                                                <td>USP & BP</td>
+                                                <td>Anti-Malarial</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Choloroquine</td>
+                                                <td>USP & BP</td>
+                                                <td>Anti-Malarial</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ascorbic Acid</td>
+                                                <td>USP & BP</td>
+                                                <td>Vitamin C</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Sulphamexthoxazolc</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Moxiflocacin HCL</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Mefenamic Acid</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Montelukast Sodium</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Diclofenac Sodium</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </Animation>
+
+                            <Animation name={"animate__fadeInUp"}>
+                                <div className="api-table table-responsive">
+                                    <h1 className='mainHeadings'>SEMI-SYNTHETIC PENICILLIN</h1>
+                                    <table className="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Products</th>
+                                                <th>Specifications</th>
+                                                <th>Therapeutic Class</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Amoxicillin (Compacted/Micronized)</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ampicillin (Compacted/Micronized)</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cloxacillin (Compacted/Micronized)</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Flucloxacillin (Compacted/Micronized)</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </Animation>
+
+                            <Animation name={"animate__fadeInUp"}>
+                                <div className="api-table table-responsive">
+                                    <h1 className='mainHeadings'>SEMI-SYNTHETIC CEPHALOSPORIN ORAL</h1>
+                                    <table className="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Products</th>
+                                                <th>Specifications</th>
+                                                <th>Therapeutic Class</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Cefixime (Compacted/Micronized)</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cephradine (Compacted/Micronized)</td>
+                                                <td>USP & BP</td>
+                                                <td>Antibiotic</td>
                                             </tr>
                                         </tbody>
                                     </table>

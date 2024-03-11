@@ -27,7 +27,7 @@ export default function Home() {
               <NavLink to="/api">
                 <div className="img">
                   <img
-                    src="images/apiBanner.jpg"
+                    src="images/api.png"
                     alt=""
                   />
                 </div>
@@ -35,71 +35,60 @@ export default function Home() {
             </Carousel.Item>
 
             <Carousel.Item>
-              <div className="img">
-                <img
-                  src='https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QmlvdGVjaCUyMGZvciUyMHBoYXJtYXxlbnwwfHwwfHx8MA%3D%3D'
-                  alt=""
-                />
-              </div>
-              <Carousel.Caption>
-                <section className="slider_section">
-                  <div className="detail-box">
-                    <h1>
-                      Finish Products
-                    </h1>
-                  </div></section>
-              </Carousel.Caption>
+              <NavLink to="/citi-natural">
+                <div className="img">
+                  <img
+                    src="images/natural.jpg"
+                    alt=""
+                  />
+                </div>
+                <Carousel.Caption>
+                  <section className="slider_section">
+                    <div className="detail-box">
+                      <h1>
+                        Citi Natural
+                      </h1>
+                    </div></section>
+                </Carousel.Caption>
+              </NavLink>
             </Carousel.Item>
 
             <Carousel.Item>
-              <div className="img">
-                <img
-                  src='https://images.unsplash.com/photo-1576669801775-ff43c5ab079d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8QmlvdGVjaCUyMGZvciUyMHBoYXJtYXxlbnwwfHwwfHx8MA%3D%3D'
-                  alt=""
-                />
-              </div>
-              <Carousel.Caption>
-                <section className="slider_section">
-                  <div className="detail-box">
-                    <h1>
-                      Citi Natural
-                    </h1>
-                  </div></section>
-              </Carousel.Caption>
+              <NavLink to="/research-devlopment">
+                <div className="img">
+                  <img
+                    src="images/r&d.png"
+                    alt=""
+                  />
+                </div>
+                <Carousel.Caption>
+                  <section className="slider_section">
+                    <div className="detail-box">
+                      <h1>
+                        Research & Devlopment
+                      </h1>
+                    </div></section>
+                </Carousel.Caption>
+              </NavLink>
             </Carousel.Item>
 
             <Carousel.Item>
-              <div className="img">
-                <img
-                  src='https://images.unsplash.com/photo-1525904097878-94fb15835963?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGZpbmlzaCUyMHByb2R1Y3QlMjBmb3IlMjBwaGFybWF8ZW58MHx8MHx8fDA%3D'
-                  alt=""
-                />
-              </div>
-              <Carousel.Caption>
-                <section className="slider_section">
-                  <div className="detail-box">
-                    <h1>
-                      Research & Development
-                    </h1>
-                  </div></section>
-              </Carousel.Caption>
-            </Carousel.Item>
-
-            <Carousel.Item>
-              <div className="img">
-                <img
-                  src='https://media.istockphoto.com/id/1460294048/photo/scientists-working-in-the-laboratory.webp?b=1&s=170667a&w=0&k=20&c=sf3AXP8jC-deNaZUrqNWCehpBZwEXzY3d3zC4RByIFI='
-                  alt=""
-                />
-              </div>
-              <Carousel.Caption>
-                <section className="slider_section">
-                  <div className="detail-box">
-                    <h1>
-                      Oncology & Biotech
-                    </h1>
-                  </div></section>
-              </Carousel.Caption>
+              <NavLink to="/orthotics-biotech">
+                <div className="img">
+                  <img
+                    src="images/biotech.jpg"
+                    alt=""
+                  />
+                </div>
+                <Carousel.Caption>
+                  <section className="slider_section">
+                    <div className="detail-box">
+                      <h1>
+                      Orthotics & Biotech
+                      </h1>
+                    </div></section>
+                </Carousel.Caption>
+              </NavLink>
             </Carousel.Item>
           </Carousel>
         </div>

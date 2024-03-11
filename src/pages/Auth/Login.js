@@ -1,6 +1,5 @@
 import axios from 'axios'
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../../context/authContext'
 
 const initialState = {
@@ -11,7 +10,6 @@ const initialState = {
 export default function Login() {
     const [auth, setAuth] = useAuth()
 
-    const navigate = useNavigate()
     // Get current year
     const year = new Date().getFullYear()
 
@@ -64,7 +62,8 @@ export default function Login() {
                 user: response.data,
             })
             localStorage.setItem('auth', JSON.stringify(response.data))
-            navigate("/dashboard")
+            // navigate("/dashboard")
+            window.location.reload()
         } catch (error) {
             // console.error('Error updating item:', error);
             window.notify("Error user login:", "error")
@@ -76,7 +75,7 @@ export default function Login() {
             <div className='vh-100 d-flex align-items-center justify-content-center'>
                 <div className="form-signin shadow">
                     <form>
-                        <img className="mb-4" src="images/logo.png" alt="" width="70" height="70" />
+                        <img className="mb-4" src="../images/logo.png" alt="" width="70" height="70" />
                         <h1 className="h3 mb-3 fw-bold">Login Here</h1>
 
                         <div className="form-floating">

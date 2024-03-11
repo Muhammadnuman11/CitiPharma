@@ -6,7 +6,7 @@ const User = require('../models/userModel')
 // Get Products
 // Get /api/products
 const getProducts = asyncHandler(async (req, res) => {
-    const products = await Product.find({ user: req.user.id })
+    const products = await Product.find()
     res.status(200).json(products)
 })
 
@@ -17,8 +17,7 @@ const setProduct = asyncHandler(async (req, res) => {
         res.status(400)
         throw new Error('Please Add text field')
     }
-
-    
+   
     // Product already exist
     const product = await Product.findOne({number : req.body.number})
     // console.log(product)
@@ -27,13 +26,9 @@ const setProduct = asyncHandler(async (req, res) => {
         throw new Error('Product already exist')
     }
 
-    // Assuming req.user contains the logged-in user's information
-    const userId = req.user.id;
-
     // Create a new product with the user ID included
     const productData = {
-        ...req.body,
-        user: userId
+        ...req.body
     };
     // console.log(req.body.user.id)
     const products = await Product.create(productData)
@@ -49,18 +44,18 @@ const updateProduct = asyncHandler(async (req, res) => {
         throw new Error('Product not found')
     }
 
-    const user = await User.findById(req.user.id)
-    // Check for user
-    if (!user) {
-        res.status(401)
-        throw new Error('User not found')
-    }
+    // const user = await User.findById(req.user.id)
+    // // Check for user
+    // if (!user) {
+    //     res.status(401)
+    //     throw new Error('User not found')
+    // }
 
     // Make sure the logged in user matches the goal user
-    if (product.user.toString() !== user.id) {
-        res.status(401)
-        throw new Error('User not Autherized')
-    }
+    // if (product.user.toString() !== user.id) {
+    //     res.status(401)
+    //     throw new Error('User not Autherized')
+    // }
 
 
     const { number, name, form, potency, composition, size, rDate, nDate } = req.body;
@@ -92,18 +87,18 @@ const deleteProduct = asyncHandler(async (req, res) => {
         throw new Error('Product not found')
     }
 
-    const user = await User.findById(req.user.id)
-    // Check for user
-    if (!user) {
-        res.status(401)
-        throw new Error('User not found')
-    }
+    // const user = await User.findById(req.user.id)
+    // // Check for user
+    // if (!user) {
+    //     res.status(401)
+    //     throw new Error('User not found')
+    // }
 
-    // Make sure the logged in user matches the product user
-    if (product.user.toString() !== user.id) {
-        res.status(401)
-        throw new Error('User not Autherized')
-    }
+    // // Make sure the logged in user matches the product user
+    // if (product.user.toString() !== user.id) {
+    //     res.status(401)
+    //     throw new Error('User not Autherized')
+    // }
 
     // await product.findByIdAndDelete()
     const deletedProduct = await Product.findByIdAndDelete(req.params.id, req.body)

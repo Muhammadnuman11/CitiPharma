@@ -66,20 +66,20 @@ export default function Navbar() {
                                         </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/finishproducts" className="nav-link text-white ">Finish Products
+                                        <NavLink to="/finish-products" className="nav-link text-white ">Finish Products
                                         </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/citinatural" className="nav-link text-white ">Citi Natural</NavLink>
+                                        <NavLink to="/citi-natural" className="nav-link text-white ">Citi Natural</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/biotech" className="nav-link text-white">orthotics & Biotech</NavLink>
+                                        <NavLink to="/orthotics-biotech" className="nav-link text-white">Orthotics & Biotech</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/rd" className="nav-link text-white">Research & Devlopment</NavLink>
+                                        <NavLink to="/research-devlopment" className="nav-link text-white">Research & Devlopment</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/pdf" className="nav-link text-white">Annual Report 2023</NavLink>
+                                        <NavLink to="/annual-report" className="nav-link text-white">Annual Report 2023</NavLink>
                                     </li>
                                 </ul>
                             </div>

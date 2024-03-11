@@ -19,11 +19,11 @@ export default function Contact() {
   return (
     <Layout title={'Contact - Citi Pharma'}>
       <div className="contact">
-        <Pages title={"Contact Us"} link={"images/apiBanner.jpg"} />
         <div className="contact-details">
           <div className="map">
             <iframe title='Citi Pharma' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.7600346124627!2d73.90621807462088!3d31.199666262918488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39185de50beac6d7%3A0x905c41e507064bc!2sCITI%20Pharma%20Limited!5e0!3m2!1sen!2s!4v1708507019216!5m2!1sen!2s" width="100%" height="500" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
+          <Pages title={"Contact Us"} link={"images/apiBanner.jpg"} />
             <div className="contact-box">
               <div className="address">
                 <h1 className='mainHeadings'>Head Office</h1>
@@ -89,7 +89,7 @@ export default function Contact() {
                 </div>
               </div>
               <div className="contactForm">
-                <h1 className='mainHeadings'>Contact Us</h1>
+                {/* <h1 className='mainHeadings'>Contact Us</h1> */}
                 <form className="row g-3 needs-validation" noValidate>
                   <div className="col-12 col-md-6">
                     <input type="text" name='name' className="form-control" placeholder='Your Name' required />

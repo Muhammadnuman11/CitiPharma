@@ -4,9 +4,9 @@ import Layout from './Layout'
 
 export default function Blog() {
   return (
-    <Layout title={"Blog - Lahore Plastic"}>
+    <Layout title={"Blog - Citi Pharma"}>
       <div className="blog">
-        <Pages title={"Blog"} />
+        <Pages title={"Our Blog"} />
       </div>
     </Layout>
   )

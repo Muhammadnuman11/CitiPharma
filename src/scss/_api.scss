@@ -25,10 +25,11 @@
         width: 100%;
         padding: 0 30px;
         display: flex;
+        justify-content: space-between;
 
         .api-table {
             margin: 100px 0;
-            width: 86%;
+            // width: 86%;
 
             h1 {
                 font-size: 28px;
@@ -47,24 +48,31 @@
 
                 td {
                     width: 250px;
-                    height: 120px;
+                    // height: 120px;
 
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
+                    // img {
+                    //     width: 100%;
+                    //     height: 100%;
+                    // }
                 }
 
-                .quantity {
-                    display: flex;
-                    flex-direction: column;
-                    border-bottom: 1px solid #15a0c7;
-                }
+                // .quantity {
+                //     display: flex;
+                //     flex-direction: column;
+                //     border-bottom: 1px solid #15a0c7;
+                // }
             }
         }
 
         .question {
             margin: 100px 0;
+            
+
+            input,
+            textarea {
+                background: none;
+                border: 1px solid #15a0c7;
+            }
 
             input[type="text"] {
                 margin-bottom: -1px;

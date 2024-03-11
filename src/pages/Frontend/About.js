@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Pages from '../../components/Pages'
+// import Pages from '../../components/Pages'
 import Layout from './Layout'
 import directorData from '../../data/directorData';
 import CardContainer from '../../components/Card/CardContainer';
@@ -16,7 +16,7 @@ export default function About() {
   return (
     <Layout title={"About - Citi Pharma"}>
       <div className="about">
-        <Pages title={"About Citi Pharma"} link={"images/apiBanner.jpg"} />
+        {/* <Pages title={"About Citi Pharma"} link={"images/citiPharma.jpg"} /> */}
 
         <div className="aboutBox">
           {/* Intro */}
