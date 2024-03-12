@@ -1,0 +1,20 @@
+.blog {
+    padding: 100px 30px;
+    background: whitesmoke;
+
+    .blogBox {
+        display: flex;
+        flex-wrap: wrap;
+
+        .blogData {
+            position: relative;
+            display: flex;
+
+            .delBtn {
+                position: absolute;
+                bottom: 40px;
+                right: 40px;
+            }
+        }
+    }
+}

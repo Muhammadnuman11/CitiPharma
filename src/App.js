@@ -17,7 +17,8 @@ import Login from './pages/Auth/Login';
 import Dashboard from './pages/Dashboard/Dashboard';
 import { ToastContainer } from 'react-toastify';
 import ProductSec from './pages/Dashboard/productsManagement/ProductSec';
-import BlogSec from './pages/Dashboard/blog/BlogSec';
+import Blog from './pages/Frontend/Blog';
+import BlogPage from './components/BlogCard/BlogPage';
 
 function App() {
   const auth = localStorage.getItem("auth")
@@ -47,7 +48,9 @@ function App() {
         {/* <Route path='/login' element={!auth ? <Login /> : navigate('/dashboard')} /> */}
         <Route path='/dashboard' element={auth ? <Dashboard /> : <Login />} />
         <Route path='/dashboard/product' element={auth ? <ProductSec /> : <Login />} />
-        <Route path='/dashboard/blog' element={auth ? <BlogSec /> : <Login />} />
+
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogPage />} />
       </Routes>
       <ToastContainer />
     </>

@@ -1,20 +1,42 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import Layout from './Layout';
 import DataBoxs from '../../components/HomeComponents/DataBoxs';
 import { FaQuoteLeft } from "react-icons/fa";
-import CardContainer from '../../components/Card/CardContainer';
+import BlogCardContainer from '../../components/BlogCard/BlogCardContainer';
 import { NavLink } from 'react-router-dom';
 import OurValues from '../../components/HomeComponents/OurValues';
 import Animation from '../../components/Animation';
+import axios from 'axios';
 
 export default function Home() {
 
-  const cardsData = [
-    { id: 1, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO. 🌿✨', imgUrl: 'https://unsplash.it/200/203' },
-    { id: 2, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO. 🌿✨', imgUrl: 'https://unsplash.it/200/202' },
-    { id: 3, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO. 🌿✨', imgUrl: 'https://unsplash.it/200/201' },
-  ];
+  // const cardsData = [
+  //   { id: 1, title: "Future Fusion: CITI Pharma's Visionary Path to Health", content: 'CITI Pharma stands at the forefront of innovation and progress in the pharmaceutical industry. Our vision extends far beyond the boundaries of Pakistan, reaching towards a future where CITI Pharma is a global leader in healthcare solutions'},
+  //   { id: 2, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO.' },
+  //   { id: 3, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO.' },
+  // ];
+
+  const [blogs, setBlogs] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:5000/api/blogs');
+        const blogData = response.data;
+        // Sort blogs by createdAt date in descending order
+        blogData.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+        // Take the first 3 blogs
+        const newestBlogs = blogData.slice(0, 3);
+        setBlogs(newestBlogs);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+        window.notify("Error fetching blogs:", "error");
+      }
+    };
+
+    fetchData();
+  }, []);
 
 
   return (
@@ -84,7 +106,7 @@ export default function Home() {
                   <section className="slider_section">
                     <div className="detail-box">
                       <h1>
-                      Orthotics & Biotech
+                        Orthotics & Biotech
                       </h1>
                     </div></section>
                 </Carousel.Caption>
@@ -215,7 +237,7 @@ export default function Home() {
           </div>
           <div className="cards">
             <div className="container">
-              <CardContainer cards={cardsData} />
+              <BlogCardContainer cards={blogs} />
             </div>
           </div>
         </div>

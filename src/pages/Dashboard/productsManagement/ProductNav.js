@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { useAuth } from "../../../context/authContext";
 
 const initialState = {
     number: "",
@@ -60,7 +61,7 @@ export default function ProductNav() {
         }
 
         let prductData = { number, name, form, potency, composition, size, rDate, nDate };
-        console.log(prductData)
+        // console.log(prductData)
         try {
             await axios.post('http://localhost:5000/api/products', prductData);
             // console.log('Data sent successfully:', response.data);
@@ -73,6 +74,17 @@ export default function ProductNav() {
 
     }
 
+    // Logout
+    const [auth, setAuth] = useAuth()
+
+    const handleLogout = () => {
+        setAuth({
+            ...auth,
+            user: null
+        })
+        localStorage.removeItem("auth")
+    }
+
     return (
         <>
             <header>
@@ -83,12 +95,17 @@ export default function ProductNav() {
                         </Link>
                         <div className="p-0 top-0 bg-transparent rounded-0 w-100 h-100">
                             <div className="d-flex text-start w-100">
-                                <ul className="navbar-nav d-flex w-100 me-auto mb-2 mb-lg-0">
+                                <ul className="navbar-nav d-flex justify-content-between align-items-center w-100 me-auto mb-2 mb-lg-0">
+                                    <div className="d-flex">
+                                        <li className="nav-item mx-2">
+                                            <NavLink to="/dashboard" className="nav-link text-wite">Dashboard</NavLink>
+                                        </li>
+                                        <li className="nav-item mx-2">
+                                            <NavLink to="/" className="nav-link text-white" data-bs-toggle="modal" data-bs-target="#dataModal">Add Products</NavLink>
+                                        </li>
+                                    </div>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/dashboard" className="nav-link text-wite">Dashboard</NavLink>
-                                    </li>
-                                    <li className="nav-item mx-2">
-                                        <NavLink to="/" className="nav-link text-white" data-bs-toggle="modal" data-bs-target="#dataModal">Add Products</NavLink>
+                                        <NavLink to="/" className="nav-link text-dark bg-white fw-bold py-2 px-3 rounded-2" onClick={handleLogout}>Logout</NavLink>
                                     </li>
                                 </ul>
                             </div>

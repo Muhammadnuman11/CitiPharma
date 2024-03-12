@@ -18,6 +18,7 @@ app.use(cors());
 // required to parse the html body in response
 app.use(bodyParser.json());
 
+app.use('/api/blogs', require('./routes/blogRoutes'))
 app.use('/api/products', require('./routes/productRoutes'))
 app.use('/api/users', require('./routes/userRoutes'))
 

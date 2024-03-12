@@ -36,7 +36,7 @@ export default function Navbar() {
                 <nav className="navbar fixed-top custom_nav-container p-0">
                     <div className="container">
                         <Link to="/" className="navbar-brand fs-2 fw-bold text-white">
-                            <img src="images/logo.png" alt="" />
+                            <img src="../images/logo.png" alt="" />
                         </Link>
                         <button className="navbar-toggler shadow-none border-0 navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -77,6 +77,9 @@ export default function Navbar() {
                                     </li>
                                     <li className="nav-item mx-2">
                                         <NavLink to="/research-devlopment" className="nav-link text-white">Research & Devlopment</NavLink>
+                                    </li>
+                                    <li className="nav-item mx-2">
+                                        <NavLink to="/blog" className="nav-link text-white">Blog</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
                                         <NavLink to="/annual-report" className="nav-link text-white">Annual Report 2023</NavLink>
