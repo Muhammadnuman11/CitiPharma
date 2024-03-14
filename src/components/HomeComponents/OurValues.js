@@ -19,7 +19,7 @@ export default function OurValues() {
                 <div>
                     <div className="jobs">
                         <div className="video">
-                            <video src="images/citiPharma.mp4" controls className='w-100 h-100'></video>
+                            <video src="images/ceo.mp4" controls className='w-100 h-100'></video>
                         </div>
                         <div className="jobDetail">
                             <div className="jobContent">
@@ -35,7 +35,7 @@ export default function OurValues() {
                 <div>
                     <div className="jobs">
                         <div className="video">
-                            <video src="images/citiPharma.mp4" controls className='w-100 h-100'></video>
+                            <video src="images/ceo.mp4" controls className='w-100 h-100'></video>
                         </div>
                         <div className="jobDetail">
                             <div className="jobContent">

@@ -22,10 +22,14 @@ function NumberCounter({ initialNumber, targetNumber }) {
             const progress = (currentTime - startTime) / duration;
             if (progress < 1) {
                 currentNumber = Math.floor(progress * targetNumber);
-                numberRef.current.textContent = currentNumber.toLocaleString();
+                if (numberRef.current) {
+                    numberRef.current.textContent = currentNumber.toLocaleString();
+                }
                 requestAnimationFrame(updateNumber);
             } else {
-                numberRef.current.textContent = targetNumber.toLocaleString();
+                if (numberRef.current) {
+                    numberRef.current.textContent = targetNumber.toLocaleString();
+                }
             }
         };
 

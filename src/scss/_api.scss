@@ -29,7 +29,6 @@
 
         .api-table {
             margin: 100px 0;
-            // width: 86%;
 
             h1 {
                 font-size: 28px;
@@ -48,25 +47,14 @@
 
                 td {
                     width: 250px;
-                    // height: 120px;
-
-                    // img {
-                    //     width: 100%;
-                    //     height: 100%;
-                    // }
                 }
-
-                // .quantity {
-                //     display: flex;
-                //     flex-direction: column;
-                //     border-bottom: 1px solid #15a0c7;
-                // }
             }
         }
 
         .question {
-            margin: 100px 0;
-            
+            padding: 150px 0;
+            width: 340px;
+
 
             input,
             textarea {
@@ -113,7 +101,7 @@
             }
 
             .question {
-                width: 100%;
+                padding: 30px 0 !important;
             }
         }
 

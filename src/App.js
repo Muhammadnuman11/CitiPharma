@@ -12,16 +12,11 @@ import RD from './pages/Frontend/R&D';
 import Natural from './pages/Frontend/Natural';
 import PageNotFound from './pages/Frontend/PageNotFound';
 import Pdf from './pages/Frontend/Pdf';
-import Login from './pages/Auth/Login';
-// Dashboard
-import Dashboard from './pages/Dashboard/Dashboard';
-import { ToastContainer } from 'react-toastify';
-import ProductSec from './pages/Dashboard/productsManagement/ProductSec';
 import Blog from './pages/Frontend/Blog';
 import BlogPage from './components/BlogCard/BlogPage';
+import { ToastContainer } from 'react-toastify';
 
 function App() {
-  const auth = localStorage.getItem("auth")
 
   const [loading, setLoading] = useState(true)
   useEffect(() => {
@@ -34,6 +29,7 @@ function App() {
 
   return (
     <>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -42,13 +38,9 @@ function App() {
         <Route path="/finish-products" element={<Products />} />
         <Route path="/citi-natural" element={<Natural />} />
         <Route path="/research-devlopment" element={<RD />} />
-        <Route path="/orthotics-biotech" element={<Biotech />} />
+        <Route path="/biotech" element={<Biotech />} />
         <Route path="/annual-report" element={<Pdf />} />
         <Route path='/*' element={<PageNotFound />} />
-        {/* <Route path='/login' element={!auth ? <Login /> : navigate('/dashboard')} /> */}
-        <Route path='/dashboard' element={auth ? <Dashboard /> : <Login />} />
-        <Route path='/dashboard/product' element={auth ? <ProductSec /> : <Login />} />
-
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogPage />} />
       </Routes>

@@ -4,9 +4,9 @@ import Layout from './Layout'
 
 export default function Biotech() {
   return (
-    <Layout title={'Orthotics & Biotech - Citi Pharma'}>
+    <Layout title={'Biotechnology - Citi Pharma'}>
       <div>
-        <Pages title={"Orthotics & Biotech"} link={"images/apiBanner.jpg"} />
+        <Pages title={"Biotechnology"}/>
       </div>
     </Layout>
   )

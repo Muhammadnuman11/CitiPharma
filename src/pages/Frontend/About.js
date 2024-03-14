@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-// import Pages from '../../components/Pages'
 import Layout from './Layout'
 import directorData from '../../data/directorData';
 import CardContainer from '../../components/Card/CardContainer';
@@ -126,9 +125,6 @@ export default function About() {
                     Together, let us embrace the opportunities of
                     the year ahead and work towards yet another
                     successful chapter in our journey.</p>
-                  {/* <div className='signImg'>
-                  <img src="images/sign.jpg" alt="Sign" />
-                </div> */}
                 </div>
                 <span className='learnBtn' onClick={toggleExpansion}>
                   {isExpanded ? 'Read less' : 'Read more'}
@@ -137,17 +133,16 @@ export default function About() {
                 <p className='p-1 m-0'>C.E.O</p>
               </div>
               <div className="img">
-                <img src="images/members/rizwan.jpg" className='px-5' alt="CEOImage" />
+                <img src="images/members/rizwan.jpg" className='px-1 md:px-5' alt="CEOImage" />
               </div>
             </div>
           </Animation>
 
           {/* DIRECTOR’S REPORT */}
           <div className="aboutCards">
-            <h1 className='mainHeadings'>Board of Directors</h1>
             <div className="cardData">
               <div className="cards">
-                <div className="w-100">
+                <div className="cardWidth">
                   <CardContainer cards={directorData} />
                 </div>
               </div>

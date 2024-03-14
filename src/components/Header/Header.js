@@ -1,6 +1,6 @@
 import React from 'react'
-// import { FaFacebook, FaPhone } from 'react-icons/fa';
 import { Link, NavLink } from "react-router-dom";
+import scrollToTop from '../scrollToTop';
 // import { Dropdown, Space } from 'antd';
 
 // const items = [
@@ -20,22 +20,12 @@ import { Link, NavLink } from "react-router-dom";
 
 export default function Navbar() {
 
-    // const openFacebook = () => {
-    //     window.open('https://www.facebook.com/lahoreplasitc/?_rdc=1&_rdr', '_blank');
-    // }
-    // const openMail = () => {
-    //     window.open('mailto:mudassir@lahorehouse.com');
-    // }
-    // const openPhone = () => {
-    //     window.open('tel:923028466555');
-    // }
-
     return (
         <>
             <header>
                 <nav className="navbar fixed-top custom_nav-container p-0">
                     <div className="container">
-                        <Link to="/" className="navbar-brand fs-2 fw-bold text-white">
+                        <Link to="/" className="navbar-brand fs-2 fw-bold text-white" onClick={scrollToTop}>
                             <img src="../images/logo.png" alt="" />
                         </Link>
                         <button className="navbar-toggler shadow-none border-0 navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
@@ -45,10 +35,10 @@ export default function Navbar() {
                             <div className="d-flex w-100">
                                 <ul className="navbar-nav mb-2 mb-lg-0">
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/" className="nav-link text-white">Home</NavLink>
+                                        <NavLink to="/" className="nav-link text-white" onClick={scrollToTop}>Home</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/about" className="nav-link text-white">
+                                        <NavLink to="/about" className="nav-link text-white" onClick={scrollToTop}>
                                             About Us
                                             {/* <Dropdown menu={{ items }}>
                                                 <span onClick={(e) => e.preventDefault()}>
@@ -59,46 +49,35 @@ export default function Navbar() {
                                         </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/contact" className="nav-link text-white">Contact</NavLink>
+                                        <NavLink to="/contact" className="nav-link text-white" onClick={scrollToTop}>Contact</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/api" className="nav-link text-white ">Api
+                                        <NavLink to="/api" className="nav-link text-white " onClick={scrollToTop}>Api
                                         </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/finish-products" className="nav-link text-white ">Finish Products
+                                        <NavLink to="/finish-products" className="nav-link text-white " onClick={scrollToTop}>Finish Products
                                         </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/citi-natural" className="nav-link text-white ">Citi Natural</NavLink>
+                                        <NavLink to="/citi-natural" className="nav-link text-white " onClick={scrollToTop}>Citi Natural</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/orthotics-biotech" className="nav-link text-white">Orthotics & Biotech</NavLink>
+                                        <NavLink to="/biotech" className="nav-link text-white" onClick={scrollToTop}>Biotech</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/research-devlopment" className="nav-link text-white">Research & Devlopment</NavLink>
+                                        <NavLink to="/research-devlopment" className="nav-link text-white" onClick={scrollToTop}>Research & Devlopment</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/blog" className="nav-link text-white">Blog</NavLink>
+                                        <NavLink to="/blog" className="nav-link text-white" onClick={scrollToTop}>Blog</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/annual-report" className="nav-link text-white">Annual Report 2023</NavLink>
+                                        <NavLink to="/annual-report" className="nav-link text-white" onClick={scrollToTop}>Annual Report 2023</NavLink>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    {/* <div className="nav-icons">
-                        <div className="nav-link">
-                            <FaFacebook onClick={openFacebook} />
-                        </div>
-                        <div className="nav-link">
-                            <IoMail onClick={openMail} />
-                        </div>
-                        <div className="nav-link">
-                            <FaPhone onClick={openPhone} />
-                        </div>
-                    </div> */}
                 </nav>
             </header>
         </>

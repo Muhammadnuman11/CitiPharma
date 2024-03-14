@@ -12,9 +12,9 @@ export default function BlogCardContainer({ cards }) {
                 <BlogCard
                     key={id}
                     title={card.title}
-                    date={new Date(card.createdAt).toLocaleString()}
+                    date={card.date}
                     content={card.shortDesc}
-                    id={card._id}
+                    id={card.id}
                 />
             ))}
         </div>

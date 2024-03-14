@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import Layout from './Layout';
 import DataBoxs from '../../components/HomeComponents/DataBoxs';
@@ -7,38 +7,9 @@ import BlogCardContainer from '../../components/BlogCard/BlogCardContainer';
 import { NavLink } from 'react-router-dom';
 import OurValues from '../../components/HomeComponents/OurValues';
 import Animation from '../../components/Animation';
-import axios from 'axios';
+import blogData from '../../data/blogData'
 
 export default function Home() {
-
-  // const cardsData = [
-  //   { id: 1, title: "Future Fusion: CITI Pharma's Visionary Path to Health", content: 'CITI Pharma stands at the forefront of innovation and progress in the pharmaceutical industry. Our vision extends far beyond the boundaries of Pakistan, reaching towards a future where CITI Pharma is a global leader in healthcare solutions'},
-  //   { id: 2, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO.' },
-  //   { id: 3, title: 'Citi Pharma Group', content: 'Découvrez les dernières nouveautés de Klorane France, expert en soins depuis 50 ans : la crème nettoyante démaquillante et l’eau micellaire au Bleuet BIO.' },
-  // ];
-
-  const [blogs, setBlogs] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get('http://localhost:5000/api/blogs');
-        const blogData = response.data;
-        // Sort blogs by createdAt date in descending order
-        blogData.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
-        // Take the first 3 blogs
-        const newestBlogs = blogData.slice(0, 3);
-        setBlogs(newestBlogs);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-        window.notify("Error fetching blogs:", "error");
-      }
-    };
-
-    fetchData();
-  }, []);
-
-
   return (
     <Layout title={'Citi Pharma'}>
       <div className='home'>
@@ -119,8 +90,8 @@ export default function Home() {
         <div className="d-flex align-items-center justify-content-center overflow-hidden">
           <div className="dataBoxs">
             <DataBoxs icon={"images/revenue.png"} title={"Revenue in 2023"} number={"44."} countNumber={"27"} suffix={"M $"} />
-            <DataBoxs icon={"https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-03/HP%20V2%20Picto%20Investissement%20Pierre%20Fabre.svg"} title={"Invested in R&D"} number={"2."} countNumber={"5"} suffix={"M $"} />
-            <DataBoxs icon={"https://www.pierre-fabre.com/sites/pierre-fabre.com/files/2023-03/HP%20V2%20Picto%20collaborateurs%20Pierre%20Fabre.svg"} title={"Employees"} number={"+"} countNumber={"800"} />
+            <DataBoxs icon={"images/r&d-Icon.svg"} title={"Invested in R&D"} number={"2."} countNumber={"5"} suffix={"M $"} />
+            <DataBoxs icon={"images/employees-Icon.svg"} title={"Employees"} number={"+"} countNumber={"800"} />
           </div>
         </div>
 
@@ -237,7 +208,7 @@ export default function Home() {
           </div>
           <div className="cards">
             <div className="container">
-              <BlogCardContainer cards={blogs} />
+              <BlogCardContainer cards={blogData} />
             </div>
           </div>
         </div>

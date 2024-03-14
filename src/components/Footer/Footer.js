@@ -39,14 +39,6 @@ export default function Footer() {
         <>
             <footer className='footer'>
                 <div className="arrow" onClick={scrollTop} style={{ display: isVisible ? 'flex' : 'none' }}>
-                    {/* <lord-icon
-                        src="https://cdn.lordicon.com/vvflvbfj.json"
-                        trigger="loop"
-                        stroke="bold"
-                        state="loop-slide"
-                        colors="primary:#4be1ec,secondary:#104891"
-                        style={{ width: "70px", height: "70px", }}>
-                    </lord-icon> */}
                     <TiArrowSortedUp />
                 </div>
                 <TopFooter />

@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Pages from '../../components/Pages'
 import Layout from './Layout'
-import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaLinkedin, FaPhoneAlt } from 'react-icons/fa'
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdFax } from "react-icons/md";
+
+const initialState = {
+  name: "",
+  email: "",
+  phone: "",
+  subject: "",
+  message: "",
+}
 
 
 export default function Contact() {
@@ -16,6 +24,49 @@ export default function Contact() {
     window.open('mailto:info@citipharma.com.pk');
   }
 
+  // Send Message
+  const [state, setState] = useState(initialState);
+
+  const handleChange = e => {
+    setState(s => ({ ...s, [e.target.name]: e.target.value }))
+  }
+
+  const handleEmail = (e) => {
+    e.preventDefault()
+
+    let { name, email, phone, subject, message } = state
+
+    name = name.trim()
+    email = email.trim()
+    phone = phone.trim()
+    subject = subject.trim()
+    message = message.trim()
+
+    if (name.length < 3) {
+      return window.notify("Please enter name atleast 3 char.", "error")
+    }
+    if (!email) {
+      return window.notify("Please enter email", "error")
+    }
+    if (!phone) {
+      return window.notify("Please enter phone", "error")
+    }
+    if (subject.length < 3) {
+      return window.notify("Please enter subject atleast 3 char.", "error")
+    }
+    if (message.length < 10) {
+      return window.notify("Please enter message atleast 10 char.", "error")
+    }
+
+    const sub = encodeURIComponent('New inquiry');
+    const body = encodeURIComponent(`Question From website:-\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`);
+
+    const mailtoLink = `mailto::corporate@citipharma.com.pk?subject=${sub}&body=${body}`;
+
+    window.location.href = mailtoLink;
+    setState(initialState)
+  }
+
   return (
     <Layout title={'Contact - Citi Pharma'}>
       <div className="contact">
@@ -24,60 +75,60 @@ export default function Contact() {
             <iframe title='Citi Pharma' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.7600346124627!2d73.90621807462088!3d31.199666262918488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39185de50beac6d7%3A0x905c41e507064bc!2sCITI%20Pharma%20Limited!5e0!3m2!1sen!2s!4v1708507019216!5m2!1sen!2s" width="100%" height="500" style={{ border: 0 }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <Pages title={"Contact Us"} link={"images/apiBanner.jpg"} />
-            <div className="contact-box">
-              <div className="address">
-                <h1 className='mainHeadings'>Head Office</h1>
-                <p>
-                  <span className="contactIcon">
-                    <FaLocationDot />
-                  </span>
-                  <span>588-Q Block, M.A., Johar Town, Lahore Punjab, Pakistan</span>
-                </p>
-                <p>
-                  <span className="contactIcon">
-                    <FaPhoneAlt />
-                  </span>
-                  <span onClick={handlePhone}>+92 42 353-16587</span>
-                </p>
-                <h1 className='mainHeadings'>Registered Office</h1>
-                <p>
-                  <span className="contactIcon">
-                    <FaLocationDot />
-                  </span>
-                  <span>3-KM, Head Balloki Road, Bhai Pheru, Distt Kasur</span>
-                </p>
-                <p>
-                  <span className="contactIcon">
-                    <FaPhoneAlt />
-                  </span>
-                  <span onClick={handlePhone}> +92 49 4510189</span>
-                </p>
-                <p>
-                  <span className="contactIcon">
-                    <FaPhoneAlt />
-                  </span>
-                  <span onClick={handlePhone}> +92 49 4513392</span>
-                </p>
-                <p>
-                  <span className="contactIcon">
-                    <IoMdMail />
-                  </span>
-                  <span onClick={handleMail}>corporate@citipharma.com.pk</span>
-                </p>
-                <p>
-                  <span className="contactIcon">
-                    <MdFax />
-                  </span>
-                  <span onClick={handleMail}>+92 49 4510191</span>
-                </p>
-                <div className='footerIcons'>
-                  <div className="contactIcon">
-                    <FaLinkedin className='icons' />
-                  </div>
-                  <div className="contactIcon">
-                    <FaFacebook className='icons' />
-                  </div>
-                  <div className="contactIcon">
+          <div className="contact-box">
+            <div className="address">
+              <h1 className='mainHeadings'>Head Office</h1>
+              <p>
+                <span className="contactIcon">
+                  <FaLocationDot />
+                </span>
+                <span>588-Q Block, M.A., Johar Town, Lahore Punjab, Pakistan</span>
+              </p>
+              <p>
+                <span className="contactIcon">
+                  <FaPhoneAlt />
+                </span>
+                <span onClick={handlePhone}>+92 42 353-16587</span>
+              </p>
+              <h1 className='mainHeadings'>Registered Office</h1>
+              <p>
+                <span className="contactIcon">
+                  <FaLocationDot />
+                </span>
+                <span>3-KM, Head Balloki Road, Bhai Pheru, Distt Kasur</span>
+              </p>
+              <p>
+                <span className="contactIcon">
+                  <FaPhoneAlt />
+                </span>
+                <span onClick={handlePhone}> +92 49 4510189</span>
+              </p>
+              <p>
+                <span className="contactIcon">
+                  <FaPhoneAlt />
+                </span>
+                <span onClick={handlePhone}> +92 49 4513392</span>
+              </p>
+              <p>
+                <span className="contactIcon">
+                  <IoMdMail />
+                </span>
+                <span onClick={handleMail}>corporate@citipharma.com.pk</span>
+              </p>
+              <p>
+                <span className="contactIcon">
+                  <MdFax />
+                </span>
+                <span onClick={handleMail}>+92 49 4510191</span>
+              </p>
+              <div className='footerIcons w-50'>
+                <div className="contactIcon">
+                  <FaLinkedin className='icons' onClick={() => window.open("https://www.linkedin.com/company/citipharmalimited", "_blank")} />
+                </div>
+                <div className="contactIcon"  >
+                  <FaFacebook className='icons' onClick={() => window.open("https://www.facebook.com/citipharmaltd?mibextid=ZbWKwL", "_blank")} />
+                </div>
+                {/* <div className="contactIcon">
                     <FaTwitter className='icons' />
                   </div>
                   <div className="contactIcon">
@@ -85,33 +136,33 @@ export default function Contact() {
                   </div>
                   <div className="contactIcon">
                     <FaYoutube className='icons' />
-                  </div>
-                </div>
-              </div>
-              <div className="contactForm">
-                {/* <h1 className='mainHeadings'>Contact Us</h1> */}
-                <form className="row g-3 needs-validation" noValidate>
-                  <div className="col-12 col-md-6">
-                    <input type="text" name='name' className="form-control" placeholder='Your Name' required />
-                  </div>
-                  <div className="col-12 col-md-6">
-                    <input type="email" name='email' className="form-control" placeholder='Your Email' required />
-                  </div>
-                  <div className="col-12 col-md-6">
-                    <input type="phone" name='phone' className="form-control" placeholder='Phone Number' required />
-                  </div>
-                  <div className="col-12 col-md-6">
-                    <input type="text" name='subject' className="form-control" placeholder='Subject' required />
-                  </div>
-                  <div className="col-12">
-                    <textarea name="message" className='form-control' placeholder='Message' rows="6"></textarea>
-                  </div>
-                  <div className="col-12 text-end">
-                    <button className="btn">Send Message</button>
-                  </div>
-                </form>
+                </div> */}
               </div>
             </div>
+            <div className="contactForm">
+              {/* <h1 className='mainHeadings'>Contact Us</h1> */}
+              <form className="row g-3 needs-validation" noValidate>
+                <div className="col-12 col-md-6">
+                  <input type="text" name='name' className="form-control" placeholder='Your Name' required onChange={handleChange} value={state.name}/>
+                </div>
+                <div className="col-12 col-md-6">
+                  <input type="email" name='email' className="form-control" placeholder='Your Email' required onChange={handleChange} value={state.email}/>
+                </div>
+                <div className="col-12 col-md-6">
+                  <input type="phone" name='phone' className="form-control" placeholder='Phone Number' required onChange={handleChange} value={state.phone}/>
+                </div>
+                <div className="col-12 col-md-6">
+                  <input type="text" name='subject' className="form-control" placeholder='Subject' required onChange={handleChange} value={state.subject}/>
+                </div>
+                <div className="col-12">
+                  <textarea name="message" className='form-control' placeholder='Message' rows="6" onChange={handleChange} value={state.message}></textarea>
+                </div>
+                <div className="col-12 text-end">
+                  <button className="btn" onClick={handleEmail}>Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div >
     </Layout >

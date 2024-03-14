@@ -1,6 +1,7 @@
 import React from 'react'
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaLinkedin } from 'react-icons/fa'
 import { Link, NavLink } from 'react-router-dom'
+import scrollToTop from '../scrollToTop';
 
 export default function TopFooter() {
     return (
@@ -15,55 +16,55 @@ export default function TopFooter() {
                     <div className="topFooterCol">
                         <h1>Working together</h1>
                         <ul>
-                            <li><NavLink to="/" className="nav-link">Patients and caregivers</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Healthcare professionals</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Researchers</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Job seekers</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Journalists</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Investors</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Patients and caregivers</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Healthcare professionals</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Researchers</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Job seekers</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Journalists</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Investors</NavLink></li>
                         </ul>
                     </div>
                     <div className="topFooterCol">
                         <h1>Topics</h1>
                         <ul>
-                            <li><NavLink to="/" className="nav-link">Full year/Q4 2023</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Our next era</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Access</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Diversity</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">ESG</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">SpeakUp</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Full year/Q4 2023</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Our next era</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Access</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Diversity</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>ESG</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>SpeakUp</NavLink></li>
                         </ul>
                     </div>
                     <div className="topFooterCol">
                         <h1>Explore</h1>
                         <ul>
-                            <li><NavLink to="/" className="nav-link">Pipeline</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Products</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Clinical trials</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Partnering</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Stories</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Pipeline</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Products</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Clinical trials</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Partnering</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Stories</NavLink></li>
                         </ul>
                     </div>
                     <div className="topFooterCol">
                         <h1>Therapeutic areas</h1>
                         <ul>
-                            <li><NavLink to="/" className="nav-link">Cardiovascular, renal and metabolic</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Immunology</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Neuroscience</NavLink></li>
-                            <li><NavLink to="/" className="nav-link">Oncology</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Cardiovascular, renal and metabolic</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Immunology</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Neuroscience</NavLink></li>
+                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Oncology</NavLink></li>
                         </ul>
                     </div>
                 </div>
                 <div className="topFooterIcons">
                     <div className='footerIcons'>
-                        <FaLinkedin className='icons' />
-                        <FaFacebook className='icons' />
-                        <FaTwitter className='icons' />
+                        <FaLinkedin className='icons' onClick={()=>window.open("https://www.linkedin.com/company/citipharmalimited/", "_blank")}/>
+                        <FaFacebook className='icons' onClick={()=>window.open("https://www.facebook.com/citipharmaltd?mibextid=ZbWKwL", "_blank")}/>
+                        {/* <FaTwitter className='icons' />
                         <FaInstagram className='icons' />
-                        <FaYoutube className='icons' />
+                        <FaYoutube className='icons' /> */}
                     </div>
                     <div className="contactBtn">
-                        <Link to="/contact" className='btn'>Contact Us</Link>
+                        <Link to="/contact" onClick={scrollToTop} className='btn'>Contact Us</Link>
                     </div>
                 </div>
             </div>
