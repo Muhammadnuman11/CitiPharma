@@ -5,6 +5,7 @@ import { FaFacebook, FaLinkedin, FaPhoneAlt } from 'react-icons/fa'
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdFax } from "react-icons/md";
+import emailjs from 'emailjs-com';
 
 const initialState = {
   name: "",
@@ -31,8 +32,72 @@ export default function Contact() {
     setState(s => ({ ...s, [e.target.name]: e.target.value }))
   }
 
+
+  // const errors = {};
+  // const handleEmail = (e) => {
+  //   e.preventDefault()
+
+  //   let { name, email, phone, subject, message } = state
+
+  //   name = name.trim()
+  //   email = email.trim()
+  //   phone = phone.trim()
+  //   subject = subject.trim()
+  //   message = message.trim()
+
+  //   if (name.length < 3) {
+  //     errors.name = "Please enter a name with at least 3 characters.";
+  //   } else if (/^[0-9!@#$%^&*()_+=[\]{};':"\\|,.<>/?]/.test(name)) {
+  //     errors.name = "Name cannot start with a number or special character.";
+  //   }
+  //   if (!email) {
+  //     errors.email = "Please enter an email.";
+  //   } else if (/^[0-9!@#$%^&*()_+=[\]{};':"\\|,.<>/?]/.test(email)) {
+  //     errors.email = "Email cannot start with a number or special character.";
+  //   } else if (!isValidEmail(email)) {
+  //     errors.email = "Please enter a valid email address.";
+  //   }
+  //   if (phone.length < 11 || !/^\d+$/.test(phone)) {
+  //     errors.phone = "Please enter a valid phone number with at least 11 digits.";
+  //   }
+  //   if (subject.length < 3) {
+  //     errors.subject = "Please enter a subject with at least 3 characters.";
+  //   } else if (/^[0-9!@#$%^&*()_+=[\]{};':"\\|,.<>/?]/.test(subject)) {
+  //     errors.subject = "Subject cannot start with a number or special character.";
+  //   }
+  //   if (message.length < 10) {
+  //     errors.message = "Please enter a question with at least 10 characters.";
+  //   }
+
+  //   if (Object.keys(errors).length > 0) {
+  //     // Display error messages
+  //     Object.keys(errors).forEach(key => {
+  //       window.notify(errors[key], "error");
+  //     });
+  //   } else {
+  //     console.log(state)
+  //     const sub = encodeURIComponent('New inquiry');
+  //     const body = encodeURIComponent(`Question From website:-\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`);
+
+  //     const mailtoLink = `mailto::corporate@citipharma.com.pk?subject=${sub}&body=${body}`;
+
+  //     window.location.href = mailtoLink;
+  //     setState(initialState)
+  //   }
+  // }
+
+  // // Helper function to check if email is valid
+  // const isValidEmail = (email) => {
+  //   // You can implement your own email validation logic here
+  //   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  // };
+
+  // User id
+  emailjs.init('_hGEO10AHgEOuemnJ');
+
+
   const handleEmail = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     let { name, email, phone, subject, message } = state
 
@@ -42,30 +107,66 @@ export default function Contact() {
     subject = subject.trim()
     message = message.trim()
 
+    const errors = {};
+
     if (name.length < 3) {
-      return window.notify("Please enter name atleast 3 char.", "error")
+      errors.name = "Please enter a name with at least 3 characters.";
+    } else if (/^[0-9!@#$%^&*()_+=[\]{};':"\\|,.<>/?]/.test(name)) {
+      errors.name = "Name cannot start with a number or special character.";
     }
     if (!email) {
-      return window.notify("Please enter email", "error")
+      errors.email = "Please enter an email.";
+    } else if (/^[0-9!@#$%^&*()_+=[\]{};':"\\|,.<>/?]/.test(email)) {
+      errors.email = "Email cannot start with a number or special character.";
+    } else if (!isValidEmail(email)) {
+      errors.email = "Please enter a valid email address.";
     }
-    if (!phone) {
-      return window.notify("Please enter phone", "error")
+    if (phone.length < 11 || !/^\d+$/.test(phone)) {
+      errors.phone = "Please enter a valid phone number with at least 11 digits.";
     }
     if (subject.length < 3) {
-      return window.notify("Please enter subject atleast 3 char.", "error")
+      errors.subject = "Please enter a subject with at least 3 characters.";
+    } else if (/^[0-9!@#$%^&*()_+=[\]{};':"\\|,.<>/?]/.test(subject)) {
+      errors.subject = "Subject cannot start with a number or special character.";
     }
     if (message.length < 10) {
-      return window.notify("Please enter message atleast 10 char.", "error")
+      errors.message = "Please enter a question with at least 10 characters.";
     }
 
-    const sub = encodeURIComponent('New inquiry');
-    const body = encodeURIComponent(`Question From website:-\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nSubject: ${subject}\nMessage: ${message}`);
+    // If there are errors, display them and prevent form submission
+    if (Object.keys(errors).length > 0) {
+      // Display error messages
+      Object.keys(errors).forEach(key => {
+        window.notify(errors[key], "error");
+      });
+    } else {
+      // If no errors, proceed with sending email using EmailJS
+      emailjs.send('service_mm02ymf', 'Citi_Pharma_Msg', {
+        name,
+        email,
+        phone,
+        subject,
+        message
+      })
+        .then((response) => {
+          // console.log('Email sent successfully:', response);
+          window.notify("Message sent successfully!", "success");
+        })
+        .catch((error) => {
+          console.error('Error sending email:', error);
+          window.notify("Error sending email. Please try again later.", "error");
+        });
 
-    const mailtoLink = `mailto::corporate@citipharma.com.pk?subject=${sub}&body=${body}`;
+      setState(initialState); // Reset form state
+    }
+  };
 
-    window.location.href = mailtoLink;
-    setState(initialState)
-  }
+  // Helper function to check if email is valid
+  const isValidEmail = (email) => {
+    // You can implement your own email validation logic here
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+  };
+
 
   return (
     <Layout title={'Contact - Citi Pharma'}>
@@ -143,16 +244,16 @@ export default function Contact() {
               {/* <h1 className='mainHeadings'>Contact Us</h1> */}
               <form className="row g-3 needs-validation" noValidate>
                 <div className="col-12 col-md-6">
-                  <input type="text" name='name' className="form-control" placeholder='Your Name' required onChange={handleChange} value={state.name}/>
+                  <input type="text" name='name' className="form-control" placeholder='Your Name' required onChange={handleChange} value={state.name} />
                 </div>
                 <div className="col-12 col-md-6">
-                  <input type="email" name='email' className="form-control" placeholder='Your Email' required onChange={handleChange} value={state.email}/>
+                  <input type="email" name='email' className="form-control" placeholder='Your Email' required onChange={handleChange} value={state.email} />
                 </div>
                 <div className="col-12 col-md-6">
-                  <input type="phone" name='phone' className="form-control" placeholder='Phone Number' required onChange={handleChange} value={state.phone}/>
+                  <input type="phone" name='phone' className="form-control" placeholder='Phone Number' required onChange={handleChange} value={state.phone} />
                 </div>
                 <div className="col-12 col-md-6">
-                  <input type="text" name='subject' className="form-control" placeholder='Subject' required onChange={handleChange} value={state.subject}/>
+                  <input type="text" name='subject' className="form-control" placeholder='Subject' required onChange={handleChange} value={state.subject} />
                 </div>
                 <div className="col-12">
                   <textarea name="message" className='form-control' placeholder='Message' rows="6" onChange={handleChange} value={state.message}></textarea>

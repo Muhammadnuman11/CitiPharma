@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Pages from '../../components/Pages';
 import Animation from '../../components/Animation';
 import Layout from './Layout';
+import emailjs from 'emailjs-com';
 
 
 const initialState = {
@@ -20,37 +21,83 @@ export default function Api() {
         setState(s => ({ ...s, [e.target.name]: e.target.value }))
     }
 
+    // User id
+    emailjs.init('_hGEO10AHgEOuemnJ');
+
     const handleEmail = (e) => {
-        e.preventDefault()
+        e.preventDefault();
 
-        let { name, country, email, question } = state
+        let { name, country, email, question } = state;
 
-        name = name.trim()
-        country = country.trim()
-        email = email.trim()
-        question = question.trim()
+        name = name.trim();
+        country = country.trim();
+        email = email.trim();
+        question = question.trim();
+
+        const errors = {};
 
         if (name.length < 3) {
-            return window.notify("Please enter name atleast 3 char.", "error")
+            errors.name = "Please enter a name with at least 3 characters.";
+        } else if (/^[0-9!@#$%^&*()_+=[\]{};':"\\|,.<>/?]/.test(name)) {
+            errors.name = "Name cannot start with a number or special character.";
         }
         if (country.length < 3) {
-            return window.notify("Please enter country atleast 3 char.", "error")
+            errors.country = "Please enter a country with at least 3 characters.";
+        } else if (/^[0-9!@#$%^&*()_+=[\]{};':"\\|,.<>/?]/.test(country)) {
+            errors.country = "Country cannot start with a number or special character.";
         }
         if (!email) {
-            return window.notify("Please enter email", "error")
+            errors.email = "Please enter an email.";
+        } else if (/^[0-9!@#$%^&*()_+=[\]{};':"\\|,.<>/?]/.test(email)) {
+            errors.email = "Email cannot start with a number or special character.";
+        } else if (!isValidEmail(email)) {
+            errors.email = "Please enter a valid email address.";
         }
         if (question.length < 10) {
-            return window.notify("Please enter question atleast 10 char.", "error")
+            errors.question = "Please enter a question with at least 10 characters.";
         }
 
-        const subject = encodeURIComponent('New inquiry');
-        const body = encodeURIComponent(`Question From website:-\nName: ${name}\nCountry: ${country}\nEmail: ${email}\nQuestion: ${question}`);
+        // If there are errors, display them and prevent form submission
+        if (Object.keys(errors).length > 0) {
+            // Display error messages
+            Object.keys(errors).forEach(key => {
+                window.notify(errors[key], "error");
+            });
+            // } else {
+            //     // If no errors, proceed with sending email
+            //     const subject = encodeURIComponent('New inquiry');
+            //     const body = encodeURIComponent(`Question From website:-\nName: ${name}\nCountry: ${country}\nEmail: ${email}\nQuestion: ${question}`);
+            //     const mailtoLink = `mailto:corporate@citipharma.com.pk?subject=${subject}&body=${body}`;
+            //     window.location.href = mailtoLink;
+            //     setState(initialState); // Reset form state
+        }
+        else {
+            // If no errors, proceed with sending email using EmailJS
+            emailjs.send('service_mm02ymf', 'Citi_Pharma_Que', {
+                name,
+                country,
+                email,
+                question,
+            })
+                .then((response) => {
+                    // console.log('Email sent successfully:', response);
+                    window.notify("Question sent successfully!", "success");
+                })
+                .catch((error) => {
+                    console.error('Error sending email:', error);
+                    window.notify("Error sending email. Please try again later.", "error");
+                });
 
-        const mailtoLink = `mailto::corporate@citipharma.com.pk?subject=${subject}&body=${body}`;
+            setState(initialState); // Reset form state
+        }
+    };
 
-        window.location.href = mailtoLink;
-        setState(initialState)
-    }
+    // Helper function to check if email is valid
+    const isValidEmail = (email) => {
+        // You can implement your own email validation logic here
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    };
+
 
     return (
         <>

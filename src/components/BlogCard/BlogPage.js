@@ -16,7 +16,7 @@ export default function BlogPage() {
                     <div>
                         <h1 className='mainHeadings'>{blog.title}</h1>
                         <p className='text-secondary fw-bold'>Posted Date: {blog.date}</p>
-                        <p>{blog.desc}</p>
+                        <p style={{ whiteSpace: 'pre-wrap',}}>{blog.desc}</p>
                     </div>
                 ) : (
                     <p>Loading...</p>

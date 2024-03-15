@@ -66,7 +66,7 @@ export default function Home() {
             </Carousel.Item>
 
             <Carousel.Item>
-              <NavLink to="/orthotics-biotech">
+              <NavLink to="/biotech">
                 <div className="img">
                   <img
                     src="images/biotech.jpg"
@@ -77,7 +77,7 @@ export default function Home() {
                   <section className="slider_section">
                     <div className="detail-box">
                       <h1>
-                        Orthotics & Biotech
+                        Biotechnology
                       </h1>
                     </div></section>
                 </Carousel.Caption>
