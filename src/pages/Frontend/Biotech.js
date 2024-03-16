@@ -1,12 +1,11 @@
 import React from 'react'
-import Pages from '../../components/Pages'
 import Layout from './Layout'
 
 export default function Biotech() {
   return (
     <Layout title={'Biotechnology - Citi Pharma'}>
       <div>
-        <Pages title={"Biotechnology"}/>
+        <h1 className="mainHeadings py-5">Biotechnology</h1>
       </div>
     </Layout>
   )

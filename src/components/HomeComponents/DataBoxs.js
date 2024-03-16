@@ -1,5 +1,5 @@
 import React from 'react'
-import NumberCounter from './NumberCounter'
+// import NumberCounter from './NumberCounter'
 import { useInView } from 'react-intersection-observer';
 
 
@@ -14,10 +14,14 @@ export default function DataBoxs({ icon, title, number, countNumber, suffix }) {
                     <img src={icon} alt="" />
                 </div>
                 <div className="dataBox-body">
-                    <h1>{number}
+                    {/* <h1>{number}
                         <NumberCounter initialNumber={0} targetNumber={countNumber} />
                         <span>{suffix}</span>
-                    </h1>
+                    </h1> */}
+                    {/* <h1>{number}
+                        <NumberCounter initialNumber={0} targetNumber={countNumber} />
+                        <span>{suffix}</span>
+                    </h1> */}
                     <p>{title}</p>
                 </div>
             </div>

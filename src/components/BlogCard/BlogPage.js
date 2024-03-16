@@ -15,8 +15,8 @@ export default function BlogPage() {
                 {blog ? (
                     <div>
                         <h1 className='mainHeadings'>{blog.title}</h1>
-                        <p className='text-secondary fw-bold'>Posted Date: {blog.date}</p>
-                        <p style={{ whiteSpace: 'pre-wrap',}}>{blog.desc}</p>
+                        <p className='text-secondary fs-6 fw-medium'>Posted Date: {blog.date}</p>
+                        <p style={{ whiteSpace: 'pre-wrap', }} dangerouslySetInnerHTML={{ __html: blog.desc }} />
                     </div>
                 ) : (
                     <p>Loading...</p>

@@ -4,12 +4,14 @@ import Layout from './Layout';
 import DataBoxs from '../../components/HomeComponents/DataBoxs';
 import { FaQuoteLeft } from "react-icons/fa";
 import BlogCardContainer from '../../components/BlogCard/BlogCardContainer';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import OurValues from '../../components/HomeComponents/OurValues';
 import Animation from '../../components/Animation';
 import blogData from '../../data/blogData'
+import scrollToTop from '../../components/scrollToTop';
 
 export default function Home() {
+  const blogObj = blogData.slice(3);
   return (
     <Layout title={'Citi Pharma'}>
       <div className='home'>
@@ -89,9 +91,16 @@ export default function Home() {
         {/* Data Boxses */}
         <div className="d-flex align-items-center justify-content-center overflow-hidden">
           <div className="dataBoxs">
-            <DataBoxs icon={"images/revenue.png"} title={"Revenue in 2023"} number={"44."} countNumber={"27"} suffix={"M $"} />
-            <DataBoxs icon={"images/r&d-Icon.svg"} title={"Invested in R&D"} number={"2."} countNumber={"5"} suffix={"M $"} />
-            <DataBoxs icon={"images/employees-Icon.svg"} title={"Employees"} number={"+"} countNumber={"800"} />
+            {/* <DataBoxs icon={"images/revenue.png"} title={"Revenue in 2023"} number={"44."} countNumber={"27"} suffix={"M $"} /> */}
+            <Link to="/blog/0" onClick={scrollToTop} className="text-decoration-none">
+              <DataBoxs icon={"images/quality.png"} title={"Quality"} />
+            </Link>
+            <Link to="/blog/1" onClick={scrollToTop} className="text-decoration-none">
+              <DataBoxs icon={"images/relief.png"} title={"Relief"} />
+            </Link>
+            <Link to="/blog/2" onClick={scrollToTop} className="text-decoration-none">
+              <DataBoxs icon={"images/advance.png"} title={"Advancement"} />
+            </Link>
           </div>
         </div>
 
@@ -108,7 +117,6 @@ export default function Home() {
                 </span>
               </h1>
               <p>It is our mission to develop, license and manufacture safe, effective, reliable and affordable pharmaceutical products.</p>
-              {/* <p>M. Pierre Fabre, founder of the Group</p> */}
             </Animation>
           </div>
         </div>
@@ -124,26 +132,6 @@ export default function Home() {
                 <button className="btn">Learn more about our collaborations </button>
               </div>
             </Animation>
-            {/* <Animation name={"animate__fadeInRight"}>
-              <div className='images'>
-                <div className="img">
-                  <img src="https://images.unsplash.com/photo-1556229165-8aa0ceaa93a7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGFrZSUyMGNhcmUlMjBoZXIlMjBoYWlyfGVufDB8fDB8fHww" alt="" />
-                  <h1>Take care of your skin, hair and oral health.</h1>
-                </div>
-                <div className="img">
-                  <img src="https://images.unsplash.com/photo-1630959305790-4c956ce6c0b6?q=80&w=1493&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                  <h1>Treating cancer</h1>
-                </div>
-                <div className="img">
-                  <img src="https://images.unsplash.com/photo-1683208529938-8a7fb89c855f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-                  <h1>Treating chronic diseases</h1>
-                </div>
-                <div className="img">
-                  <img src="https://media.istockphoto.com/id/1344413214/photo/doctor-listening-to-little-boys-heart.jpg?s=1024x1024&w=is&k=20&c=ppxfnKq-Myx8xuds8ZvtnreoWRoV0bd35PrU-JhhJyc=" alt="" />
-                  <h1>Treating everyday ailments</h1>
-                </div>
-              </div>
-            </Animation> */}
             <Animation name={"animate__fadeInUp"}>
               <div className="clients">
                 <div className="img">
@@ -208,7 +196,7 @@ export default function Home() {
           </div>
           <div className="cards">
             <div className="container">
-              <BlogCardContainer cards={blogData} />
+              <BlogCardContainer cards={blogObj} />
             </div>
           </div>
         </div>

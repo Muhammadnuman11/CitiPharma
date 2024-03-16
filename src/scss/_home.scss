@@ -7,7 +7,7 @@
         .img {
             background: #000;
             width: 100%;
-            height: 96vh;
+            height: 80vh;
 
             img {
                 width: 100%;
@@ -397,12 +397,14 @@
                 width: 90%;
 
                 .collaborationsContent {
+                    padding: 18px 0;
+
                     p {
-                        width: 98%;
+                        width: 98% !important;
                     }
 
                     .btn {
-                        padding: 12px 18px;
+                        padding: 12px 18px !important;
                     }
                 }
             }
@@ -430,24 +432,24 @@
     }
 
 
-    .products-client-list {
-        padding: 50px 0;
-        text-align: center;
-        margin-top: 40px;
+    // .products-client-list {
+    //     padding: 50px 0;
+    //     text-align: center;
+    //     margin-top: 40px;
 
-        h1 {
-            font-weight: 700;
-        }
+    //     h1 {
+    //         font-weight: 700;
+    //     }
 
-        .prodects-client-box {
-            padding: 40px 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            text-align: center;
-        }
+    //     .prodects-client-box {
+    //         padding: 40px 0;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         flex-wrap: wrap;
+    //         text-align: center;
+    //     }
 
-    }
+    // }
 
 }

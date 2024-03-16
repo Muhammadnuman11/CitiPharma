@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import Layout from './Layout'
-import Pages from '../../components/Pages'
 import Animation from '../../components/Animation'
 import productsData from '../../data/productsData'
 
@@ -22,7 +21,6 @@ export default function Products() {
 
     return (
         <Layout title={'Finish Products - Citi Pharma'}>
-            <Pages title={"Finish Products"} link={"images/apiBanner.jpg"} />
             <Animation name={"animate__fadeInUp"}>
                 <div className="products">
                     <h1 className='mainHeadings'>Registered Product List</h1>

@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Pages from '../../components/Pages';
 import Animation from '../../components/Animation';
 import Layout from './Layout';
 import emailjs from 'emailjs-com';
@@ -103,16 +102,21 @@ export default function Api() {
         <>
             <Layout title={"Api - Citi Pharma"}>
                 <div className="api">
-                    <Pages title={"Highly Potent API Toxins"} link={"images/api.png"} />
                     <Animation name={"animate__fadeInUp"}>
                         <div className="api-text">
-                            <div className='para'>
-                                <p>
-                                    A selection of DNA damaging HPAPI toxins and intermediates are available to purchase directly from Apex Molecular. These compounds are synthesised in our laboratories.
-                                </p>
-                                <p>
-                                    We also have experience in producing toxin-linker constructs utilising toxins classes, such as PDBs, Duocarmycins, Auristatins and Camptothecin analogues i.e Exatecan and SN-38
-                                </p>
+                            <h1 className='mainHeadings'>Citi Pharma - Your Premier API Manufacturer</h1>
+                            <div className='apiTextBox'>
+                                <div className="para">
+                                    <p>
+                                        Welcome to Citi Pharma, a beacon of excellence in the realm of pharmaceuticals. Situated in Pakistan, we proudly stand as one of the largest API manufacturers in the country, boasting a state-of-the-art facility adorned with cutting-edge technology. With an unwavering commitment to quality and innovation, we specialize in the production of Active Pharmaceutical Ingredients (APIs) and finished products, ensuring the delivery of top-notch pharmaceutical solutions to meet the diverse needs of our valued clientele.
+                                    </p>
+                                    <p>
+                                        At Citi Pharma, we transcend boundaries, blending precision with passion to pioneer advancements in the healthcare industry. Our dedication to research, development, and manufacturing excellence is unparalleled, making us a trusted partner for pharmaceutical companies worldwide. Join us on our journey as we redefine the standards of pharmaceutical manufacturing, one breakthrough at a time.
+                                    </p>
+                                </div>
+                                <div className="apiImg">
+                                    <img src="images/apiPage.jpg" alt="Api Page" />
+                                </div>
                             </div>
                         </div>
                     </Animation>

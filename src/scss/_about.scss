@@ -16,11 +16,12 @@
 
             p {
                 font-weight: 350;
-                font-size: 16px;
+                font-size: 18px;
                 color: #535353;
                 width: 100%;
                 margin: 24px 0;
-
+                text-align: justify;
+                padding-right: 30px;
             }
 
             .learnBtn {
@@ -94,6 +95,14 @@
 
     .aboutDetails {
         flex-direction: column;
+
+        .img{
+            height: 300px !important;
+        }
+
+        p {
+            padding: 0;
+        }
 
         div {
             width: 100% !important;

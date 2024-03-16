@@ -1,29 +1,28 @@
 .pages {
-    // background: #000;
-    // width: 100%;
-    // height: 70vh;
-    // position: relative;
-    // margin-top: 50px;
+    background: #000;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    margin-top: 50px;
 
-    // img {
-    //     width: 100%;
-    //     height: 100%;
-    //     opacity: 0.7;
-
-    // }
-
-    .pages-detail {
-        // position: absolute;
+    img {
         width: 100%;
-        padding: 100px 0 20px 0;
+        height: 100%;
+        opacity: 0.5;
 
-        h1 {
-            // padding-left: 30px;
-            text-align: center;
-            font-size: 48px;
-            font-weight: 700;
-            color: #15a0c7;
-            // text-shadow: 1px 1px 2px #000, 0 0 1em #fff, 0 0 0.2em #15a0c7;
-        }
     }
+
+    // .pages-detail {
+    //     // position: absolute;
+    //     width: 100%;
+    //     padding: 100px 0 20px 0;
+
+    //     h1 {
+    //         padding-left: 30px;
+    //         text-align: center;
+    //         font-size: 48px;
+    //         font-weight: 700;
+    //         color: #15a0c7;
+    //     }
+    // }
 }

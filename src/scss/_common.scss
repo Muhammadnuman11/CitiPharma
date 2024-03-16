@@ -1,5 +1,4 @@
 .mainHeadings {
-    // padding: 10px 30px;
     font-size: 32px;
     color: #15a0c7;
     font-weight: 900;
@@ -27,5 +26,13 @@
         100% {
             width: 100px;
         }
+    }
+}
+
+
+@media only screen and (max-width:500px) {
+    .mainHeadings {
+        font-size: 24px;
+        font-weight: 700;
     }
 }
