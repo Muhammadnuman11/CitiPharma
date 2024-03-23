@@ -1,0 +1,64 @@
+.dev {
+    padding: 30px;
+    background: #f0f4f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        font-size: 24px;
+        color: #004b96;
+        text-transform: uppercase;
+    }
+
+    p {
+        text-align: justify;
+        font-weight: 300;
+    }
+
+    .devItem {
+        width: 80%;
+    }
+
+    .devPara {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+
+
+        .devParaBox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 18px 0;
+
+            img {
+                width: 300px;
+                height: 300px;
+            }
+
+            .para {
+                width: 66%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:1000px) {
+
+    .devItem {
+        width: 96% !important;
+    }
+
+    .devParaBox {
+        flex-direction: column;
+
+        .para {
+            width: 100% !important;
+        }
+    }
+
+}

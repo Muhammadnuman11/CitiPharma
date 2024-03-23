@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
 import Layout from './Layout'
-import directorData from '../../data/directorData';
-import CardContainer from '../../components/Card/CardContainer';
 import Animation from '../../components/Animation';
 
 export default function About() {
@@ -21,13 +19,13 @@ export default function About() {
           {/* Intro */}
           <Animation name={"animate__fadeInUp"}>
             <div className="aboutDetails">
-              <div className='w-50'>
+              <div className='w-50 px-3'>
                 <h1 className='mainHeadings'>Welcome to Citi Pharma!</h1>
                 <p>The factory is located at 3km Head Balloki road, Kasur. It has a land of 47 acres and have more than 800,000 Sq. Feet covered area. Citi Pharma got its first project in 1990 by AWT. Then the major plant erection period started in 1993 and ended somewhere in 1996. Production commenced in 1996 and formulation established in 2003.</p>
                 <p>Citi Pharma mission is to dedicate itself top adding exceptional value through creation of innovative and cost effective Pharma products and develop a corporate culture that rewards initiative, enthusiasm and ethical practices.</p>
               </div>
               <div className="img">
-                <img src="images/citiPharma.jpg" alt="" />
+              <video src="images/company.mp4" autoPlay controls className='w-100 h-100'></video>
               </div>
             </div>
           </Animation>
@@ -35,7 +33,11 @@ export default function About() {
           {/* Mission and Vision */}
           <Animation name={"animate__fadeInUp"}>
             <div className="aboutDetails">
-              <div className='w-50'>
+              <div className="img">
+                {/* <img src="images/home.jpg" alt="" /> */}
+                <img src="images/citiPharma.jpg" alt="" />
+              </div>
+              <div className='w-50 px-3'>
                 <h1 className='mainHeadings'>Our Mission</h1>
                 <p>Citi Pharma's mission is to
                   dedicate itself exceptional value
@@ -51,16 +53,13 @@ export default function About() {
                   and bringing home innovative
                   products in healthcare segment.</p>
               </div>
-              <div className="img">
-                <img src="images/home.jpg" alt="" />
-              </div>
             </div>
           </Animation>
 
           {/* CEO Message */}
           <Animation name={"animate__fadeInUp"}>
             <div className="aboutDetails">
-              <div className='w-50'>
+              <div className='w-50 px-3'>
                 <h1 className='mainHeadings'>CEO message</h1>
                 <p>I am delighted to address you all as we reflect
                   on another year of significant achievements
@@ -137,18 +136,14 @@ export default function About() {
               </div>
             </div>
           </Animation>
-
-          {/* DIRECTOR’S REPORT */}
-          <div className="aboutCards">
-            <div className="cardData">
-              <div className="cards">
-                <div className="cardWidth">
-                  <CardContainer cards={directorData} />
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
+
+        {/* <div className="company-video">
+
+          <div className="video">
+            <video src="images/company.mp4" controls className='w-100 h-100'></video>
+          </div>
+        </div> */}
       </div>
     </Layout >
   )

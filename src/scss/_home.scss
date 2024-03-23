@@ -7,7 +7,7 @@
         .img {
             background: #000;
             width: 100%;
-            height: 80vh;
+            height: 96vh;
 
             img {
                 width: 100%;
@@ -43,77 +43,123 @@
     }
 
     // Quote
-    .quote {
-        background: linear-gradient(0deg, rgba(197, 197, 197, .16), rgba(197, 197, 197, .16)), linear-gradient(270deg, rgba(0, 75, 150, .4608) 14.13%, rgba(0, 75, 150, .72) 50.76%, rgba(0, 75, 150, .4608) 71.84%, rgba(255, 255, 255, .72) 100%);
-        position: relative;
+    // .quote {
+    //     background: linear-gradient(0deg, rgba(197, 197, 197, .16), rgba(197, 197, 197, .16)), linear-gradient(270deg, rgba(0, 75, 150, .4608) 14.13%, rgba(0, 75, 150, .72) 50.76%, rgba(0, 75, 150, .4608) 71.84%, rgba(255, 255, 255, .72) 100%);
+    //     position: relative;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: center;
+    //     box-sizing: border-box;
+    //     overflow: hidden;
+
+    //     .img {
+    //         width: 100%;
+    //         height: 450px;
+    //         object-fit: contain;
+    //         object-position: bottom;
+
+    //         img {
+    //             width: 100%;
+    //             height: 100%;
+    //             opacity: 0.5;
+    //             z-index: -1;
+    //             -webkit-transition: all 1s ease;
+    //             -moz-transition: all 1s ease;
+    //             -o-transition: all 1s ease;
+    //             transition: all 1s ease;
+
+    //             &:hover {
+    //                 transform: scale(1.2);
+    //                 -webkit-transform: scale(1.2);
+    //                 -moz-transform: scale(1.2);
+    //                 -ms-transform: scale(1.2);
+    //                 -o-transform: scale(1.2);
+    //                 transform: scale(1.2);
+    //             }
+    //         }
+    //     }
+
+    //     .quoteText {
+    //         text-align: center;
+    //         color: #fff;
+    //         position: absolute;
+    //         width: 60%;
+    //         font-size: 24px;
+    //         font-weight: 500;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+    //         flex-direction: column;
+
+    //         h1 {
+    //             width: 100%;
+    //             display: flex;
+    //             align-items: center;
+    //             justify-content: center;
+
+    //             .quote-box {
+    //                 border-radius: 50%;
+    //                 background: rgba(255, 255, 255, .16);
+    //                 width: 70px;
+    //                 height: 70px;
+    //                 display: flex;
+    //                 align-items: center;
+    //                 justify-content: center;
+    //                 margin: 0 0 10px 0;
+
+    //                 .quote-icon {
+    //                     font-size: 42px;
+    //                 }
+    //             }
+    //         }
+
+    //         p {
+    //             margin: 24px 0;
+    //         }
+    //     }
+    // }
+
+    // Exports
+    .exports {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        box-sizing: border-box;
-        overflow: hidden;
 
-        .img {
-            width: 100%;
-            height: 450px;
-
-            img {
-                width: 100%;
-                height: 100%;
-                opacity: 0.5;
-                z-index: -1;
-                -webkit-transition: all 1s ease;
-                -moz-transition: all 1s ease;
-                -o-transition: all 1s ease;
-                transition: all 1s ease;
-
-                &:hover {
-                    transform: scale(1.2);
-                    -webkit-transform: scale(1.2);
-                    -moz-transform: scale(1.2);
-                    -ms-transform: scale(1.2);
-                    -o-transform: scale(1.2);
-                    transform: scale(1.2);
-                }
-            }
-        }
-
-        .quoteText {
-            text-align: center;
-            color: #fff;
-            position: absolute;
-            width: 60%;
-            font-size: 24px;
-            font-weight: 500;
+        .exportText {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
+            text-align: center;
+            width: 80%;
 
             h1 {
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-                .quote-box {
-                    border-radius: 50%;
-                    background: rgba(255, 255, 255, .16);
-                    width: 70px;
-                    height: 70px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin: 0 0 10px 0;
-
-                    .quote-icon {
-                        font-size: 42px;
-                    }
-                }
+                color: #004b96;
+                font-weight: 700;
+                font-size: 32px;
             }
 
             p {
-                margin: 24px 0;
+                font-weight: 350;
+                font-size: 20px;
+                color: #535353;
+                padding: 0;
+            }
+        }
+
+        .flagImgs {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            img {
+                width: 200px;
+                height: 120px;
+                margin: 14px 0;
             }
         }
     }
@@ -375,18 +421,27 @@
 
     @media only screen and (max-width:768px) {
 
-        .quoteText {
-            width: 96% !important;
-            font-size: 22px;
-            font-weight: 400;
+        // .quoteText {
+        //     width: 96% !important;
+        //     font-size: 22px;
+        //     font-weight: 400;
 
-            h1 {
-                width: 60px;
-                height: 60px;
-            }
+        //     h1 {
+        //         width: 60px;
+        //         height: 60px;
+        //     }
 
-            p {
-                margin: 24px 0;
+        //     p {
+        //         margin: 24px 0;
+        //     }
+        // }
+
+        .carousel {
+
+            .img {
+                background: #000;
+                width: 100%;
+                height: 60vh;
             }
         }
 

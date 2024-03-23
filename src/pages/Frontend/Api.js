@@ -123,7 +123,6 @@ export default function Api() {
 
                     <div className="api-details">
                         <div>
-
                             <Animation name={"animate__fadeInUp"}>
                                 <div className="api-table table-responsive">
                                     <h1 className='mainHeadings'>LIST OF PRODUCTS</h1>

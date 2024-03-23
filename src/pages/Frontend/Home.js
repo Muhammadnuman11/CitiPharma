@@ -2,7 +2,6 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import Layout from './Layout';
 import DataBoxs from '../../components/HomeComponents/DataBoxs';
-import { FaQuoteLeft } from "react-icons/fa";
 import BlogCardContainer from '../../components/BlogCard/BlogCardContainer';
 import { Link, NavLink } from 'react-router-dom';
 import OurValues from '../../components/HomeComponents/OurValues';
@@ -105,9 +104,10 @@ export default function Home() {
         </div>
 
         {/* Quote */}
-        <div className="quote">
+        {/* <div className="quote">
           <div className="img">
-            <img src="https://static.pierre-fabre.com/corpo/sites/pierre-fabre.com/files/2023-03/Pierre%20Fabre%20HP%20V2%20Quote.png" alt="" />
+            <img src="https://static.pierre-fabre.com/corpo/sites/pierre-fabre.com/files/2023-03/Pierre%20Fabre%20HP%20V2%20Quote.png" alt="" /> 
+            <img src="images/pharm.jpg" alt="" />
           </div>
           <div className="quoteText">
             <Animation name={"animate__fadeInDown"}>
@@ -118,6 +118,21 @@ export default function Home() {
               </h1>
               <p>It is our mission to develop, license and manufacture safe, effective, reliable and affordable pharmaceutical products.</p>
             </Animation>
+          </div>
+        </div> */}
+
+        {/* Exports */}
+        <div className="exports">
+          <div className="exportText">
+            <h1>
+              INTERNATIONAL EXPORTS
+            </h1>
+            <p>we are successfully exporting our nutraceutical products to these countries</p>
+          </div>
+          <div className="flagImgs">
+            <img src="images/uzbekistan.png" alt="" />
+            <img src="images/dubai.png" alt="" />
+            <img src="images/usa.webp" alt="" />
           </div>
         </div>
 

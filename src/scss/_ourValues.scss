@@ -5,17 +5,15 @@
     .jobs {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         text-align: left;
         width: 100%;
 
         .video {
             width: 42%;
-            height: 320px;
         }
 
         .jobDetail {
-            background: #f8f8f8;
             width: 42%;
 
             .jobContent {
@@ -26,37 +24,20 @@
                 h3 {
                     color: #3db5e6;
                     font-weight: 300;
-                    margin: 3px 0;
                     padding: 0;
+                    font-size: 21px;
                 }
 
                 h1 {
                     color: #004b96;
                     font-weight: 700;
+                    font-size: 32px;
                 }
 
                 p {
                     font-weight: 350;
                     font-size: 20px;
                     color: #535353;
-                    margin: 24px 0;
-                    padding: 0;
-                }
-
-                .btn {
-                    border-radius: 0;
-                    padding: 15px 30px;
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    font-weight: 400;
-                    background: #3db5e6;
-                    border: none;
-                    color: #fff;
-                    width: 220px;
-
-                    &:hover {
-                        background: #03a8e9;
-                    }
                 }
             }
         }
