@@ -39,53 +39,6 @@
                     height: 100%;
                 }
             }
-
-            .cards {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                box-sizing: border-box;
-                overflow: hidden;
-                border: 1px solid red;
-                width: 100%;
-                position: absolute;
-                bottom: 0px;
-                right: 0;
-            }
-        }
-
-        .aboutCards {
-            z-index: 10;
-
-            h1 {
-                padding: 0;
-                margin: 16px 0;
-            }
-
-            .cardData {
-                display: flex;
-                justify-content: space-between;
-                flex-direction: column;
-                position: relative;
-                height: 90vh;
-
-                .cards {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    box-sizing: border-box;
-                    overflow: hidden;
-                    width: 100%;
-                    position: absolute;
-                    bottom: 0px;
-                    right: 0;
-
-                    .cardWidth {
-                        width: 70%;
-                    }
-
-                }
-            }
         }
     }
 
@@ -94,7 +47,6 @@
 
         .video {
             width: 80%;
-            // height: 60vh;
         }
     }
 }
@@ -119,7 +71,4 @@
 
     }
 
-    .cardWidth {
-        width: 100% !important;
-    }
 }

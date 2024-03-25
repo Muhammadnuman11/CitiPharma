@@ -4,7 +4,7 @@ import Pages from '../../components/Pages'
 
 export default function Natural() {
     return (
-        <Layout title={'Citi Natural - Citi Pharma'}>
+        <Layout title={'Citi Natural - Citi Pharma'} description={'Welcome to Citi Naturals, where innovation meets excellence in the world of nutraceuticals.'}>
             <Pages title={'Citi Natural'} link='images/naturalPage.jpeg' />
             <div className='dev'>
                 <div className="devItem">

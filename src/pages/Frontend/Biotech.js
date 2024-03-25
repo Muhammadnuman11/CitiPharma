@@ -4,7 +4,7 @@ import Pages from '../../components/Pages'
 
 export default function Biotech() {
   return (
-    <Layout title={'Biotechnology - Citi Pharma'}>
+    <Layout title={'Biotechnology - Citi Pharma'} description={"Citi Pharma's Biotechnology Initiative: A Step Towards Self-Reliance"}>
       <Pages title={'Biotechnology'} link='images/bio.jpeg' />
       <div className='dev'>
         <div className="devItem">

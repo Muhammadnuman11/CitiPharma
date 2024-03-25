@@ -16,7 +16,7 @@ export default function TopFooter() {
                     <div className="topFooterCol">
                         <h1>Working together</h1>
                         <ul>
-                            <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Patients and caregivers</NavLink></li>
+                            <li><NavLink to="/caregiver" className="nav-link" onClick={scrollToTop}>Patients and caregivers</NavLink></li>
                             <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Healthcare professionals</NavLink></li>
                             <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Researchers</NavLink></li>
                             <li><NavLink to="/" className="nav-link" onClick={scrollToTop}>Job seekers</NavLink></li>
@@ -59,9 +59,6 @@ export default function TopFooter() {
                     <div className='footerIcons'>
                         <FaLinkedin className='icons' onClick={()=>window.open("https://www.linkedin.com/company/citipharmalimited/", "_blank")}/>
                         <FaFacebook className='icons' onClick={()=>window.open("https://www.facebook.com/citipharmaltd?mibextid=ZbWKwL", "_blank")}/>
-                        {/* <FaTwitter className='icons' />
-                        <FaInstagram className='icons' />
-                        <FaYoutube className='icons' /> */}
                     </div>
                     <div className="contactBtn">
                         <Link to="/contact" onClick={scrollToTop} className='btn'>Contact Us</Link>

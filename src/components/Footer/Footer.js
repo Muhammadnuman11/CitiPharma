@@ -45,7 +45,6 @@ export default function Footer() {
                 <div className="footerPara">
                     <p>&copy; {year} Citi Pharma</p>
                     <p>Powered By <span onClick={webLink}>Markoverment</span></p>
-                    {/* <p>Design & Develop By <span>Numan Irshad</span></p> */}
                 </div>
             </footer>
         </>

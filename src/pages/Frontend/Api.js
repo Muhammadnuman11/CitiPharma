@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Animation from '../../components/Animation';
 import Layout from './Layout';
 import emailjs from 'emailjs-com';
-
+import Pages from '../../components/Pages';
 
 const initialState = {
     name: "",
@@ -13,28 +13,21 @@ const initialState = {
 }
 
 export default function Api() {
-
     const [state, setState] = useState(initialState);
-
     const handleChange = e => {
         setState(s => ({ ...s, [e.target.name]: e.target.value }))
     }
 
     // User id
-    emailjs.init('_hGEO10AHgEOuemnJ');
-
+    emailjs.init(process.env.REACT_APP_User_Id);
     const handleEmail = (e) => {
         e.preventDefault();
-
         let { name, country, email, question } = state;
-
         name = name.trim();
         country = country.trim();
         email = email.trim();
         question = question.trim();
-
         const errors = {};
-
         if (name.length < 3) {
             errors.name = "Please enter a name with at least 3 characters.";
         } else if (/^[0-9!@#$%^&*()_+=[\]{};':"\\|,.<>/?]/.test(name)) {
@@ -56,30 +49,19 @@ export default function Api() {
             errors.question = "Please enter a question with at least 10 characters.";
         }
 
-        // If there are errors, display them and prevent form submission
         if (Object.keys(errors).length > 0) {
-            // Display error messages
             Object.keys(errors).forEach(key => {
                 window.notify(errors[key], "error");
             });
-            // } else {
-            //     // If no errors, proceed with sending email
-            //     const subject = encodeURIComponent('New inquiry');
-            //     const body = encodeURIComponent(`Question From website:-\nName: ${name}\nCountry: ${country}\nEmail: ${email}\nQuestion: ${question}`);
-            //     const mailtoLink = `mailto:corporate@citipharma.com.pk?subject=${subject}&body=${body}`;
-            //     window.location.href = mailtoLink;
-            //     setState(initialState); // Reset form state
         }
         else {
-            // If no errors, proceed with sending email using EmailJS
-            emailjs.send('service_mm02ymf', 'Citi_Pharma_Que', {
+            emailjs.send(process.env.REACT_APP_Service_Id, process.env.REACT_APP_Q_Template_Id, {
                 name,
                 country,
                 email,
                 question,
             })
                 .then((response) => {
-                    // console.log('Email sent successfully:', response);
                     window.notify("Question sent successfully!", "success");
                 })
                 .catch((error) => {
@@ -87,21 +69,20 @@ export default function Api() {
                     window.notify("Error sending email. Please try again later.", "error");
                 });
 
-            setState(initialState); // Reset form state
+            setState(initialState);
         }
     };
 
-    // Helper function to check if email is valid
     const isValidEmail = (email) => {
-        // You can implement your own email validation logic here
         return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     };
 
 
     return (
         <>
-            <Layout title={"Api - Citi Pharma"}>
+            <Layout title={"Api - Citi Pharma"} description={"We specialize in the production of Active Pharmaceutical Ingredients (APIs) and finished products, ensuring the delivery of top-notch pharmaceutical solutions to meet the diverse needs of our valued clientele."}>
                 <div className="api">
+                    <Pages title={'API Manufacturer'} link={"images/api.png"} />
                     <Animation name={"animate__fadeInUp"}>
                         <div className="api-text">
                             <h1 className='mainHeadings'>Citi Pharma - Your Premier API Manufacturer</h1>

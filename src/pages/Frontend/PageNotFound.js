@@ -5,7 +5,7 @@ import Animation from '../../components/Animation'
 
 export default function PageNotFound() {
     return (
-        <Layout title={"Page Not Found"}>
+        <Layout title={"Page Not Found - Citi Pharma"} description={"Citi Pharma: The page you are looking for doesn't exist."}>
             <Animation name={"animate__fadeInUp"}>
                 <div className="page-404">
                     <h1>404</h1>

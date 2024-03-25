@@ -1,9 +1,10 @@
+import { useEffect, useState } from 'react';
+import { ToastContainer } from 'react-toastify';
 import { Routes, Route } from 'react-router-dom';
 import './App.scss';
 import Home from '../src/pages/Frontend/Home'
 import About from '../src/pages/Frontend/About'
 import Contact from '../src/pages/Frontend/Contact'
-import { useEffect, useState } from 'react';
 import Loader from './components/Loader';
 import Api from './pages/Frontend/Api';
 import Products from './pages/Frontend/Products';
@@ -14,7 +15,8 @@ import PageNotFound from './pages/Frontend/PageNotFound';
 import Pdf from './pages/Frontend/Pdf';
 import Blog from './pages/Frontend/Blog';
 import BlogPage from './components/BlogCard/BlogPage';
-import { ToastContainer } from 'react-toastify';
+import Caregiver from './pages/FooterPages/Caregiver';
+// Footer Pages
 
 function App() {
 
@@ -43,6 +45,9 @@ function App() {
         <Route path='/*' element={<PageNotFound />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:id" element={<BlogPage />} />
+        {/* Footer Pages */}
+        <Route path="/caregiver" element={<Caregiver />} />
+
       </Routes>
       <ToastContainer />
     </>

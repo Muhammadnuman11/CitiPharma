@@ -1,22 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from "react-router-dom";
 import scrollToTop from '../scrollToTop';
-// import { Dropdown, Space } from 'antd';
-
-// const items = [
-//     {
-//         key: '1',
-//         label: (
-//             <NavLink to="/about" className="nav-link text-dark">About</NavLink>
-//         ),
-//     },
-//     {
-//         key: '2',
-//         label: (
-//             <a href="images/annualReport.pdf" download="Cit Pharma Annual Report 2023" rel="noreferrer" target='_blank' className="nav-link text-dark">Download Finanial Report 2023</a>
-//         ),
-//     },
-// ];
 
 export default function Navbar() {
 
@@ -40,12 +24,6 @@ export default function Navbar() {
                                     <li className="nav-item mx-2">
                                         <NavLink to="/about" className="nav-link text-white" onClick={scrollToTop}>
                                             About Us
-                                            {/* <Dropdown menu={{ items }}>
-                                                <span onClick={(e) => e.preventDefault()}>
-                                                    <Space>
-                                                    </Space>
-                                                </span>
-                                            </Dropdown> */}
                                         </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">

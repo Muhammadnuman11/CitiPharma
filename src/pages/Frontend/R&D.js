@@ -4,7 +4,7 @@ import Pages from '../../components/Pages'
 
 export default function RD() {
     return (
-        <Layout title={'Research & Devlopment - Citi Pharma'}>
+        <Layout title={'Research & Devlopment - Citi Pharma'} description={'Citi Pharma, we are dedicated to pushing the boundaries of innovation in the pharmaceutical industry in Research and Development.'}>
             <Pages title={'Research & Devlopment'} link='images/rd2.jpeg' />
             <div className='dev'>
                 <div className="devItem">

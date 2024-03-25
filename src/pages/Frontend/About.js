@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Layout from './Layout'
 import Animation from '../../components/Animation';
+import Pages from '../../components/Pages';
 
 export default function About() {
 
@@ -11,9 +12,9 @@ export default function About() {
   };
 
   return (
-    <Layout title={"About - Citi Pharma"}>
+    <Layout title={"About - Citi Pharma"} description={"Citi Pharma mission is to dedicate itself top adding exceptional value through creation of innovative and cost effective Pharma products and develop a corporate culture that rewards initiative, enthusiasm and ethical practices."}>
       <div className="about">
-        {/* <Pages title={"About Citi Pharma"} link={"images/citiPharma.jpg"} /> */}
+        <Pages title={"About Us"} link={"images/citiPharma.jpg"} />
 
         <div className="aboutBox">
           {/* Intro */}
@@ -25,7 +26,7 @@ export default function About() {
                 <p>Citi Pharma mission is to dedicate itself top adding exceptional value through creation of innovative and cost effective Pharma products and develop a corporate culture that rewards initiative, enthusiasm and ethical practices.</p>
               </div>
               <div className="img">
-              <video src="images/company.mp4" autoPlay controls className='w-100 h-100'></video>
+                <video src="images/company.mp4" autoPlay controls className='w-100 h-100'></video>
               </div>
             </div>
           </Animation>
@@ -34,8 +35,7 @@ export default function About() {
           <Animation name={"animate__fadeInUp"}>
             <div className="aboutDetails">
               <div className="img">
-                {/* <img src="images/home.jpg" alt="" /> */}
-                <img src="images/citiPharma.jpg" alt="" />
+                <img src="images/home.jpg" alt="" />
               </div>
               <div className='w-50 px-3'>
                 <h1 className='mainHeadings'>Our Mission</h1>
@@ -137,13 +137,6 @@ export default function About() {
             </div>
           </Animation>
         </div>
-
-        {/* <div className="company-video">
-
-          <div className="video">
-            <video src="images/company.mp4" controls className='w-100 h-100'></video>
-          </div>
-        </div> */}
       </div>
     </Layout >
   )

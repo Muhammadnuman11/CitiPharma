@@ -2,12 +2,13 @@ import React from 'react'
 import Layout from './Layout'
 import BlogCard from '../../components/BlogCard/BlogCard'
 import blogData from '../../data/blogData'
+import Pages from '../../components/Pages'
 
 export default function Blog() {
   return (
-    <Layout title={"Blog - Citi Pharma"}>
+    <Layout title={"Blog - Citi Pharma"} description={'Citi Pharma stands out for its unwavering commitment to delivering products of the highest quality.'}>
+    <Pages title={'Blogs'} link={"images/blog.jpg"} />
       <div className="blog">
-        <h1 className='mainHeadings'>Blogs</h1>
         <div className="blogBox">
           {
             blogData.map((blog, i) =>

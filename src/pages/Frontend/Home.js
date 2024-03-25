@@ -103,24 +103,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Quote */}
-        {/* <div className="quote">
-          <div className="img">
-            <img src="https://static.pierre-fabre.com/corpo/sites/pierre-fabre.com/files/2023-03/Pierre%20Fabre%20HP%20V2%20Quote.png" alt="" /> 
-            <img src="images/pharm.jpg" alt="" />
-          </div>
-          <div className="quoteText">
-            <Animation name={"animate__fadeInDown"}>
-              <h1>
-                <span className="quote-box">
-                  <FaQuoteLeft className='quote-icon' />
-                </span>
-              </h1>
-              <p>It is our mission to develop, license and manufacture safe, effective, reliable and affordable pharmaceutical products.</p>
-            </Animation>
-          </div>
-        </div> */}
-
         {/* Exports */}
         <div className="exports">
           <div className="exportText">
@@ -143,8 +125,8 @@ export default function Home() {
               <div className="collaborationsContent">
                 <h3>Discover</h3>
                 <h1>Our Collaborations</h1>
-                <p>Our dual expertise - pharmaceutical and dermo-cosmetics - helps us offer a holistic approach to care: prevent, treat and support.</p>
-                <button className="btn">Learn more about our collaborations </button>
+                <p>We are collaborating with national and multi-national companies.</p>
+                {/* <button className="btn">Learn more about our collaborations </button> */}
               </div>
             </Animation>
             <Animation name={"animate__fadeInUp"}>
@@ -185,7 +167,7 @@ export default function Home() {
         </div>
 
         {/* Commitments */}
-        <div className="commitments">
+        {/* <div className="commitments">
           <Animation name={"animate__fadeInUp"}>
             <div className="commitmentsContent">
               <h3>Focus on</h3>
@@ -194,7 +176,7 @@ export default function Home() {
               <button className="btn">Discover all our commitments</button>
             </div>
           </Animation>
-        </div>
+        </div> */}
 
         {/* job section */}
         <OurValues />
@@ -205,8 +187,8 @@ export default function Home() {
             <div className="newsContent">
               <h3>Our latest</h3>
               <h1>News</h1>
-              <p>Curious to learn more about our news? Get the latest on our brand innovations, our flagship commitments and the highlights of the life of the Group</p>
-              <button className="btn">All our news</button>
+              {/* <p>Curious to learn more about our news? Get the latest on our brand innovations, our flagship commitments and the highlights of the life of the Group</p>
+              <button className="btn">All our news</button> */}
             </div>
           </div>
           <div className="cards">

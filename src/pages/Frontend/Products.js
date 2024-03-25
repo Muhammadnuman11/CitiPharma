@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Layout from './Layout'
 import Animation from '../../components/Animation'
 import productsData from '../../data/productsData'
+import Pages from '../../components/Pages';
 
 export default function Products() {
     // Sorting
@@ -20,7 +21,8 @@ export default function Products() {
 
 
     return (
-        <Layout title={'Finish Products - Citi Pharma'}>
+        <Layout title={'Finish Products - Citi Pharma'} description={'Citi Pharma: Registered Product List'}>
+            <Pages title={'Finish Products'} link={"images/pro.jpg"} />
             <Animation name={"animate__fadeInUp"}>
                 <div className="products">
                     <h1 className='mainHeadings'>Registered Product List</h1>
