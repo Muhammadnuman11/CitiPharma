@@ -5,6 +5,8 @@ import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdFax } from "react-icons/md";
 import emailjs from 'emailjs-com';
+import config from '../../components/config';
+
 
 const initialState = {
   name: "",
@@ -29,9 +31,12 @@ export default function Contact() {
   const handleChange = e => {
     setState(s => ({ ...s, [e.target.name]: e.target.value }))
   }
+    const userId = config.User_Id
+    const serId = config.Service_Id
+    const tempId = config.M_Template_Id
 
   // User id
-  emailjs.init(process.env.REACT_APP_User_Id);
+  emailjs.init(userId);
 
   const handleEmail = (e) => {
     e.preventDefault();
@@ -75,7 +80,7 @@ export default function Contact() {
         window.notify(errors[key], "error");
       });
     } else {
-      emailjs.send(process.env.REACT_APP_Service_Id, process.env.REACT_APP_M_Template_Id, {
+      emailjs.send(serId, tempId, {
         name,
         email,
         phone,
