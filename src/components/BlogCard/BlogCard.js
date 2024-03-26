@@ -8,7 +8,7 @@ export default function BlogCard({ title, content, date, id }) {
     const navigate = useNavigate()
     const handleBlog = (id) => {
         scrollToTop()
-        navigate(`/blog/${id}`)
+        navigate(`/blogs/${id}`)
     }
     return (
         <div className="cardBox">

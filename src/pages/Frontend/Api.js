@@ -80,7 +80,7 @@ export default function Api() {
 
     return (
         <>
-            <Layout title={"Api - Citi Pharma"} description={"We specialize in the production of Active Pharmaceutical Ingredients (APIs) and finished products, ensuring the delivery of top-notch pharmaceutical solutions to meet the diverse needs of our valued clientele."}>
+            <Layout title={"Api Manufacturer - Citi Pharma"} description={"We specialize in the production of Active Pharmaceutical Ingredients (APIs) and finished products, ensuring the delivery of top-notch pharmaceutical solutions to meet the diverse needs of our valued clientele."}>
                 <div className="api">
                     <Pages title={'API Manufacturer'} link={"images/api.png"} />
                     <Animation name={"animate__fadeInUp"}>
@@ -274,7 +274,7 @@ export default function Api() {
                             <div className="question">
                                 <div className="p-4 shadow">
                                     <form>
-                                        <h1 className="mainHeadings mt-3 mb-4 fs-4">Ask any question</h1>
+                                        <h1 className="mainHeadings mt-3 mb-4 fs-4">Ask a question</h1>
                                         <div className="form-floating">
                                             <input type="text" className="form-control shadow-none" id="floatingName" placeholder='Name' name='name' value={state.name} onChange={handleChange} />
                                             <label htmlFor="floatingName">Name</label>

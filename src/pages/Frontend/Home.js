@@ -91,13 +91,13 @@ export default function Home() {
         <div className="d-flex align-items-center justify-content-center overflow-hidden">
           <div className="dataBoxs">
             {/* <DataBoxs icon={"images/revenue.png"} title={"Revenue in 2023"} number={"44."} countNumber={"27"} suffix={"M $"} /> */}
-            <Link to="/blog/0" onClick={scrollToTop} className="text-decoration-none">
+            <Link to="/blogs/0" onClick={scrollToTop} className="text-decoration-none">
               <DataBoxs icon={"images/quality.png"} title={"Quality"} />
             </Link>
-            <Link to="/blog/1" onClick={scrollToTop} className="text-decoration-none">
+            <Link to="/blogs/1" onClick={scrollToTop} className="text-decoration-none">
               <DataBoxs icon={"images/relief.png"} title={"Relief"} />
             </Link>
-            <Link to="/blog/2" onClick={scrollToTop} className="text-decoration-none">
+            <Link to="/blogs/2" onClick={scrollToTop} className="text-decoration-none">
               <DataBoxs icon={"images/advance.png"} title={"Advancement"} />
             </Link>
           </div>

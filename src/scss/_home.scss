@@ -276,11 +276,11 @@
     // News
     .news {
         margin: 40px 0;
-        text-align: left;
         background: #f0f4f9;
         position: relative;
         display: flex;
         height: 500px;
+
 
         .cards {
             display: flex;
@@ -313,14 +313,7 @@
                 h1 {
                     color: #004b96;
                     font-weight: 700;
-                }
-
-                p {
-                    font-weight: 350;
-                    font-size: 20px;
-                    color: #535353;
-                    margin: 24px 0;
-                    padding: 0;
+                    width: 100% !important;
                 }
 
                 // .btn {
@@ -374,22 +367,7 @@
         }
 
         .news {
-            flex-direction: column;
-            height: 820px;
-
-            .cards {
-                width: 100%;
-                bottom: -4px;
-                right: 0;
-            }
-
-            .newsDetail {
-                width: 80%;
-
-                .newsContent {
-                    padding: 20px;
-                }
-            }
+            height: 550px;
         }
 
     }

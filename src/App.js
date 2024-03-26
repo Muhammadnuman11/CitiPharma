@@ -36,15 +36,15 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/api" element={<Api />} />
+        <Route path="/api-manufacturer" element={<Api />} />
         <Route path="/finish-products" element={<Products />} />
         <Route path="/citi-natural" element={<Natural />} />
         <Route path="/research-devlopment" element={<RD />} />
         <Route path="/biotech" element={<Biotech />} />
         <Route path="/annual-report" element={<Pdf />} />
         <Route path='/*' element={<PageNotFound />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogPage />} />
+        <Route path="/blogs" element={<Blog />} />
+        <Route path="/blogs/:id" element={<BlogPage />} />
         {/* Footer Pages */}
         <Route path="/caregiver" element={<Caregiver />} />
 

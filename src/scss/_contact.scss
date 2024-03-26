@@ -21,13 +21,13 @@
         }
 
         .contact-box {
-            padding-bottom: 30px;
+            padding-bottom: 18px;
             width: 80%;
             display: flex;
 
             .address {
                 width: 40%;
-                padding: 30px 10px;
+                padding: 10px;
                 background: #15a0c7;
 
                 h1 {
@@ -40,7 +40,7 @@
                 }
 
                 p {
-                    font-size: 21px;
+                    font-size: 18px;
                     color: #fff;
                     padding: 0;
                     font-weight: 300;
@@ -71,7 +71,6 @@
                     align-items: center;
                     justify-content: space-between;
                     width: 280px;
-                    padding: 16px 0;
 
                     .icons {
                         font-size: 21px;

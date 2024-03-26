@@ -9,7 +9,7 @@ export default function TopFooter() {
             <div className='topFooter'>
                 <div className="topFooterLogo">
                     <div className="img">
-                        <img src="https://citipharma.com.pk/images/logo-img.png" alt="" />
+                        <img src="../images/logo.png" alt="" />
                     </div>
                 </div>
                 <div className="topFooterRow">

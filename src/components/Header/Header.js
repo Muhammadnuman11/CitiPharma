@@ -30,7 +30,7 @@ export default function Navbar() {
                                         <NavLink to="/contact" className="nav-link text-white" onClick={scrollToTop}>Contact</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/api" className="nav-link text-white " onClick={scrollToTop}>Api
+                                        <NavLink to="/api-manufacturer" className="nav-link text-white " onClick={scrollToTop}>Api
                                         </NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
@@ -47,7 +47,7 @@ export default function Navbar() {
                                         <NavLink to="/research-devlopment" className="nav-link text-white" onClick={scrollToTop}>Research & Devlopment</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/blog" className="nav-link text-white" onClick={scrollToTop}>Blog</NavLink>
+                                        <NavLink to="/blogs" className="nav-link text-white" onClick={scrollToTop}>Blogs</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
                                         <NavLink to="/annual-report" className="nav-link text-white" onClick={scrollToTop}>Annual Report 2023</NavLink>

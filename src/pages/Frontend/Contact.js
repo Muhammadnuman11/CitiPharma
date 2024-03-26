@@ -20,7 +20,7 @@ export default function Contact() {
     window.open('tel:924235316587');
   }
   const handleMail = () => {
-    window.open('mailto:info@citipharma.com.pk');
+    window.open('mailto:corporate@citipharma.com.pk');
   }
 
   // Send Message
@@ -164,6 +164,7 @@ export default function Contact() {
               </div>
             </div>
             <div className="contactForm">
+            <h1 className='mainHeadings my-0 py-0'>Get in touch</h1>
               <form className="row g-3 needs-validation" noValidate>
                 <div className="col-12 col-md-6">
                   <input type="text" name='name' className="form-control" placeholder='Your Name' required onChange={handleChange} value={state.name} />
