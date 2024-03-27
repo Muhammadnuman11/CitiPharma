@@ -143,58 +143,6 @@
                 // }
             }
 
-            .images {
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                flex-wrap: wrap;
-                padding: 30px 0;
-
-                .img {
-                    width: 235px;
-                    height: 235px;
-                    border-radius: 6px;
-                    box-sizing: border-box;
-                    overflow: hidden;
-                    position: relative;
-                    background: #000000de;
-                    margin: 20px 0;
-                    box-shadow: rgba(0, 0, 0, 0.4) -5px 5px 15px, rgba(0, 0, 0, 0.3) -10px 10px 15px, rgba(0, 0, 0, 0.2) -15px 15px 15px;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        opacity: 0.7;
-                        z-index: -1;
-                        -webkit-transition: all 1s ease;
-                        -moz-transition: all 1s ease;
-                        -o-transition: all 1s ease;
-                        transition: all 1s ease;
-                        cursor: pointer;
-
-                        &:hover {
-                            transform: scale(1.2);
-                            -webkit-transform: scale(1.2);
-                            -moz-transform: scale(1.2);
-                            -ms-transform: scale(1.2);
-                            -o-transform: scale(1.2);
-                            transform: scale(1.2);
-                        }
-                    }
-
-                    h1 {
-                        position: absolute;
-                        bottom: 10px;
-                        right: 20px;
-                        padding: 0 20px;
-                        font-size: 23px;
-                        z-index: 2;
-                        color: #fff;
-                        text-align: left;
-                    }
-                }
-            }
-
             .clients {
                 display: flex;
                 align-items: center;
@@ -346,21 +294,80 @@
             }
         }
 
-        .collaborations {
-            margin: 30px 0;
+        .dataBoxs {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 90%;
+            padding: 10px 0;
+        }
 
-            .collaborationssDetail {
-                width: 90%;
+        // .collaborations {
+        //     margin: 10px 0;
+
+        //     .collaborationssDetail {
+        //         width: 96%;
+
+        //         .collaborationsContent {
+        //             padding: 6px 0;
+
+        //             p {
+        //                 width: 98% !important;
+        //                 border: 1px solid red;
+        //             }
+
+        //             .btn {
+        //                 padding: 12px 18px !important;
+        //             }
+        //         }
+        //     }
+        // }
+
+        .collaborations {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 10px 0;
+
+            .collaborationsDetail {
+                background: #f8f8f8;
+                width: 96%;
+                text-align: center;
 
                 .collaborationsContent {
-                    padding: 18px 0;
+                    padding: 10px 0;
 
-                    p {
-                        width: 98% !important;
+                    h1 {
+                        font-size: 24px;
                     }
 
-                    .btn {
-                        padding: 12px 18px !important;
+                    p {
+                        font-weight: 300;
+                        font-size: 18px;
+                        margin: 12px 0;
+                        width: 100% !important;
+                    }
+
+                }
+
+                .clients {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    padding: 10px 0;
+                    background: #a5a5a5;
+
+                    .img {
+                        width: 100px;
+                        margin: 8px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
                 }
             }
@@ -368,6 +375,36 @@
 
         .news {
             height: 550px;
+        }
+
+        // Exports
+        .exports {
+
+            .exportText {
+                width: 96%;
+
+                p {
+                    font-weight: 300;
+                }
+
+                h1 {
+                    font-size: 24px;
+                }
+            }
+
+            .flagImgs {
+                width: 96%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                img {
+                    width: 100px;
+                    height: 60px;
+                    margin: 14px 0;
+                }
+            }
         }
 
     }

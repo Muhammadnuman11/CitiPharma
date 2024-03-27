@@ -187,8 +187,7 @@ export default function Home() {
             <div className="newsContent">
               <h3>Our latest</h3>
               <h1>News</h1>
-              {/* <p>Curious to learn more about our news? Get the latest on our brand innovations, our flagship commitments and the highlights of the life of the Group</p>
-              <button className="btn">All our news</button> */}
+              {/* <button className="btn">All our news</button>  */}
             </div>
           </div>
           <div className="cards">

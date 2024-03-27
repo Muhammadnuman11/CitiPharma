@@ -147,7 +147,7 @@ export default function Contact() {
                 </span>
                 <span onClick={handlePhone}> +92 49 4513392</span>
               </p>
-              <p>
+              <p className='btn border-0'>
                 <span className="contactIcon">
                   <IoMdMail />
                 </span>
