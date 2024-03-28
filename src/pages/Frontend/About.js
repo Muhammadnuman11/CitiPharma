@@ -35,7 +35,7 @@ export default function About() {
           <Animation name={"animate__fadeInUp"}>
             <div className="aboutDetails">
               <div className="img">
-                <img src="images/home.jpg" alt="" />
+                <img src="images/home.png" alt="" />
               </div>
               <div className='w-50 px-3'>
                 <h1 className='mainHeadings'>Our Mission</h1>

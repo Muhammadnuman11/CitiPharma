@@ -18,7 +18,7 @@ export default function Home() {
         <div className='carousel'>
           <Carousel fade interval={2000}>
             <Carousel.Item>
-              <NavLink to="/api">
+              <NavLink to="/api-manufacturer">
                 <div className="img">
                   <img
                     src="images/api.png"
@@ -112,9 +112,18 @@ export default function Home() {
             <p>we are successfully exporting our nutraceutical products to these countries</p>
           </div>
           <div className="flagImgs">
-            <img src="images/uzbekistan.png" alt="" />
-            <img src="images/dubai.png" alt="" />
-            <img src="images/usa.webp" alt="" />
+            <div className='img-box'>
+              <img src="images/uzbekistan.png" alt="" />
+              <p>Uzbekistan</p>
+            </div>
+            <div className='img-box'>
+              <img src="images/dubai.png" alt="" />
+              <p>Dubai</p>
+            </div>
+            <div className='img-box'>
+              <img src="images/usa.webp" alt="" />
+              <p>Usa</p>
+            </div>
           </div>
         </div>
 

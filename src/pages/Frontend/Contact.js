@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Layout from './Layout'
-import { FaFacebook, FaLinkedin, FaPhoneAlt } from 'react-icons/fa'
+import { FaPhoneAlt } from 'react-icons/fa'
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdFax } from "react-icons/md";
@@ -128,7 +128,7 @@ export default function Contact() {
                 </span>
                 <span onClick={handlePhone}>+92 42 353-16587</span>
               </p>
-              <h1 className='mainHeadings'>Registered Office</h1>
+              <h1 className='mainHeadings w-100'>Registered Office</h1>
               <p>
                 <span className="contactIcon">
                   <FaLocationDot />
@@ -159,14 +159,14 @@ export default function Contact() {
                 </span>
                 <span onClick={handleMail}>+92 49 4510191</span>
               </p>
-              <div className='footerIcons w-50'>
+              {/* <div className='footerIcons w-50'>
                 <div className="contactIcon">
                   <FaLinkedin className='icons' onClick={() => window.open("https://www.linkedin.com/company/citipharmalimited", "_blank")} />
                 </div>
                 <div className="contactIcon"  >
                   <FaFacebook className='icons' onClick={() => window.open("https://www.facebook.com/citipharmaltd?mibextid=ZbWKwL", "_blank")} />
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="contactForm">
             <h1 className='mainHeadings my-0 py-0'>Get in touch</h1>

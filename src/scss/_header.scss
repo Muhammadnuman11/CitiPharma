@@ -1,13 +1,14 @@
 .navbar {
-    background: #15a0c7;
+    // background: #15a0c7;
+    background: #004b96;
 
 
     .navbar-brand {
         border-radius: 8px;
-        height: 60px;
+        height: 70px;
         margin: 6px;
         padding: 0;
-        width: 60px;
+        width: 70px;
         z-index: 1;
 
         img {
@@ -22,9 +23,10 @@
     }
 
     .navbar-collapse {
-        background: #15a0c7;
+        // background: #15a0c7;
+        background: #004b96;
         position: absolute;
-        top: 70px;
+        top: 80px;
         left: 0;
         width: 100%;
         transition: 0.3s;
@@ -34,7 +36,6 @@
         padding: 0 0 0 118px;
 
         .navbar-nav {
-            // width: 100%;
             width: 240px;
 
             ul {
@@ -44,10 +45,6 @@
                     .nav-link {
                         color: #ffffff;
                         font-size: 18px;
-
-                        &:hover {
-                            color: #000 !important;
-                        }
                     }
                 }
             }

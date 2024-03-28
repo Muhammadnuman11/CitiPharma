@@ -28,7 +28,8 @@
             .address {
                 width: 40%;
                 padding: 10px;
-                background: #15a0c7;
+                // background: #15a0c7;
+                background: #004b96;
 
                 h1 {
                     font-size: 24px;
@@ -65,22 +66,22 @@
                     justify-content: center;
                 }
 
-                .footerIcons {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-between;
-                    width: 280px;
+                // .footerIcons {
+                //     display: flex;
+                //     align-items: center;
+                //     justify-content: space-between;
+                //     width: 280px;
 
-                    .icons {
-                        font-size: 21px;
-                        color: #fff;
-                        cursor: pointer;
+                //     .icons {
+                //         font-size: 21px;
+                //         color: #fff;
+                //         cursor: pointer;
 
-                        &:hover {
-                            color: #000;
-                        }
-                    }
-                }
+                //         &:hover {
+                //             color: #000;
+                //         }
+                //     }
+                // }
             }
 
             .contactForm {
@@ -97,7 +98,8 @@
                     .form-control {
                         outline: none;
                         box-shadow: none;
-                        border: 1px solid #15a0c7;
+                        // border: 1px solid #15a0c7;
+                        border: 1px solid #004b96;
                         border-radius: 0;
                         padding: 8px;
                         margin: 12px 0;
@@ -109,7 +111,8 @@
                     }
 
                     .btn {
-                        background: #15a0c7;
+                        // background: #15a0c7;
+                        background: #004b96;
                         border: none;
                         border-radius: 0;
                         font-size: 14px;
@@ -121,7 +124,7 @@
                         width: 200px;
 
                         &:hover {
-                            background: #1189aa;
+                            background: #0057ad;
                         }
                     }
                 }
@@ -132,16 +135,18 @@
 
 @media only screen and (max-width:1000px) {
 
-    h1 {
-        width: 90% !important;
-    }
+    .contact-details {
+        h1 {
+            width: 90% !important;
+        }
 
-    .contact-box {
-        flex-direction: column;
-        width: 90% !important;
+        .contact-box {
+            flex-direction: column;
+            width: 90% !important;
 
-        .address {
-            width: 100% !important;
+            .address {
+                width: 100% !important;
+            }
         }
     }
 

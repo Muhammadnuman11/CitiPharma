@@ -1,5 +1,6 @@
 .footer {
-    background: #15a0c7;
+    // background: #15a0c7;
+    background: #004b96;
     padding: 12px 0;
     font-weight: 300;
     position: relative;
@@ -17,7 +18,7 @@
         cursor: pointer;
         z-index: 100;
         background: #fff;
-        color: #15a0c7;
+        color: #004b96;
         font-size: 42px;
         border-radius: 6px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -65,19 +66,19 @@
 
     // Top Footer
     .topFooter {
-        padding: 30px 50px;
+        padding: 10px 50px;
         border-bottom: 1px solid #fff;
 
-        .topFooterLogo {
-            width: 60px;
-            height: 60px;
+        // .topFooterLogo {
+        //     width: 60px;
+        //     height: 60px;
 
-            img {
-                width: 100%;
-                height: 100%;
-                border-radius: 8px;
-            }
-        }
+        //     img {
+        //         width: 100%;
+        //         height: 100%;
+        //         border-radius: 8px;
+        //     }
+        // }
 
         .topFooterRow {
             display: flex;
@@ -87,7 +88,7 @@
 
             .topFooterCol {
                 padding: 16px 0;
-                width: 300px;
+                width: 200px;
                 height: 240px;
                 position: relative;
 
@@ -113,7 +114,7 @@
                             font-weight: 300;
 
                             &:hover {
-                                color: #000 !important;
+                                text-decoration: underline;
                             }
                         }
                     }
@@ -122,52 +123,55 @@
         }
 
         .topFooterIcons {
+            position: fixed;
+            bottom: 120px;
+            left: 0;
+            width: 40px;
+            height: 100px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: column;
+            cursor: pointer;
+            z-index: 100;
+            background: #004b96;
 
-            .footerIcons {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 100px;
+            .icons {
+                font-size: 28px;
+                color: #fff;
+                cursor: pointer;
+                margin: 12px 0;
 
-                .icons {
-                    font-size: 32px;
-                    color: #fff;
-                    margin: 10px;
-                    cursor: pointer;
-
-                    &:hover {
-                        color: #000;
-                    }
+                &:hover {
+                    color: #2b2b2b;
                 }
             }
 
-            .contactBtn {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 260px;
+            // }
 
-                .btn {
-                    font-size: 13px;
-                    width: 100%;
-                    color: #fff;
-                    border: 1px solid #fff;
-                    font-weight: 500;
-                    border-radius: 0;
-                    padding: 12px 0;
-                    cursor: pointer;
-                    text-transform: uppercase;
+            // .contactBtn {
+            //     display: flex;
+            //     align-items: center;
+            //     justify-content: center;
+            //     width: 200px;
 
-                    &:hover {
-                        color: #000;
-                        border: 1px solid #000;
-                    }
-                }
-            }
+            //     .btn {
+            //         font-size: 13px;
+            //         width: 100%;
+            //         color: #fff;
+            //         border: 1px solid #fff;
+            //         font-weight: 500;
+            //         border-radius: 0;
+            //         padding: 12px 0;
+            //         cursor: pointer;
+            //         text-transform: uppercase;
+
+            //         &:hover {
+            //             color: #000;
+            //             background: #fff;
+            //         }
+            //     }
+            // }
         }
 
     }

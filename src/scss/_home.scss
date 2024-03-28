@@ -78,11 +78,25 @@
             justify-content: space-around;
             flex-wrap: wrap;
 
-            img {
+            .img-box {
                 width: 200px;
                 height: 120px;
                 margin: 14px 0;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                p {
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    color: #535353;
+                    margin: 6px 0 12px 0;
+                }
             }
+
         }
     }
 
@@ -95,7 +109,8 @@
         margin: 40px 0;
 
         .collaborationsDetail {
-            background: #f8f8f8;
+            // background: #f8f8f8;
+            background: #004b96;
             width: 80%;
             text-align: center;
 
@@ -107,21 +122,23 @@
                 flex-direction: column;
 
                 h3 {
-                    color: #3db5e6;
+                    // color: #3db5e6;
+                    color: #c4eeff;
                     font-weight: 300;
                     margin: 3px 0;
                     padding: 0;
                 }
 
                 h1 {
-                    color: #004b96;
+                    color: #fff;
                     font-weight: 700;
                 }
 
                 p {
                     font-weight: 350;
                     font-size: 20px;
-                    color: #535353;
+                    // color: #535353;
+                    color: #dbdbdb;
                     margin: 24px 0;
                     padding: 0;
                     width: 50%;
@@ -149,7 +166,8 @@
                 justify-content: space-around;
                 flex-wrap: wrap;
                 padding: 30px 0;
-                background: #a5a5a5;
+                // background: #a5a5a5;
+                background: #f0f4f9;
 
                 .img {
                     width: 140px;
@@ -158,72 +176,15 @@
                     img {
                         width: 100%;
                         height: 100%;
-                        // filter: invert(100%);
-                        cursor: pointer;
-
-                        // &:hover {
-                        //     filter: invert(0);
-                        // }
                     }
                 }
             }
         }
     }
 
-    // Commitments
-    // .commitments {
-    //     background: #f8f8fb;
-    //     width: 100%;
-    //     text-align: center;
-
-    //     .commitmentsContent {
-    //         padding: 40px 0;
-    //         display: flex;
-    //         align-items: center;
-    //         justify-content: center;
-    //         flex-direction: column;
-
-    //         h3 {
-    //             color: #3db5e6;
-    //             font-weight: 300;
-    //             margin: 3px 0;
-    //             padding: 0;
-    //         }
-
-    //         h1 {
-    //             color: #004b96;
-    //             font-weight: 700;
-    //         }
-
-    //         p {
-    //             font-weight: 350;
-    //             font-size: 20px;
-    //             color: #535353;
-    //             margin: 24px 0;
-    //             padding: 0;
-    //             width: 80%;
-    //         }
-
-    //         .btn {
-    //             border-radius: 0;
-    //             padding: 15px 30px;
-    //             text-transform: uppercase;
-    //             font-size: 12px;
-    //             font-weight: 400;
-    //             background: #3db5e6;
-    //             border: none;
-    //             color: #fff;
-
-    //             &:hover {
-    //                 background: #03a8e9;
-    //             }
-    //         }
-    //     }
-    // }
-
     // News
     .news {
-        margin: 40px 0;
+        margin: 40px 0 0 0;
         background: #f0f4f9;
         position: relative;
         display: flex;
@@ -325,16 +286,10 @@
         // }
 
         .collaborations {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
             margin: 10px 0;
 
             .collaborationsDetail {
-                background: #f8f8f8;
-                width: 96%;
-                text-align: center;
+                width: 90%;
 
                 .collaborationsContent {
                     padding: 10px 0;
@@ -353,12 +308,7 @@
                 }
 
                 .clients {
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
-                    flex-wrap: wrap;
                     padding: 10px 0;
-                    background: #a5a5a5;
 
                     .img {
                         width: 100px;
@@ -379,6 +329,7 @@
 
         // Exports
         .exports {
+            padding: 20px 0;
 
             .exportText {
                 width: 96%;
@@ -394,16 +345,17 @@
 
             .flagImgs {
                 width: 96%;
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                flex-wrap: wrap;
 
-                img {
+                .img-box {
                     width: 100px;
                     height: 60px;
-                    margin: 14px 0;
+
+                    p{
+                        font-size: 13px;
+                    }
                 }
+
+
             }
         }
 
