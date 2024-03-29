@@ -20,8 +20,9 @@
         background: #fff;
         color: #004b96;
         font-size: 42px;
-        border-radius: 6px;
+        border-radius: 50%;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border: 2px solid #004b96;
     }
 
     @keyframes fade {
@@ -177,9 +178,11 @@
     }
 }
 
-@media only screen and (max-width:1000px) {
-    .footerIcons {
-        justify-content: center;
-        width: 260px;
+@media only screen and (max-width:768px) {
+    .arrow {
+        bottom: 20px;
+        right: 20px;
+        width: 40px !important;
+        height: 40px !important;
     }
 }

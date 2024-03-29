@@ -10,7 +10,7 @@
     h1 {
         font-size: 160px;
         font-weight: 900;
-        color: #15a0c7;
+        color: #004b96;
         margin: 0;
         padding: 0;
         font-family: "Ultra", serif;
@@ -37,7 +37,7 @@
         font-size: 13px;
         width: 100%;
         color: #fff;
-        background: #15a0c7;
+        background: #004b96;
         font-weight: 500;
         border-radius: 0;
         padding: 12px 0;
@@ -47,7 +47,7 @@
         margin: 24px 0;
 
         &:hover {
-            background: #0685a8;
+            background: #0057ad;
         }
     }
 }
@@ -66,24 +66,6 @@
 
         p {
             width: 100%;
-        }
-
-        .btn {
-            font-size: 13px;
-            width: 100%;
-            color: #fff;
-            background: #15a0c7;
-            font-weight: 500;
-            border-radius: 0;
-            padding: 12px 0;
-            cursor: pointer;
-            text-transform: uppercase;
-            width: 260px;
-            margin: 24px 0;
-
-            &:hover {
-                background: #0685a8;
-            }
         }
     }
 }

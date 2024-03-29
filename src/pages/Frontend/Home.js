@@ -25,6 +25,14 @@ export default function Home() {
                     alt=""
                   />
                 </div>
+                <Carousel.Caption>
+                  <section className="slider_section">
+                    <div className="detail-box">
+                      <h1>
+                      API Manufacturer
+                      </h1>
+                    </div></section>
+                </Carousel.Caption>
               </NavLink>
             </Carousel.Item>
 

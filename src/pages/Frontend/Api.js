@@ -300,7 +300,7 @@ export default function Api() {
                                             <label htmlFor="floatingQue">Ask question</label>
                                         </div>
 
-                                        <button className="btn btn-primary px-1 py-2" onClick={handleEmail}>Send a question</button>
+                                        <button className="btn px-1 py-2" onClick={handleEmail}>Send a question</button>
                                     </form>
                                 </div>
                             </div>

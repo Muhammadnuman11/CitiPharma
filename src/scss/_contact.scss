@@ -6,7 +6,8 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        background: #f5f5f5;
+        // background: #f5f5f5;
+        background: #fff;
 
         .map {
             width: 100%;
@@ -86,7 +87,8 @@
 
             .contactForm {
                 padding: 30px;
-                background: #fff;
+                // background: #fff;
+                background: #f8f8f8;
 
                 h1 {
                     font-size: 24px;
@@ -103,6 +105,7 @@
                         border-radius: 0;
                         padding: 8px;
                         margin: 12px 0;
+                        background: #f8f8f8;
 
                         &::placeholder {
                             color: #9c9c9c;

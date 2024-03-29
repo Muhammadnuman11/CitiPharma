@@ -25,14 +25,16 @@ export default function Products() {
             <Pages title={'Finish Products'} link={"images/pro.jpg"} />
             <Animation name={"animate__fadeInUp"}>
                 <div className="products">
-                    <h1 className='mainHeadings'>Registered Product List</h1>
-                    <input
-                        type="text"
-                        placeholder="Search Name Here"
-                        value={searchTerm}
-                        onChange={handleSearch}
-                        className='form-control my-3 shadow-none border rounded-0 m-auto p-2 comp'
-                    />
+                    <div className="d-flex align-items-center justify-content-between flex-wrap">
+                        <h1 className='mainHeadings'>Registered Product List</h1>
+                        <input
+                            type="text"
+                            placeholder="Search Name Here"
+                            value={searchTerm}
+                            onChange={handleSearch}
+                            className='form-control shadow-none border rounded-0 my-3 md-my-0'
+                        />
+                    </div>
                     <div className="productTable table-responsive">
                         <table className="table table-bordered">
                             <thead>
