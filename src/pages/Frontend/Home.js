@@ -100,13 +100,13 @@ export default function Home() {
           <div className="dataBoxs">
             {/* <DataBoxs icon={"images/revenue.png"} title={"Revenue in 2023"} number={"44."} countNumber={"27"} suffix={"M $"} /> */}
             <Link to="/blogs/0" onClick={scrollToTop} className="text-decoration-none">
-              <DataBoxs icon={"images/quality.png"} title={"Quality"} />
+              <DataBoxs icon={"images/quality-icon.png"} title={"Quality"} />
             </Link>
             <Link to="/blogs/1" onClick={scrollToTop} className="text-decoration-none">
-              <DataBoxs icon={"images/relief.png"} title={"Relief"} />
+              <DataBoxs icon={"images/relief-icon.png"} title={"Relief"} />
             </Link>
             <Link to="/blogs/2" onClick={scrollToTop} className="text-decoration-none">
-              <DataBoxs icon={"images/advance.png"} title={"Advancement"} />
+              <DataBoxs icon={"images/advance-icon.png"} title={"Advancement"} />
             </Link>
           </div>
         </div>

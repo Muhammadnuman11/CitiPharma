@@ -5,7 +5,7 @@ export default function Loader() {
     return (
         <div className="loader">
             <img src="../images/logo.png" alt="" />
-            <BeatLoader color="#15a0c7" />
+            <BeatLoader color="#004b96" />
         </div>
     )
 }
