@@ -5,7 +5,6 @@ import { IoMdMail } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdFax } from "react-icons/md";
 import emailjs from 'emailjs-com';
-import config from '../../components/config';
 
 
 const initialState = {
@@ -31,12 +30,9 @@ export default function Contact() {
   const handleChange = e => {
     setState(s => ({ ...s, [e.target.name]: e.target.value }))
   }
-    const userId = config.User_Id
-    const serId = config.Service_Id
-    const tempId = config.M_Template_Id
 
   // User id
-  emailjs.init(userId);
+  emailjs.init(process.env.REACT_APP_User_Id);
 
   const handleEmail = (e) => {
     e.preventDefault();
@@ -80,7 +76,7 @@ export default function Contact() {
         window.notify(errors[key], "error");
       });
     } else {
-      emailjs.send(serId, tempId, {
+      emailjs.send(process.env.REACT_APP_Service_Id, process.env.REACT_APP_M_Template_Id, {
         name,
         email,
         phone,
@@ -106,7 +102,7 @@ export default function Contact() {
 
 
   return (
-    <Layout title={'Contact - Citi Pharma'} description={'588-Q Block, M.A., Johar Town, Lahore Punjab, Pakistan, +92 42 353-16587, corporate@citipharma.com.pk'}>
+    <Layout title={'Contact - Citi Pharma'} description={'3-KM, Head Balloki Road, Bhai Pheru, Distt Kasur, +92 49 4510189, 588-Q Block, M.A., Johar Town, Lahore Punjab, Pakistan, +92 42 353-16587, corporate@citipharma.com.pk'}>
       <div className="contact">
         <div className="contact-details">
           <div className="map">

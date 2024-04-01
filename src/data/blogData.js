@@ -127,7 +127,7 @@ By establishing a facility capable of manufacturing vaccines locally, CITI Pharm
         id: 4,
         date: "16/03/2024, 3:46:12 PM",
         title: "From Molecule To Medicine: The Fascinating Journey of Paracetamol Synthesis",
-        shortDesc: "A Blog-Guide to Paracetamol Manufacturing from Phenol",
+        shortDesc: "A Blog-Guide to Paracetamol Manufacturing from Phenol. Paracetamol, also known as acetaminophen, is one of the most widely used for over 60 years and trusted over-the-counter pain relievers and fever reducers.",
         desc: `A Blog-Guide to Paracetamol Manufacturing from Phenol
 
 Paracetamol, also known as acetaminophen, is one of the most widely used for over 60 years and trusted over-the-counter pain relievers and fever reducers. Its synthesis involves several chemical reactions starting from phenol, a key raw material in the pharmaceutical industry. In this blog, we will delve into the step-by-step process of manufacturing paracetamol and explore the intermediates formed in each reaction. It all begins with the transformation of a fundamental raw material: PHENOL!!!

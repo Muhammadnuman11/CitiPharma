@@ -149,10 +149,10 @@ export default function Home() {
             <Animation name={"animate__fadeInUp"}>
               <div className="clients">
                 <div className="img">
-                  <img src="images/clients/abbott.png" alt="" />
+                  <img src="images/clients/abbott-icon.png" alt="" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/martinDow.svg" alt="" />
+                  <img src="images/clients/martinDow-icon.svg" alt="" />
                 </div>
                 <div className="img">
                   <img src="images/clients/lci.png" alt="" />
@@ -167,7 +167,7 @@ export default function Home() {
                   <img src="images/clients/searle.png" alt="" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/haleon.svg" alt="" />
+                  <img src="images/clients/haleon-icon.svg" alt="" />
                 </div>
                 <div className="img">
                   <img src="images/clients/bayer.svg" alt="" />
@@ -182,18 +182,6 @@ export default function Home() {
             </Animation>
           </div>
         </div>
-
-        {/* Commitments */}
-        {/* <div className="commitments">
-          <Animation name={"animate__fadeInUp"}>
-            <div className="commitmentsContent">
-              <h3>Focus on</h3>
-              <h1>Our Commitments</h1>
-              <p>Green Mission Citi Pharma is the eco-socio-responsible commitment from the Citi Pharma Group, awarded the Committed to CSR by AFNOR Certification at the Exemplary level. Thanks to our conviction and drive, we use sustainable innovation to benefit Nature and People, focusing on 5 pillars</p>
-              <button className="btn">Discover all our commitments</button>
-            </div>
-          </Animation>
-        </div> */}
 
         {/* job section */}
         <OurValues />

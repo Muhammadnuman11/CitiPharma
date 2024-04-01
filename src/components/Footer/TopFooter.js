@@ -26,11 +26,6 @@ export default function TopFooter() {
     return (
         <>
             <div className='topFooter'>
-                {/* <div className="topFooterLogo">
-                    <div className="img">
-                        <img src="../images/logo.png" alt="" />
-                    </div>
-                </div> */}
                 <div className="topFooterRow">
                     <div className="topFooterCol">
                         <h1>Working together</h1>
@@ -75,13 +70,8 @@ export default function TopFooter() {
                     </div>
                 </div>
                 <div className="topFooterIcons" style={{ display: isVisible ? 'flex' : 'none' }}>
-                    {/* <div className='footerIcons'> */}
                     <FaLinkedin className='icons' onClick={() => window.open("https://www.linkedin.com/company/citipharmalimited/", "_blank")} />
                     <FaFacebook className='icons' onClick={() => window.open("https://www.facebook.com/citipharmaltd?mibextid=ZbWKwL", "_blank")} />
-                    {/* </div> */}
-                    {/* <div className="contactBtn">
-                        <Link to="/contact" onClick={scrollToTop} className='btn'>Contact Us</Link>
-                    </div> */}
                 </div>
             </div>
         </>
