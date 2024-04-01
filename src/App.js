@@ -39,7 +39,7 @@ function App() {
         <Route path="/api-manufacturer" element={<Api />} />
         <Route path="/finish-products" element={<Products />} />
         <Route path="/citi-natural" element={<Natural />} />
-        <Route path="/research-devlopment" element={<RD />} />
+        <Route path="/research-development" element={<RD />} />
         <Route path="/biotech" element={<Biotech />} />
         <Route path="/annual-report" element={<Pdf />} />
         <Route path='/*' element={<PageNotFound />} />

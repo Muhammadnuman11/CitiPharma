@@ -56,7 +56,7 @@ export default function Home() {
             </Carousel.Item>
 
             <Carousel.Item>
-              <NavLink to="/research-devlopment">
+              <NavLink to="/research-development">
                 <div className="img">
                   <img
                     src="images/r&d.png"
@@ -67,7 +67,7 @@ export default function Home() {
                   <section className="slider_section">
                     <div className="detail-box">
                       <h1>
-                        Research & Devlopment
+                        Research & Development
                       </h1>
                     </div></section>
                 </Carousel.Caption>

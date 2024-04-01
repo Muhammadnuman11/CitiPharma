@@ -43,7 +43,7 @@ export default function Navbar() {
                                         <NavLink to="/biotech" className="nav-link text-white" onClick={scrollToTop}>Biotech</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
-                                        <NavLink to="/research-devlopment" className="nav-link text-white" onClick={scrollToTop}>Research & Devlopment</NavLink>
+                                        <NavLink to="/research-development" className="nav-link text-white" onClick={scrollToTop}>Research & Development</NavLink>
                                     </li>
                                     <li className="nav-item mx-2">
                                         <NavLink to="/blogs" className="nav-link text-white" onClick={scrollToTop}>Blogs</NavLink>
