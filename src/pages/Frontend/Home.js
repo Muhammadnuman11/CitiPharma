@@ -22,7 +22,7 @@ export default function Home() {
                 <div className="img">
                   <img
                     src="images/api.png"
-                    alt=""
+                    alt="Api Banner"
                   />
                 </div>
                 <Carousel.Caption>
@@ -41,7 +41,7 @@ export default function Home() {
                 <div className="img">
                   <img
                     src="images/natural.jpg"
-                    alt=""
+                    alt="Citi Natural"
                   />
                 </div>
                 <Carousel.Caption>
@@ -60,7 +60,7 @@ export default function Home() {
                 <div className="img">
                   <img
                     src="images/r&d.png"
-                    alt=""
+                    alt="research-development"
                   />
                 </div>
                 <Carousel.Caption>
@@ -79,7 +79,7 @@ export default function Home() {
                 <div className="img">
                   <img
                     src="images/biotech.jpg"
-                    alt=""
+                    alt="biotech"
                   />
                 </div>
                 <Carousel.Caption>
@@ -121,15 +121,15 @@ export default function Home() {
           </div>
           <div className="flagImgs">
             <div className='img-box'>
-              <img src="images/uzbekistan.png" alt="" />
+              <img src="images/uzbekistan.png" alt="Uzbekistan flag" />
               <p>Uzbekistan</p>
             </div>
             <div className='img-box'>
-              <img src="images/dubai.png" alt="" />
+              <img src="images/dubai.png" alt="Uae flag" />
               <p>Dubai</p>
             </div>
             <div className='img-box'>
-              <img src="images/usa.webp" alt="" />
+              <img src="images/usa.webp" alt="Usa flag" />
               <p>Usa</p>
             </div>
           </div>
@@ -149,34 +149,34 @@ export default function Home() {
             <Animation name={"animate__fadeInUp"}>
               <div className="clients">
                 <div className="img">
-                  <img src="images/clients/abbott-icon.png" alt="" />
+                  <img src="images/clients/abbott-icon.png" alt="abbott-icon" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/martinDow-icon.svg" alt="" />
+                  <img src="images/clients/martinDow-icon.svg" alt="martinDow-icon" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/lci.png" alt="" />
+                  <img src="images/clients/lci.png" alt="Lci" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/tabros.png" alt="" />
+                  <img src="images/clients/tabros.png" alt="tabros" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/ferozsons.png" alt="" />
+                  <img src="images/clients/ferozsons.png" alt="ferozsons" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/searle.png" alt="" />
+                  <img src="images/clients/searle.png" alt="searle" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/haleon-icon.svg" alt="" />
+                  <img src="images/clients/haleon-icon.svg" alt="haleon" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/bayer.svg" alt="" />
+                  <img src="images/clients/bayer.svg" alt="bayer" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/ccl.png" alt="" />
+                  <img src="images/clients/ccl.png" alt="Ccl" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/gsk.png" alt="" />
+                  <img src="images/clients/gsk.png" alt="Gsk" />
                 </div>
               </div>
             </Animation>

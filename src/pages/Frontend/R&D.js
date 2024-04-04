@@ -19,10 +19,10 @@ export default function RD() {
                             <h1>Setting Standards for Excellence</h1>
                             <p>In addition to researching new nutraceutical molecules, our R&D lab will also play a pivotal role in establishing reference standards for pharmaceutical ingredients. By developing reference standards locally, we aim to reduce reliance on imports and empower local companies to meet international quality standards more efficiently. This initiative aligns with our vision of fostering self-sufficiency and promoting growth within the pharmaceutical industry.</p>
                         </div>
-                        <img src="images/nutra.jpg" alt="" className='ms' />
+                        <img src="images/nutra.jpg" alt="nutra img"/>
                     </div>
                     <div className="devParaBox">
-                        <img src="images/rd.jpeg" alt="" />
+                        <img src="images/rd.jpeg" alt="Research and development" />
                         <div className='para'>
                             <h1>Enhancing Drug Delivery Systems</h1>
                             <p>Furthermore, our R&D lab will be at the forefront of research on new dosage forms and drug delivery techniques. We are committed to enhancing the efficacy, bioavailability, and patient experience of existing pharmaceutical products. Through rigorous experimentation and innovation, we will explore novel formulations and delivery methods that optimize drug performance and improve patient outcomes.</p>

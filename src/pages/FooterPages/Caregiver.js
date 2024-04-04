@@ -13,7 +13,7 @@ export default function Caregiver() {
                 </div>
                 <div className="row d-flex align-items-center flex-column-reverse flex-md-row">
                     <div className="col-12 col-md-8 text-center">
-                        <img src="images/caregiver.jpg" alt="" className='w-75 py-3' />
+                        <img src="images/caregiver.jpg" alt="caregiver" className='w-75 py-3' />
                     </div>
                     <div className="col-12 col-md-4">
                         <p className='fs-5 text-dark py-3 fw-light' style={{ textAlign: 'justify', }}>

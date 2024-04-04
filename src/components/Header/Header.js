@@ -10,7 +10,7 @@ export default function Navbar() {
                 <nav className="navbar fixed-top custom_nav-container p-0">
                     <div className="container">
                         <Link to="/" className="navbar-brand fs-2 fw-bold text-white" onClick={scrollToTop}>
-                            <img src="../images/logo.png" alt="" />
+                            <img src="../images/logo.png" alt="Citi pharma logo" />
                         </Link>
                         <button className="navbar-toggler shadow-none border-0 navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>

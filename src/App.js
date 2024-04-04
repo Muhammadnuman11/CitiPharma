@@ -15,8 +15,8 @@ import PageNotFound from './pages/Frontend/PageNotFound';
 import Pdf from './pages/Frontend/Pdf';
 import Blog from './pages/Frontend/Blog';
 import BlogPage from './components/BlogCard/BlogPage';
-import Caregiver from './pages/FooterPages/Caregiver';
 // Footer Pages
+import Caregiver from './pages/FooterPages/Caregiver';
 
 function App() {
 

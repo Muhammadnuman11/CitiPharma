@@ -10,7 +10,7 @@ export default function DataBoxs({ icon, title}) {
         <>
             <div ref={ref} className={`dataBox animate__animated ${inView ? 'animate__fadeInRight' : ''}`}>
                 <div className="icon">
-                    <img src={icon} alt="" />
+                    <img src={icon} alt={title} />
                 </div>
                 <div className="dataBox-body">
                     <p>{title}</p>

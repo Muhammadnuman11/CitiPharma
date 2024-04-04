@@ -19,10 +19,10 @@ export default function Natural() {
                             <h1>Local Manufacturing, Global Impact</h1>
                             <p>In addition to our international presence, we are also making a significant impact locally. Citi Naturals is proud to manufacture high-quality nutraceuticals for local companies, contributing to the growth and development of the domestic market. Our state-of-the-art manufacturing facilities and stringent quality control measures ensure that every product that bears the Citi Naturals name meets the highest standards of excellence.</p>
                         </div>
-                        <img src="images/naturalPage1.jpg" alt="" className='ms-2' style={{height: "270px"}} />
+                        <img src="images/naturalPage1.jpg" alt="natural 1" className='ms-2' style={{height: "270px"}} />
                     </div>
                     <div className="devParaBox">
-                        <img src="images/naturalPage2.jpg" alt="" className='me-2' style={{height: "280px"}} />
+                        <img src="images/naturalPage2.jpg" alt="natural 2" className='me-2' style={{height: "280px"}} />
                         <div className='para'>
                             <h1>Innovation at the Forefront</h1>
                             <p>At Citi Naturals, innovation is at the heart of everything we do. We are constantly pushing the boundaries of scientific research and development to bring you the latest advancements in nutraceutical technology. Our team of experts is dedicated to developing innovative products that address the evolving needs of our customers and contribute to improved health and wellness.</p>
