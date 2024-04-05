@@ -5,11 +5,12 @@
 
     .navbar-brand {
         border-radius: 8px;
-        height: 70px;
+        height: 80px;
         margin: 6px;
-        padding: 0;
-        width: 70px;
+        padding: 2px;
+        width: 80px;
         z-index: 1;
+        background: #fff;
 
         img {
             border-radius: 8px;
@@ -26,7 +27,7 @@
         // background: #15a0c7;
         background: #004b96;
         position: absolute;
-        top: 80px;
+        top: 90px;
         left: 0;
         width: 100%;
         transition: 0.3s;

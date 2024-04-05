@@ -17,6 +17,8 @@ import Blog from './pages/Frontend/Blog';
 import BlogPage from './components/BlogCard/BlogPage';
 // Footer Pages
 import Caregiver from './pages/FooterPages/Caregiver';
+import Pipeline from './pages/FooterPages/Pipeline';
+import Internship from './pages/FooterPages/Internship';
 
 function App() {
 
@@ -47,6 +49,8 @@ function App() {
         <Route path="/blogs/:id" element={<BlogPage />} />
         {/* Footer Pages */}
         <Route path="/caregiver" element={<Caregiver />} />
+        <Route path="/pipeline" element={<Pipeline />} />
+        <Route path="/internship" element={<Internship />} />
 
       </Routes>
       <ToastContainer />

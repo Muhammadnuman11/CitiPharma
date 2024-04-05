@@ -10,7 +10,6 @@ export default function TopFooter() {
 
     useEffect(() => {
         function handleScroll() {
-            // Show the button when user scrolls down beyond certain threshold
             if (window.scrollY > 400) {
                 setIsVisible(true);
             } else {
@@ -40,12 +39,9 @@ export default function TopFooter() {
                     <div className="topFooterCol">
                         <h1>Working together</h1>
                         <ul>
-                            {/* <li><Link to="/caregiver" className="nav-link" onClick={scrollToTop}>Patients and caregivers</Link></li> */}
                             <li><Link to="/" className="nav-link" onClick={scrollToTop}>Healthcare professionals</Link></li>
-                            {/* <li><Link to="/" className="nav-link" onClick={scrollToTop}>Researchers</Link></li> */}
-                            <li><Link to="/" className="nav-link" onClick={scrollToTop}>Internship</Link></li>
+                            <li><Link to="/internship" className="nav-link" onClick={scrollToTop}>Internship</Link></li>
                             <li><Link to="/" className="nav-link" onClick={scrollToTop}>Media</Link></li>
-                            {/* <li><Link to="/" className="nav-link" onClick={scrollToTop}>Investors</Link></li> */}
                         </ul>
                     </div>
                     <div className="topFooterCol">
@@ -53,16 +49,13 @@ export default function TopFooter() {
                         <ul>
                             <li><Link to="/annual-report" className="nav-link" onClick={scrollToTop}>Annual Report</Link></li>
                             <li><Link to="/" className="nav-link" onClick={scrollToTop}>Our next era</Link></li>
-                            {/* <li><Link to="/" className="nav-link" onClick={scrollToTop}>Access</Link></li> */}
                             <li><Link to="/" className="nav-link" onClick={scrollToTop}>Diversity</Link></li>
-                            {/* <li><Link to="/" className="nav-link" onClick={scrollToTop}>ESG</Link></li> */}
-                            {/* <li><Link to="/" className="nav-link" onClick={scrollToTop}>SpeakUp</Link></li> */}
                         </ul>
                     </div>
                     <div className="topFooterCol">
                         <h1>Explore</h1>
                         <ul>
-                            <li><Link to="/" className="nav-link" onClick={scrollToTop}>Pipeline</Link></li>
+                            <li><Link to="/pipeline" className="nav-link" onClick={scrollToTop}>Pipeline</Link></li>
                             <li className='nav-link' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                                 Products
                                 <span className={isOpen ? 'block' : 'hidden'}>
@@ -70,7 +63,6 @@ export default function TopFooter() {
                                     <Link to="/citi-natural" className="nav-link py-1 px-2" onClick={scrollToTop}>Citi Natural</Link>
                                 </span>
                             </li>
-                            {/* <li><Link to="/" className="nav-link" onClick={scrollToTop}>Clinical trials</Link></li> */}
                             <li><Link to="/" className="nav-link" onClick={scrollToTop}>Partnering</Link></li>
                             <li><Link to="/" className="nav-link" onClick={scrollToTop}>Stories</Link></li>
                         </ul>
