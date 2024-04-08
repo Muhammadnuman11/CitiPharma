@@ -3,7 +3,7 @@ import Layout from '../Frontend/Layout'
 
 export default function Internship() {
     const handleApply = () => {
-        window.open("https://citipharma.com.pk/", "_blank")
+        window.open("https://docs.google.com/forms/d/1FWA-70sRve8TJVYY7TTLPVRVMMc2TzlhAlDR0rH2khY/edit", "_blank")
     }
     return (
         <Layout title={"Internships - Citi Pharma"} description={"Paid Internships Open Now"}>
