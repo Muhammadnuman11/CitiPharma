@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../Frontend/Layout'
+import { Link } from 'react-router-dom'
 
 export default function Internship() {
     const handleApply = () => {
@@ -17,7 +18,9 @@ export default function Internship() {
                 <div className="row d-flex align-items-center flex-column flex-md-row">
                     <div className="col-12 col-md-6">
                         <p className='fs-5 text-dark py-2 fw-light' style={{ textAlign: 'justify', }}>
-                            We believe in the transformative power of education. Our scholarship is designed to nurture bright minds dedicated to creating positive change through hands-on learning. Choose from our list of projects uploaded on LinkedIn and create a 4-slide presentation on your selected project. To apply, submit your CV along with your presentation. Join us in shaping the future!
+                            We believe in the transformative power of education. Our scholarship is designed to nurture bright minds dedicated to creating positive change through hands-on learning. Choose from our list of projects uploaded on 
+                            <Link to='https://www.linkedin.com/posts/citipharmalimited_project-list-for-internship-leading-towards-activity-7181545554483572736-l84Y?utm_source=share&utm_medium=member_desktops' className='text-decoration-none'> LinkedIn </Link> 
+                            and create a 4-slide presentation on your selected project. To apply, submit your CV along with your presentation. Join us in shaping the future!
                         </p>
                         <button className='btn btn-primary fs-6 text-uppercase border-0 rounded-0 py-2 px-4' onClick={handleApply}>Apply Now</button>
                     </div>

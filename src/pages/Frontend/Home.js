@@ -12,7 +12,7 @@ import scrollToTop from '../../components/scrollToTop';
 export default function Home() {
   const blogObj = blogData.slice(3);
   return (
-    <Layout title={'Citi Pharma'}>
+    <Layout>
       <div className='home'>
         {/* Carousel */}
         <div className='carousel'>
