@@ -7,7 +7,7 @@ export default function Pipeline() {
             <section className="pipeline">
                 <div className="pipeline-box">
                     <div className="text-center">
-                        <h2>Our route to successs & vision</h2>
+                        <h2>Our route to success & vision</h2>
                     </div>
                     <ul className="pipeline-list">
                         <li>
@@ -53,7 +53,7 @@ export default function Pipeline() {
                             <div className="circle">05</div>
                             <div className="pipeline-text">
                                 <p>2012 - 2023</p>
-                                <p>Formulation General</p>
+                                <p>General Formulation</p>
                                 <p>2Products - 56Products</p>
                             </div>
                         </li>
