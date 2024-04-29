@@ -159,7 +159,7 @@ export default function Api() {
                                             <tr>
                                                 <td>Aspirin</td>
                                                 <td>USP & BP</td>
-                                                <td>Penicillin</td>
+                                                <td>Analgesic & Anti-Coagulant</td>
                                             </tr>
                                             <tr>
                                                 <td>Hydrocholoroquine</td>
@@ -174,7 +174,7 @@ export default function Api() {
                                             <tr>
                                                 <td>Ascorbic Acid</td>
                                                 <td>USP & BP</td>
-                                                <td>Vitamin C</td>
+                                                <td>Anti-Oxidant</td>
                                             </tr>
                                             <tr>
                                                 <td>Sulphamexthoxazolc</td>
@@ -189,17 +189,17 @@ export default function Api() {
                                             <tr>
                                                 <td>Mefenamic Acid</td>
                                                 <td>USP & BP</td>
-                                                <td>Antibiotic</td>
+                                                <td>Analgesic</td>
                                             </tr>
                                             <tr>
                                                 <td>Montelukast Sodium</td>
                                                 <td>USP & BP</td>
-                                                <td>Antibiotic</td>
+                                                <td>Leukotriene Receptor Antagonists</td>
                                             </tr>
                                             <tr>
                                                 <td>Diclofenac Sodium</td>
                                                 <td>USP & BP</td>
-                                                <td>Antibiotic</td>
+                                                <td>Analgesic</td>
                                             </tr>
                                         </tbody>
                                     </table>
