@@ -12,7 +12,7 @@ export default function Blog() {
         <div className="blogBox">
           {
             blogData.map((blog, i) =>
-              <BlogCard key={i} title={blog.title} content={blog.shortDesc} date={blog.date} id={blog.id}/>
+              <BlogCard key={i} title={blog.title} content={blog.shortDesc} date={blog.date} id={blog.id} linkedinLink={blog.linkedinLink}/>
             )
           }
         </div>

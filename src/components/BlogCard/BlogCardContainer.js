@@ -13,6 +13,7 @@ export default function BlogCardContainer({ cards }) {
                     key={id}
                     title={card.title}
                     date={card.date}
+                    linkedinLink={card.linkedinLink}
                     content={card.shortDesc}
                     id={card.id}
                 />

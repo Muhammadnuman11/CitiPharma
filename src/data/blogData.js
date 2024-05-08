@@ -98,6 +98,21 @@ Adventure awaits - let's make history together! 🚀✨
     // Other Blogs
     {
         id: 3,
+        date: "04/05/2024, 2:16:34 PM",
+        title: "Board of Directors meeting",
+        linkedinLink: "https://www.linkedin.com/posts/citipharmalimited_citipharma-citipharmaceuticals-citiboardofdirectors-activity-7192128596621111296-FPah?utm_source=share&utm_medium=member_android",
+        shortDesc: "We welcomed our esteemed directors Amjad Nadeem Chairman; Rizwan Ahmad, CEO; Dr Zamir Ul Hussan , Executive Director; Miss Saira Aslam, Non-Executive Director, Mr. Mohammad Naeem, Non-Executive Director; and Mr. Abdul Jaleel Sheikh as an Independent Director.",
+        desc: `At our recent board meeting, we welcomed our esteemed directors Amjad Nadeem Chairman; Rizwan Ahmad, CEO; Dr Zamir Ul Hussan , Executive Director; Miss Saira Aslam, Non-Executive Director, Mr. Mohammad Naeem, Non-Executive Director; and Mr. Abdul Jaleel Sheikh as an Independent Director. 
+
+Together, they delved into the latest quarter's report, which showcased a remarkable performance surpassing all expectations. Bolstered by this success, the board passionately discussed the future trajectory of Citi Pharma. They celebrated the strong financial report as a reflection of our company's resilience and potential for sustained growth. With a renewed sense of purpose, the directors are committed to focus on key areas such as expanding our line of nutritional supplements, general formulation, driving innovation in our research lab, and fostering strategic collaborations with partners worldwide.🌎
+
+-Citi Pharma is proudly manufacturing "Vintogeno", Martin Dow nutra product! 
+
+We're poised to chart a course towards even greater success in the dynamic landscape of healthcare.🌟
+`
+    },
+    {
+        id: 4,
         date: "12/03/2024, 1:20:13 PM",
         title: "FUTURE FUSION: CITI PHARMA'S VISIONARY PATH TO HEALTH",
         shortDesc: "CITI Pharma stands at the forefront of innovation and progress in the pharmaceutical industry. Our vision extends far beyond the boundaries of Pakistan, reaching towards a future where CITI Pharma is a global leader in healthcare solutions.",
@@ -124,7 +139,7 @@ There are various types of vaccines, each employing different mechanisms to stim
 By establishing a facility capable of manufacturing vaccines locally, CITI Pharma aims to contribute to national and global efforts to combat infectious diseases. This initiative not only enhances Pakistan's self-reliance in vaccine production but also ensures timely access to vaccines during public health crises. Furthermore, it aligns with CITI Pharma's mission to prioritize public health and improve healthcare outcomes for people across Pakistan and beyond.`
     },
     {
-        id: 4,
+        id: 5,
         date: "16/03/2024, 3:46:12 PM",
         title: "From Molecule To Medicine: The Fascinating Journey of Paracetamol Synthesis",
         shortDesc: "A Blog-Guide to Paracetamol Manufacturing from Phenol. Paracetamol, also known as acetaminophen, is one of the most widely used for over 60 years and trusted over-the-counter pain relievers and fever reducers.",
@@ -178,6 +193,7 @@ The 4-aminophenol route offers a straightforward and industrially viable approac
 In this synthesis tale, where molecules transform from raw materials to medicine, we recognize that each step is a testament to the collaborative efforts of chemists, engineers, and researchers striving to improve and innovate. The journey from phenol to paracetamol encapsulates the essence of pharmaceutical science — a pursuit driven by the commitment to enhance health outcomes for individuals worldwide.
 `
     },
+
 
 ];
 
