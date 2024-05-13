@@ -12,13 +12,16 @@ import Biotech from './pages/Frontend/Biotech';
 import RD from './pages/Frontend/R&D';
 import Natural from './pages/Frontend/Natural';
 import PageNotFound from './pages/Frontend/PageNotFound';
-import Pdf from './pages/Frontend/Pdf';
 import Blog from './pages/Frontend/Blog';
 import BlogPage from './components/BlogCard/BlogPage';
 // Footer Pages
 import Caregiver from './pages/FooterPages/Caregiver';
 import Pipeline from './pages/FooterPages/Pipeline';
 import Internship from './pages/FooterPages/Internship';
+// Reports
+import AnnualReport from './pages/Frontend/AnnualReport';
+import FirstQuaterly from './pages/Frontend/FirstQuaterly';
+import ThirdQuaterly from './pages/Frontend/ThirdQuaterly';
 
 function App() {
 
@@ -43,10 +46,12 @@ function App() {
         <Route path="/citi-natural" element={<Natural />} />
         <Route path="/research-development" element={<RD />} />
         <Route path="/biotech" element={<Biotech />} />
-        <Route path="/annual-report" element={<Pdf />} />
         <Route path='/*' element={<PageNotFound />} />
         <Route path="/blogs" element={<Blog />} />
         <Route path="/blogs/:id" element={<BlogPage />} />
+        <Route path="/annual-report" element={<AnnualReport />} />
+        <Route path="/first-quaterly-report" element={<FirstQuaterly />} />
+        <Route path="/third-quaterly-report" element={<ThirdQuaterly />} />
         {/* Footer Pages */}
         <Route path="/caregiver" element={<Caregiver />} />
         <Route path="/pipeline" element={<Pipeline />} />

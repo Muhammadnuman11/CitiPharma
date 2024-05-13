@@ -1,5 +1,4 @@
 .pdf {
-    // background: whitesmoke;
     background: #fff;
     display: flex;
     align-items: center;
@@ -7,6 +6,7 @@
     flex-direction: column;
     height: 1000px;
     padding: 40px 30px;
+    margin: 18px 0;
 
     .iframe {
         height: 100%;
@@ -18,7 +18,8 @@
 
     .pdf {
         height: 800px;
-        padding: 40px 0px;
+        padding: 40px 4px;
+        margin: 10px 0;
     }
 
 }

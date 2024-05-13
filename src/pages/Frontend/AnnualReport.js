@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from './Layout'
 import pdfFile from '../../assets/annualReport.pdf'
 
-export default function Pdf() {
+export default function AnnualReport() {
     return (
         <>
             <Layout title={"Annual Report 2023 - Citi Pharma"} description="Citi Pharma: Annual Report 2023 pdf">

@@ -48,8 +48,13 @@ export default function Navbar() {
                                     <li className="nav-item mx-2">
                                         <NavLink to="/blogs" className="nav-link text-white" onClick={scrollToTop}>Blogs</NavLink>
                                     </li>
-                                    <li className="nav-item mx-2">
-                                        <NavLink to="/annual-report" className="nav-link text-white" onClick={scrollToTop}>Annual Report 2023</NavLink>
+                                    <li className='nav-item mx-2 cursor-pointer'>
+                                        Investors
+                                        <span>
+                                            <NavLink to="/annual-report" className="nav-link text-white py-0 fs-6" onClick={scrollToTop}>Annaul Report</NavLink>
+                                            <NavLink to="/first-quaterly-report" className="nav-link text-white py-0 fs-6" onClick={scrollToTop}>1st Quaterly Report</NavLink>
+                                            <NavLink to="/third-quaterly-report" className="nav-link text-white py-0 fs-6" onClick={scrollToTop}>3rd Quaterly Report</NavLink>
+                                        </span>
                                     </li>
                                 </ul>
                             </div>

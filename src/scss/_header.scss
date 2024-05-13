@@ -24,7 +24,6 @@
     }
 
     .navbar-collapse {
-        // background: #15a0c7;
         background: #004b96;
         position: absolute;
         top: 90px;
@@ -34,19 +33,36 @@
         border-top: 1px solid #fff;
         border-bottom-right-radius: 150px;
         text-align: left;
-        padding: 0 0 0 118px;
+        padding: 0 0 0 100px;
 
         .navbar-nav {
             width: 240px;
+            padding: 12px;
 
-            ul {
+            .nav-item {
+                font-size: 18px;
+                color: #ffffff;
 
-                .nav-item {
+                .nav-link {
+                    color: #ffffff;
+                    font-size: 18px;
+                    position: relative;
+                }
 
-                    .nav-link {
-                        color: #ffffff;
-                        font-size: 18px;
-                    }
+                span {
+                    display: none;
+                    position: absolute;
+                    width: 200px;
+                    // bottom: -80px;
+                    bottom: -50px;
+                    left: 200px;
+                    background: #0167cc;
+                    z-index: 1;
+                    padding: 4px 12px;
+                }
+
+                &:hover span {
+                    display: block;
                 }
             }
         }
@@ -67,8 +83,36 @@
             &:hover {
                 color: #000;
             }
+
+
         }
     }
+}
+
+@media only screen and (max-width:878px) {
+
+    .nav-icons {
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    .navbar-collapse {
+        padding: 0 0 0 12px !important;
+
+        .navbar-nav {
+            padding: 8px 0 !important;
+
+            .nav-item {
+
+                span {
+                    top: 94% !important;
+                    left: 100px !important;
+                }
+            }
+        }
+    }
+
 }
 
 .custom_nav-container .navbar-toggler {
@@ -150,18 +194,4 @@
 .custom_nav-container .navbar-toggler[aria-expanded="false"] .s-3 {
     -webkit-transform: none;
     transform: none;
-}
-
-@media only screen and (max-width:878px) {
-
-    .nav-icons {
-        width: 100% !important;
-        justify-content: center !important;
-        align-items: center !important;
-    }
-
-    .navbar-collapse {
-        padding: 0 0 0 12px !important;
-    }
-
 }
