@@ -95,24 +95,10 @@ Adventure awaits - let's make history together! 🚀✨
 `
     },
 
-    // Other Blogs
+    // Other Blogs Data
+    // id:3
     {
         id: 3,
-        date: "04/05/2024, 2:16:34 PM",
-        title: "Board of Directors meeting",
-        linkedinLink: "https://www.linkedin.com/posts/citipharmalimited_citipharma-citipharmaceuticals-citiboardofdirectors-activity-7192128596621111296-FPah?utm_source=share&utm_medium=member_android",
-        shortDesc: "We welcomed our esteemed directors Amjad Nadeem Chairman; Rizwan Ahmad, CEO; Dr Zamir Ul Hussan , Executive Director; Miss Saira Aslam, Non-Executive Director, Mr. Mohammad Naeem, Non-Executive Director; and Mr. Abdul Jaleel Sheikh as an Independent Director.",
-        desc: `At our recent board meeting, we welcomed our esteemed directors Amjad Nadeem Chairman; Rizwan Ahmad, CEO; Dr Zamir Ul Hussan , Executive Director; Miss Saira Aslam, Non-Executive Director, Mr. Mohammad Naeem, Non-Executive Director; and Mr. Abdul Jaleel Sheikh as an Independent Director. 
-
-Together, they delved into the latest quarter's report, which showcased a remarkable performance surpassing all expectations. Bolstered by this success, the board passionately discussed the future trajectory of Citi Pharma. They celebrated the strong financial report as a reflection of our company's resilience and potential for sustained growth. With a renewed sense of purpose, the directors are committed to focus on key areas such as expanding our line of nutritional supplements, general formulation, driving innovation in our research lab, and fostering strategic collaborations with partners worldwide.🌎
-
--Citi Pharma is proudly manufacturing "Vintogeno", Martin Dow nutra product! 
-
-We're poised to chart a course towards even greater success in the dynamic landscape of healthcare.🌟
-`
-    },
-    {
-        id: 4,
         date: "12/03/2024, 1:20:13 PM",
         title: "FUTURE FUSION: CITI PHARMA'S VISIONARY PATH TO HEALTH",
         shortDesc: "CITI Pharma stands at the forefront of innovation and progress in the pharmaceutical industry. Our vision extends far beyond the boundaries of Pakistan, reaching towards a future where CITI Pharma is a global leader in healthcare solutions.",
@@ -138,8 +124,9 @@ There are various types of vaccines, each employing different mechanisms to stim
         
 By establishing a facility capable of manufacturing vaccines locally, CITI Pharma aims to contribute to national and global efforts to combat infectious diseases. This initiative not only enhances Pakistan's self-reliance in vaccine production but also ensures timely access to vaccines during public health crises. Furthermore, it aligns with CITI Pharma's mission to prioritize public health and improve healthcare outcomes for people across Pakistan and beyond.`
     },
+    // id:4
     {
-        id: 5,
+        id: 4,
         date: "16/03/2024, 3:46:12 PM",
         title: "From Molecule To Medicine: The Fascinating Journey of Paracetamol Synthesis",
         shortDesc: "A Blog-Guide to Paracetamol Manufacturing from Phenol. Paracetamol, also known as acetaminophen, is one of the most widely used for over 60 years and trusted over-the-counter pain relievers and fever reducers.",
@@ -191,6 +178,44 @@ The choice of starting with 4-aminophenol in paracetamol synthesis offers severa
 The 4-aminophenol route offers a straightforward and industrially viable approach, often preferred for large-scale paracetamol production. Understanding the nuances of this synthesis route is crucial for pharmaceutical professionals aiming to optimize manufacturing processes.
 
 In this synthesis tale, where molecules transform from raw materials to medicine, we recognize that each step is a testament to the collaborative efforts of chemists, engineers, and researchers striving to improve and innovate. The journey from phenol to paracetamol encapsulates the essence of pharmaceutical science — a pursuit driven by the commitment to enhance health outcomes for individuals worldwide.
+`
+    },
+    // id:5
+    {
+        id: 5,
+        date: "04/05/2024, 2:16:34 PM",
+        title: "Board of Directors meeting",
+        linkedinLink: "https://www.linkedin.com/posts/citipharmalimited_citipharma-citipharmaceuticals-citiboardofdirectors-activity-7192128596621111296-FPah?utm_source=share&utm_medium=member_android",
+        shortDesc: "We welcomed our esteemed directors Amjad Nadeem Chairman; Rizwan Ahmad, CEO; Dr Zamir Ul Hussan , Executive Director; Miss Saira Aslam, Non-Executive Director, Mr. Mohammad Naeem, Non-Executive Director; and Mr. Abdul Jaleel Sheikh as an Independent Director.",
+        desc: `At our recent board meeting, we welcomed our esteemed directors Amjad Nadeem Chairman; Rizwan Ahmad, CEO; Dr Zamir Ul Hussan , Executive Director; Miss Saira Aslam, Non-Executive Director, Mr. Mohammad Naeem, Non-Executive Director; and Mr. Abdul Jaleel Sheikh as an Independent Director. 
+
+Together, they delved into the latest quarter's report, which showcased a remarkable performance surpassing all expectations. Bolstered by this success, the board passionately discussed the future trajectory of Citi Pharma. They celebrated the strong financial report as a reflection of our company's resilience and potential for sustained growth. With a renewed sense of purpose, the directors are committed to focus on key areas such as expanding our line of nutritional supplements, general formulation, driving innovation in our research lab, and fostering strategic collaborations with partners worldwide.🌎
+
+-Citi Pharma is proudly manufacturing "Vintogeno", Martin Dow nutra product! 
+
+We're poised to chart a course towards even greater success in the dynamic landscape of healthcare.🌟
+`
+    },
+    // id:6
+    {
+        id: 6,
+        date: "17/05/2024, 1:50:10 PM",
+        title: "Citi Pharma's Giant Leap: Introducing ETACI LIMITED",
+        linkedinLink: "https://www.linkedin.com/posts/citipharmalimited_citipharma-citipharmajointventure-citipharmaceuticals-activity-7193864378717237248-VfV6?utm_source=share&utm_medium=member_android",
+        shortDesc: "Citi Pharma Limited proudly unveils a groundbreaking milestone in our journey!  We are thrilled to announce our Joint Venture with Hangzhou Newsea Technology Co., Ltd., an alliance poised to redefine the landscape of Pakistan's pharmaceutical industry.",
+        desc: `🎉 Exciting News Alert! 🎉
+
+In a momentous stride towards innovation and excellence, Citi Pharma Limited proudly unveils a groundbreaking milestone in our journey!  We are thrilled to announce our Joint Venture with Hangzhou Newsea Technology Co., Ltd., an alliance poised to redefine the landscape of Pakistan's pharmaceutical industry.
+
+Introducing <span className="bold"> *ETACI LIMITED!* 🌟 </span> This transformative collaboration signifies a significant leap forward in our commitment to pioneering advancements in healthcare. By joining forces with Hangzhou Newsea Technology, renowned for its expertise and innovation in the pharmaceutical sector, we are embarking on a journey towards unparalleled growth and success.
+
+At Citi Pharma, we have always been driven by a relentless pursuit of excellence. Our API production has long been acclaimed for its quality and reliability, catering to the needs of global pharmaceutical giants. With the inception of ETACI LIMITED, we are not just expanding our product range; we are revolutionizing the very essence of pharmaceutical manufacturing in Pakistan.
+
+With plans to diversify our API portfolio to meet the ever-evolving demands of the healthcare industry, ETACI LIMITED represents a bold step towards shaping the future of medicine. Our vision for 2030 encompasses far more than just business growth - it embodies a commitment to self-reliance, economic prosperity, and sustainable development.
+
+This momentous partnership is a testament to our unwavering dedication to excellence and innovation. As we embark on this exciting new chapter, we invite you to join us on this journey of transformation and progress. Together, let us push the boundaries of what is possible and pave the way for a healthier, happier Pakistan. 🇵🇰
+
+Here's to new beginnings, boundless possibilities, and the limitless potential of ETACI LIMITED! 🌟
 `
     },
 

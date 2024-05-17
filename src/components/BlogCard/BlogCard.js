@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import scrollToTop from '../scrollToTop';
 import { FaLinkedin } from 'react-icons/fa';
+import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 
 
 
@@ -20,7 +21,7 @@ export default function BlogCard({ title, content, date, id, linkedinLink }) {
                 </p>
                 <h2>{title}</h2>
                 <p>{content}</p>
-                <button className='btn' onClick={() => handleBlog(id)}>Learn more</button>
+                <button className='btn' onClick={() => handleBlog(id)}>Learn more <FaArrowUpRightFromSquare /> </button>
             </div>
         </div>
     )

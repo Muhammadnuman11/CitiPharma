@@ -9,7 +9,7 @@ export default function BlogPage() {
     const { id } = useParams();
 
     const blog = blogData[id]
-
+    
     return (
         <Layout title={`Blog | ${blog.title}`} description={blog.shortDesc}>
             <div className="blogPage">

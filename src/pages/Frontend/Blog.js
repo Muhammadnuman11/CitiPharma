@@ -5,14 +5,15 @@ import blogData from '../../data/blogData'
 import Pages from '../../components/Pages'
 
 export default function Blog() {
+  blogData.reverse()
   return (
     <Layout title={"Blog - Citi Pharma"} description={'Citi Pharma stands out for its unwavering commitment to delivering products of the highest quality.'}>
-    <Pages title={'Blogs'} link={"images/blog.jpg"} />
+      <Pages title={'Blogs'} link={"images/blog.jpg"} />
       <div className="blog">
         <div className="blogBox">
           {
             blogData.map((blog, i) =>
-              <BlogCard key={i} title={blog.title} content={blog.shortDesc} date={blog.date} id={blog.id} linkedinLink={blog.linkedinLink}/>
+              <BlogCard key={i} title={blog.title} content={blog.shortDesc} date={blog.date} id={blog.id} linkedinLink={blog.linkedinLink} />
             )
           }
         </div>

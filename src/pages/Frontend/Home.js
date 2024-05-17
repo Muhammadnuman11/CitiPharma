@@ -10,13 +10,32 @@ import blogData from '../../data/blogData'
 import scrollToTop from '../../components/scrollToTop';
 
 export default function Home() {
-  const blogObj = blogData.slice(3);
+  const blogObj = blogData.slice(3).reverse();
   return (
     <Layout>
       <div className='home'>
         {/* Carousel */}
         <div className='carousel'>
           <Carousel fade interval={2000}>
+            <Carousel.Item>
+              <NavLink to="/blogs/6">
+                <div className="img">
+                  <img
+                    src="images/news.jpg"
+                    alt="News Banner"
+                  />
+                </div>
+                <Carousel.Caption>
+                  <section className="slider_section">
+                    <div className="detail-box">
+                      <p>
+                      The transformative Joint Venture bewteen Citi Pharma and Hengzou NewSea Technology Co., Ltd. We're excited about the postive impact this will have!💫
+                      </p>
+                    </div></section>
+                </Carousel.Caption>
+              </NavLink>
+            </Carousel.Item>
+
             <Carousel.Item>
               <NavLink to="/api-manufacturer">
                 <div className="img">
@@ -29,7 +48,7 @@ export default function Home() {
                   <section className="slider_section">
                     <div className="detail-box">
                       <h1>
-                      API Manufacturer
+                        API Manufacturer
                       </h1>
                     </div></section>
                 </Carousel.Caption>
@@ -192,7 +211,6 @@ export default function Home() {
             <div className="newsContent">
               <h3>Our latest</h3>
               <h1>News</h1>
-              {/* <button className="btn">All our news</button>  */}
             </div>
           </div>
           <div className="cards">
@@ -202,6 +220,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </Layout>
+    </Layout >
   )
 }
