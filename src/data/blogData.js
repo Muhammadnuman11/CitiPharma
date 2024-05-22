@@ -202,6 +202,7 @@ We're poised to chart a course towards even greater success in the dynamic lands
         date: "17/05/2024, 1:50:10 PM",
         title: "Citi Pharma's Giant Leap: Introducing ETACI LIMITED",
         linkedinLink: "https://www.linkedin.com/posts/citipharmalimited_citipharma-citipharmajointventure-citipharmaceuticals-activity-7193864378717237248-VfV6?utm_source=share&utm_medium=member_android",
+        imgLink:"/images/newsBanner.jpg",
         shortDesc: "Citi Pharma Limited proudly unveils a groundbreaking milestone in our journey!  We are thrilled to announce our Joint Venture with Hangzhou Newsea Technology Co., Ltd., an alliance poised to redefine the landscape of Pakistan's pharmaceutical industry.",
         desc: `🎉 Exciting News Alert! 🎉
 

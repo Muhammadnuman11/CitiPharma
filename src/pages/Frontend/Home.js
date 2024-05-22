@@ -17,12 +17,13 @@ export default function Home() {
         {/* Carousel */}
         <div className='carousel'>
           <Carousel fade interval={2000}>
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <NavLink to="/blogs/6">
                 <div className="img">
                   <img
-                    src="images/news.jpg"
+                    src="images/newsBanner.jpg"
                     alt="News Banner"
+                    className='opacity-100'
                   />
                 </div>
                 <Carousel.Caption>
@@ -31,10 +32,11 @@ export default function Home() {
                       <p>
                       The transformative Joint Venture bewteen Citi Pharma and Hengzou NewSea Technology Co., Ltd. We're excited about the postive impact this will have!💫
                       </p>
-                    </div></section>
+                    </div>
+                    </section>
                 </Carousel.Caption>
               </NavLink>
-            </Carousel.Item>
+            </Carousel.Item> */}
 
             <Carousel.Item>
               <NavLink to="/api-manufacturer">
