@@ -3,6 +3,9 @@ import Animation from '../../components/Animation';
 import Layout from './Layout';
 import emailjs from 'emailjs-com';
 import Pages from '../../components/Pages';
+import { FaLocationDot } from 'react-icons/fa6';
+import { FaPhoneAlt } from 'react-icons/fa';
+import { IoMdMail } from 'react-icons/io';
 
 const initialState = {
     name: "",
@@ -81,8 +84,8 @@ export default function Api() {
     return (
         <>
             <Layout title={"Api Manufacturer - Citi Pharma"} description={"We specialize in the production of Active Pharmaceutical Ingredients (APIs) and finished products, ensuring the delivery of top-notch pharmaceutical solutions to meet the diverse needs of our valued clientele."}>
+                <Pages title={'API Manufacturer'} link={"images/api.png"} />
                 <div className="api">
-                    <Pages title={'API Manufacturer'} link={"images/api.png"} />
                     <Animation name={"animate__fadeInUp"}>
                         <div className="api-text">
                             <h1 className='mainHeadings'>Citi Pharma - Your Premier API Manufacturer</h1>
@@ -270,36 +273,75 @@ export default function Api() {
                                 </div>
                             </Animation>
                         </div>
-                        <Animation name={"animate__fadeInUp"}>
-                            <div className="question">
-                                <div className="p-4 shadow">
-                                    <form>
-                                        <h1 className="mainHeadings mt-3 mb-4 fs-4">Ask a question</h1>
-                                        <div className="form-floating">
-                                            <input type="text" className="form-control shadow-none" id="floatingName" placeholder='Name' name='name' value={state.name} onChange={handleChange} />
-                                            <label htmlFor="floatingName">Name</label>
-                                        </div>
+                        <div className="">
+                            <Animation name={"animate__fadeInUp"}>
+                                <div className="question">
+                                    <div className="p-4 shadow">
+                                        <form>
+                                            <h1 className="mainHeadings mt-3 mb-4 fs-4">Ask a question</h1>
+                                            <div className="form-floating">
+                                                <input type="text" className="form-control shadow-none" id="floatingName" placeholder='Name' name='name' value={state.name} onChange={handleChange} />
+                                                <label htmlFor="floatingName">Name</label>
+                                            </div>
 
-                                        <div className="form-floating">
-                                            <input type="text" className="form-control shadow-none rounded-0" id="floatingCont" placeholder='Name' name='country' value={state.country} onChange={handleChange} />
-                                            <label htmlFor="floatingCont">Country</label>
-                                        </div>
+                                            <div className="form-floating">
+                                                <input type="text" className="form-control shadow-none rounded-0" id="floatingCont" placeholder='Name' name='country' value={state.country} onChange={handleChange} />
+                                                <label htmlFor="floatingCont">Country</label>
+                                            </div>
 
-                                        <div className="form-floating">
-                                            <input type="email" className="form-control shadow-none" id="floatingEmail" placeholder="Email" name='email' value={state.email} onChange={handleChange} />
-                                            <label htmlFor="floatingEmail">Email</label>
-                                        </div>
+                                            <div className="form-floating">
+                                                <input type="email" className="form-control shadow-none" id="floatingEmail" placeholder="Email" name='email' value={state.email} onChange={handleChange} />
+                                                <label htmlFor="floatingEmail">Email</label>
+                                            </div>
 
-                                        <div className="form-floating">
-                                            <textarea type="text" className="form-control shadow-none" id="floatingQue" placeholder="Question" name='question' value={state.question} onChange={handleChange} />
-                                            <label htmlFor="floatingQue">Ask question</label>
-                                        </div>
+                                            <div className="form-floating">
+                                                <textarea type="text" className="form-control shadow-none" id="floatingQue" placeholder="Question" name='question' value={state.question} onChange={handleChange} />
+                                                <label htmlFor="floatingQue">Ask question</label>
+                                            </div>
 
-                                        <button className="btn px-1 py-2" onClick={handleEmail}>Send a question</button>
-                                    </form>
+                                            <button className="btn px-1 py-2" onClick={handleEmail}>Send a question</button>
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
-                        </Animation>
+                            </Animation>
+                            <Animation name={"animate__fadeInUp"}>
+                                <div className="question m-0 p-0">
+                                    <div className="p-4 shadow-sm">
+                                        <form>
+                                            <h1 className="mainHeadings mt-3 mb-4 fs-4">Contact For API reltaed quries</h1>
+                                            <h3 className="nameHeading text-uppercase fw-bold fs-4 text-dark text-center">
+                                                Muhammad Raheel Salman
+                                            </h3>
+
+                                            <div className="text-center">
+                                                General Manager Sales and Marketing
+                                            </div>
+
+                                            <div className="quriesForm">
+                                                <p>
+                                                    <span className="contactIcon">
+                                                        <FaPhoneAlt />
+                                                    </span>
+                                                    <span>+92 300 8847678</span>
+                                                </p>
+                                                <p>
+                                                    <span className="contactIcon">
+                                                        <IoMdMail />
+                                                    </span>
+                                                    <span>raheel@citipharma.com.pk</span>
+                                                </p>
+                                                <p>
+                                                    <span className="contactIcon">
+                                                        <FaLocationDot />
+                                                    </span>
+                                                    <span>588-Q Block, M.A., Johar Town, Lahore</span>
+                                                </p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </Animation>
+                        </div>
                     </div>
                 </div>
             </Layout>
