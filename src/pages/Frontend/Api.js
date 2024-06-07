@@ -308,7 +308,7 @@ export default function Api() {
                                 <div className="question m-0 p-0">
                                     <div className="p-4 shadow-sm">
                                         <form>
-                                            <h1 className="mainHeadings mt-3 mb-4 fs-4">Contact For API reltaed quries</h1>
+                                            <h1 className="mainHeadings my-3 fs-4">Contact For API reltaed quries</h1>
                                             <h3 className="nameHeading text-uppercase fw-bold fs-4 text-dark text-center">
                                                 Muhammad Raheel Salman
                                             </h3>
