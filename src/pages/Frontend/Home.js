@@ -4,7 +4,7 @@ import Layout from './Layout';
 import DataBoxs from '../../components/HomeComponents/DataBoxs';
 import BlogCardContainer from '../../components/BlogCard/BlogCardContainer';
 import { Link, NavLink } from 'react-router-dom';
-import OurValues from '../../components/HomeComponents/OurValues';
+// import OurValues from '../../components/HomeComponents/OurValues';
 import Animation from '../../components/Animation';
 import blogData from '../../data/blogData'
 import scrollToTop from '../../components/scrollToTop';
@@ -205,7 +205,33 @@ export default function Home() {
         </div>
 
         {/* job section */}
-        <OurValues />
+        {/* <OurValues /> */}
+
+        {/* New Banners */}
+        <div className='carouse pt-5'>
+          <Carousel fade interval={2000}>
+            <Carousel.Item>
+              <NavLink to="https://www.linkedin.com/posts/zainab-baig-b83945b7_exciting-news-citipharma-is-heading-to-cphi-activity-7205114499157135361-ROGD/?utm_source=share&utm_medium=member_android" target='_blank'>
+                <div className="img">
+                  <img
+                    src="images/citi-banner.jpg"
+                    alt="New Banner"
+                    className='opacity-100'
+                  />
+                </div>
+                {/* <Carousel.Caption>
+                  <section className="slider_section">
+                    <div className="detail-box">
+                      <p>
+                        The transformative Joint Venture bewteen Citi Pharma and Hengzou NewSea Technology Co., Ltd. We're excited about the postive impact this will have!💫
+                      </p>
+                    </div>
+                  </section>
+                </Carousel.Caption> */}
+              </NavLink>
+            </Carousel.Item>
+          </Carousel>
+        </div>
 
         {/* News section */}
         <div className="news">
