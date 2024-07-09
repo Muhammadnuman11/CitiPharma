@@ -8,7 +8,7 @@ export default function Blog() {
   return (
     <Layout title={"Blog - Citi Pharma"} description={'Citi Pharma stands out for its unwavering commitment to delivering products of the highest quality.'}>
       <Pages title={'Blogs'} link={"images/blog.jpg"} />
-      <div className="blog">
+      <div className="blog mt-5">
         <div className="blogBox">
           {
             /* blogData.reverse().map((blog, i) =>

@@ -6,7 +6,7 @@ export default function Natural() {
     return (
         <Layout title={'Citi Natural - Citi Pharma'} description={'Welcome to Citi Naturals, where innovation meets excellence in the world of nutraceuticals.'}>
             <Pages title={'Citi Natural'} link='images/naturalPage.jpeg' />
-            <div className='dev'>
+            <div className='dev mt-5'>
                 <div className="devItem">
                     <h1>Citi Naturals: Your Trusted Source for High-Quality Nutraceuticals</h1>
                     <p>Welcome to Citi Naturals, where innovation meets excellence in the world of nutraceuticals. We are proud to be your trusted partner in delivering high-quality products that promote health and wellness. With a steadfast commitment to quality, innovation, and customer satisfaction, we have established ourselves as a leader in the industry.</p>

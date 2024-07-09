@@ -6,7 +6,7 @@ export default function Biotech() {
   return (
     <Layout title={'Biotechnology - Citi Pharma'} description={"Citi Pharma's Biotechnology Initiative: A Step Towards Self-Reliance"}>
       <Pages title={'Biotechnology'} link='images/bio.jpeg' />
-      <div className='dev'>
+      <div className='dev mt-5'>
         <div className="devItem">
           <h1>Citi Pharma's Biotechnology Initiative: A Step Towards Self-Reliance</h1>
           <p>In the wake of the COVID-19 pandemic, the global healthcare landscape has undergone a profound transformation. The challenges highlighted by the pandemic have underscored the critical importance of self-reliance in healthcare, particularly in the production of vaccines and biologics. At Citi Pharma, we are proud to announce our ambitious biotechnology initiative aimed at addressing these challenges and contributing to the health and well-being of our communities.</p>

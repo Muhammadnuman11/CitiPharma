@@ -6,7 +6,7 @@ export default function RD() {
     return (
         <Layout title={'Research & Development - Citi Pharma'} description={'Citi Pharma, we are dedicated to pushing the boundaries of innovation in the pharmaceutical industry in Research and Development.'}>
             <Pages title={'Research & Development'} link='images/rd2.jpeg' />
-            <div className='dev'>
+            <div className='dev mt-5'>
                 <div className="devItem">
                     <h1>Citi Pharma's State-of-the-Art Research and Development Lab</h1>
                     <p>At Citi Pharma, we are dedicated to pushing the boundaries of innovation in the pharmaceutical industry. We are excited to announce our latest endeavor: the creation of Pakistan's largest state-of-the-art Research and Development (R&D) lab. This cutting-edge facility will serve as the epicenter of our commitment to advancing healthcare through groundbreaking research and development initiatives.</p>

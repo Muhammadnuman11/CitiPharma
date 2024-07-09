@@ -6,7 +6,7 @@
         .img {
             background: #000;
             width: 100%;
-            height: 100vh;
+            height: 90vh;
             z-index: -1;
             background-image: radial-gradient(#242424 1px, transparent 1px);
             background-size: 18px 18px;
@@ -78,6 +78,7 @@
                 font-size: 20px;
                 color: #535353;
                 padding: 0;
+                text-transform: uppercase;
             }
         }
 
@@ -243,7 +244,7 @@
 
             .img {
                 width: 100%;
-                height: 56vh;
+                height: 72vh;
             }
 
             .slider_section {
@@ -253,7 +254,7 @@
                 .detail-box {
                     h1 {
                         font-weight: 500;
-                        font-size: 48px;
+                        font-size: 46px;
                     }
 
                     // p {

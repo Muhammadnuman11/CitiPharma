@@ -85,7 +85,7 @@ export default function Api() {
         <>
             <Layout title={"Api Manufacturer - Citi Pharma"} description={"We specialize in the production of Active Pharmaceutical Ingredients (APIs) and finished products, ensuring the delivery of top-notch pharmaceutical solutions to meet the diverse needs of our valued clientele."}>
                 <Pages title={'API Manufacturer'} link={"images/api.png"} />
-                <div className="api">
+                <div className="api mt-5">
                     <Animation name={"animate__fadeInUp"}>
                         <div className="api-text">
                             <h1 className='mainHeadings'>Citi Pharma - Your Premier API Manufacturer</h1>

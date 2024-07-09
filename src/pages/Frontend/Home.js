@@ -1,13 +1,14 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import Layout from './Layout';
-import DataBoxs from '../../components/HomeComponents/DataBoxs';
+import BlogBoxs from '../../components/HomeComponents/BlogBoxs';
 import BlogCardContainer from '../../components/BlogCard/BlogCardContainer';
 import { Link, NavLink } from 'react-router-dom';
 // import OurValues from '../../components/HomeComponents/OurValues';
 import Animation from '../../components/Animation';
 import blogData from '../../data/blogData'
 import scrollToTop from '../../components/scrollToTop';
+// import NumberBoxs from '../../components/HomeComponents/NumberBox';
 
 export default function Home() {
   const blogObj = blogData.slice(3).reverse();
@@ -117,17 +118,27 @@ export default function Home() {
         </div>
 
         {/* Data Boxses */}
+        {/* <div className="d-flex align-items-center justify-content-center overflow-hidden">
+          <div className="dataBoxs">
+            <NumberBoxs icon={"images/revenue.png"} title={"Revenue in 2023"} number={"44."} countNumber={"27"} suffix={"M $"} />
+            <NumberBoxs icon={"images/revenue.png"} title={"Revenue in 2023"} number={"44."} countNumber={"27"} suffix={"M $"} />
+            <NumberBoxs icon={"images/revenue.png"} title={"Revenue in 2023"} number={"44."} countNumber={"27"} suffix={"M $"} />
+            <NumberBoxs icon={"images/revenue.png"} title={"Revenue in 2023"} number={"44."} countNumber={"27"} suffix={"M $"} />
+          </div>
+        </div> */}
+
+        {/* Blogs Boxses */}
         <div className="d-flex align-items-center justify-content-center overflow-hidden">
           <div className="dataBoxs">
             {/* <DataBoxs icon={"images/revenue.png"} title={"Revenue in 2023"} number={"44."} countNumber={"27"} suffix={"M $"} /> */}
             <Link to="/blogs/0" onClick={scrollToTop} className="text-decoration-none">
-              <DataBoxs icon={"images/quality-icon.png"} title={"Quality"} />
+              <BlogBoxs icon={"images/quality-icon.png"} title={"Quality"} />
             </Link>
             <Link to="/blogs/1" onClick={scrollToTop} className="text-decoration-none">
-              <DataBoxs icon={"images/relief-icon.png"} title={"Relief"} />
+              <BlogBoxs icon={"images/relief-icon.png"} title={"Relief"} />
             </Link>
             <Link to="/blogs/2" onClick={scrollToTop} className="text-decoration-none">
-              <DataBoxs icon={"images/advance-icon.png"} title={"Advancement"} />
+              <BlogBoxs icon={"images/advance-icon.png"} title={"Advancement"} />
             </Link>
           </div>
         </div>
@@ -208,7 +219,7 @@ export default function Home() {
         {/* <OurValues /> */}
 
         {/* New Banners */}
-        <div className='carouse pt-5'>
+        {/* <div className='carouse pt-5'>
           <Carousel fade interval={2000}>
             <Carousel.Item>
               <NavLink to="https://www.linkedin.com/posts/zainab-baig-b83945b7_exciting-news-citipharma-is-heading-to-cphi-activity-7205114499157135361-ROGD/?utm_source=share&utm_medium=member_android" target='_blank'>
@@ -218,7 +229,7 @@ export default function Home() {
                     alt="New Banner"
                     className='opacity-100'
                   />
-                </div>
+                </div> */}
                 {/* <Carousel.Caption>
                   <section className="slider_section">
                     <div className="detail-box">
@@ -228,10 +239,10 @@ export default function Home() {
                     </div>
                   </section>
                 </Carousel.Caption> */}
-              </NavLink>
+              {/* </NavLink>
             </Carousel.Item>
           </Carousel>
-        </div>
+        </div> */}
 
         {/* News section */}
         <div className="news">

@@ -16,7 +16,7 @@ export default function About() {
       <div className="about">
         <Pages title={"About Us"} link={"images/citiPharma.jpg"} />
 
-        <div className="aboutBox">
+        <div className="aboutBox mt-5">
           {/* Intro */}
           <Animation name={"animate__fadeInUp"}>
             <div className="aboutDetails">

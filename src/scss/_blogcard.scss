@@ -6,6 +6,7 @@
 .cards-container {
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
     position: relative;
 
     &::-webkit-scrollbar {
@@ -21,10 +22,11 @@
     border-radius: 6px;
     transition: all 250ms ease-in-out;
     position: relative;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
-
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
     &:hover {
-        box-shadow: 0 4px 1rem -4px #000;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+        transform: scale(1.05);
     }
 
 

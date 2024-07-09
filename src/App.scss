@@ -15,6 +15,7 @@
 @import './scss/blogcard';
 @import './scss/blogPage';
 @import './scss/dataBox';
+@import './scss/numberBox';
 @import './scss/ourValues';
 @import './scss/common';
 // Pages
@@ -33,6 +34,7 @@
 
 .active {
   text-decoration: underline;
+  font-weight: bold !important;
 }
 
 #root {

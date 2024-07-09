@@ -7,7 +7,8 @@
     z-index: -2;
     background-image: radial-gradient(#181818 1px, transparent 1px);
     background-size: 18px 18px;
-
+    display: flex;
+    justify-content: center;
 
     img {
         width: 100%;
@@ -18,11 +19,13 @@
 
     .pages-detail {
         position: absolute;
-        width: 100%;
-        top: 50%;
+        width: 430px;
+        bottom: -50px;
+        background: #004b96;
+        z-index: 10;
 
         h1 {
-            padding: 30px 0;
+            padding: 24px 0;
             text-align: center;
             font-size: 48px;
             font-weight: 700;
@@ -35,8 +38,20 @@
     .pages {
         height: 50vh;
 
-        h1 {
-            font-size: 36px;
+        .pages-detail {
+            position: absolute;
+            width: 320px;
+            bottom: -50px;
+            background: #004b96;
+            z-index: 10;
+    
+            h1 {
+                padding: 18px 0;
+                text-align: center;
+                font-size: 32px;
+                font-weight: 700;
+                color: #fff;
+            }
         }
     }
 }
