@@ -147,22 +147,20 @@ export default function Home() {
         <div className="exports">
           <div className="exportText">
             <h1>
-              INTERNATIONAL EXPORTS
+              {/* INTERNATIONAL EXPORTS */}
+              OUR WORLDWIDE FOOTPRINT!
             </h1>
             <p>we are successfully exporting our nutraceutical products to these countries</p>
           </div>
-          <div className="flagImgs">
-            <div className='img-box'>
-              <img src="images/uzbekistan.png" alt="Uzbekistan flag" />
-              <p>Uzbekistan</p>
-            </div>
-            <div className='img-box'>
-              <img src="images/dubai.png" alt="Uae flag" />
-              <p>Dubai</p>
-            </div>
-            <div className='img-box'>
-              <img src="images/usa.webp" alt="Usa flag" />
-              <p>Usa</p>
+          <div className="map-section">
+            {/* <div className="map-box">
+ABC
+            </div> */}
+            <div className="map-img">
+              <img
+                src="images/map.jpg"
+                alt="map"
+              />
             </div>
           </div>
         </div>
@@ -230,7 +228,7 @@ export default function Home() {
                     className='opacity-100'
                   />
                 </div> */}
-                {/* <Carousel.Caption>
+        {/* <Carousel.Caption>
                   <section className="slider_section">
                     <div className="detail-box">
                       <p>
@@ -239,7 +237,7 @@ export default function Home() {
                     </div>
                   </section>
                 </Carousel.Caption> */}
-              {/* </NavLink>
+        {/* </NavLink>
             </Carousel.Item>
           </Carousel>
         </div> */}

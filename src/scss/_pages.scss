@@ -19,15 +19,15 @@
 
     .pages-detail {
         position: absolute;
-        width: 430px;
+        // width: 430px;
         bottom: -50px;
         background: #004b96;
         z-index: 10;
 
         h1 {
-            padding: 24px 0;
+            margin: 18px;
             text-align: center;
-            font-size: 48px;
+            font-size: 52px;
             font-weight: 700;
             color: #fff;
         }
@@ -40,13 +40,13 @@
 
         .pages-detail {
             position: absolute;
-            width: 320px;
-            bottom: -50px;
+            // width: 320px;
+            bottom: -36px;
             background: #004b96;
             z-index: 10;
     
             h1 {
-                padding: 18px 0;
+                margin: 12px;
                 text-align: center;
                 font-size: 32px;
                 font-weight: 700;

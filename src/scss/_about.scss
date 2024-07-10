@@ -25,14 +25,14 @@
 
             .learnBtn {
                 cursor: pointer;
-                color: #15a0c7;
+                color: #004b96;
                 text-decoration: underline;
                 font-size: 12px;
             }
 
             .img {
                 width: 50%;
-                height: 400px;
+                // height: 400px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -56,22 +56,23 @@
 
 @media only screen and (max-width:1000px) {
 
-    .aboutDetails {
-        flex-direction: column;
+    .aboutBox{
+        padding: 10px !important;
 
-        .img {
-            height: 300px !important;
+        .aboutDetails {
+            flex-direction: column;
+
+            p {
+                padding: 0;
+                font-size: 15px !important;
+            }
+
+            div {
+                width: 100% !important;
+            }
+
+
         }
-
-        p {
-            padding: 0;
-        }
-
-        div {
-            width: 100% !important;
-        }
-
-
     }
 
 }

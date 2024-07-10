@@ -16,7 +16,7 @@ export default function About() {
       <div className="about">
         <Pages title={"About Us"} link={"images/citiPharma.jpg"} />
 
-        <div className="aboutBox mt-5">
+        <div className="aboutBox">
           {/* Intro */}
           <Animation name={"animate__fadeInUp"}>
             <div className="aboutDetails">
@@ -35,7 +35,7 @@ export default function About() {
           <Animation name={"animate__fadeInUp"}>
             <div className="aboutDetails">
               <div className="img">
-                <img src="images/home.jpg" alt="Citi pharma img" />
+                <img src="images/mission-vision.jpg" alt="mission & vision" />
               </div>
               <div className='w-50 px-3'>
                 <h1 className='mainHeadings'>Our Mission</h1>
@@ -57,7 +57,7 @@ export default function About() {
           </Animation>
 
           {/* CEO Message */}
-          <Animation name={"animate__fadeInUp"}>
+          <Animation name={"animate__fadeIn"}>
             <div className="aboutDetails">
               <div className='w-50 px-3'>
                 <h1 className='mainHeadings'>CEO message</h1>

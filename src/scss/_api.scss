@@ -145,16 +145,20 @@
     }
 
     @media only screen and (max-width:1000px) {
-        .apiTextBox {
-            flex-direction: column;
+        .api-text {
+            padding: 24px 12px 0 12px;
 
-            .para {
-                width: 100% !important;
-                padding: 0 !important;
-            }
+            .apiTextBox {
+                flex-direction: column;
 
-            .apiImg {
-                width: 100% !important;
+                .para {
+                    width: 100% !important;
+                    padding: 0 !important;
+                }
+
+                .apiImg {
+                    width: 100% !important;
+                }
             }
         }
 

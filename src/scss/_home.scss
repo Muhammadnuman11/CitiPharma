@@ -82,32 +82,24 @@
             }
         }
 
-        .flagImgs {
+        .map-section{
             width: 80%;
             display: flex;
             align-items: center;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 18px 0;
 
-            .img-box {
-                width: 200px;
-                height: 120px;
-                margin: 14px 0;
+            // .map-box{
+            //     width: 40%;
+            // }
+            .map-img{
+                width: 100%;
 
-                img {
+                img{
                     width: 100%;
                     height: 100%;
                 }
-
-                p {
-                    text-align: center;
-                    text-transform: uppercase;
-                    font-size: 20px;
-                    color: #535353;
-                    margin: 6px 0 12px 0;
-                }
             }
-
         }
     }
 
@@ -326,28 +318,20 @@
             .exportText {
                 width: 96%;
 
-                p {
-                    font-weight: 300;
-                }
-
+                
                 h1 {
                     font-size: 24px;
+                    
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 300;
                 }
             }
 
-            .flagImgs {
+            .map-section {
                 width: 96%;
-
-                .img-box {
-                    width: 100px;
-                    height: 60px;
-
-                    p {
-                        font-size: 13px;
-                    }
-                }
-
-
+                padding: 12px;
             }
         }
 

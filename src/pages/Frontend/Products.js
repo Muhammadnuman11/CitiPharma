@@ -24,7 +24,7 @@ export default function Products() {
         <Layout title={'Finish Products - Citi Pharma'} description={'Citi Pharma: Registered Product List'}>
             <Pages title={'Finish Products'} link={"images/pro.jpg"} />
             <Animation name={"animate__fadeInUp"}>
-                <div className="products mt-5">
+                <div className="products mt-0 mt-md-5">
                     <div className="d-flex align-items-center justify-content-between flex-wrap">
                         <h1 className='mainHeadings'>Registered Product List</h1>
                         <input
