@@ -14,7 +14,7 @@ export default function About() {
   return (
     <Layout title={"About - Citi Pharma"} description={"Citi Pharma mission is to dedicate itself top adding exceptional value through creation of innovative and cost effective Pharma products and develop a corporate culture that rewards initiative, enthusiasm and ethical practices."}>
       <div className="about">
-        <Pages title={"About Us"} link={"images/citiPharma.jpg"} />
+        <Pages title={"About Us"} link={"images/about-banner.jpg"} />
 
         <div className="aboutBox">
           {/* Intro */}
@@ -35,7 +35,7 @@ export default function About() {
           <Animation name={"animate__fadeInUp"}>
             <div className="aboutDetails">
               <div className="img">
-                <img src="images/mission-vision.jpg" alt="mission & vision" />
+                <img src="images/missionVision.jpg" alt="mission & vision" />
               </div>
               <div className='w-50 px-3'>
                 <h1 className='mainHeadings'>Our Mission</h1>

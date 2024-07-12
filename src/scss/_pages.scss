@@ -36,7 +36,7 @@
 
 @media only screen and (max-width:1000px) {
     .pages {
-        height: 50vh;
+        height: auto !important;
 
         .pages-detail {
             position: absolute;

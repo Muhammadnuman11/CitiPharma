@@ -150,15 +150,12 @@ export default function Home() {
               {/* INTERNATIONAL EXPORTS */}
               OUR WORLDWIDE FOOTPRINT!
             </h1>
-            <p>we are successfully exporting our nutraceutical products to these countries</p>
+            <p>We are successfully exporting our nutraceutical products to these countries</p>
           </div>
           <div className="map-section">
-            {/* <div className="map-box">
-ABC
-            </div> */}
             <div className="map-img">
               <img
-                src="images/map.jpg"
+                src="images/citiMap.png"
                 alt="map"
               />
             </div>
