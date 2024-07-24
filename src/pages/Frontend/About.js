@@ -14,7 +14,7 @@ export default function About() {
   return (
     <Layout title={"About - Citi Pharma"} description={"Citi Pharma mission is to dedicate itself top adding exceptional value through creation of innovative and cost effective Pharma products and develop a corporate culture that rewards initiative, enthusiasm and ethical practices."}>
       <div className="about">
-        <Pages title={"About Us"} link={"images/about-banner.jpg"} />
+        <Pages title={"About Us"} link={"images/aboutBanner.jpg"} />
 
         <div className="aboutBox">
           {/* Intro */}
