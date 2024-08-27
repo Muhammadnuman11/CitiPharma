@@ -48,6 +48,9 @@ export default function Navbar() {
                                     <li className="nav-item mx-2">
                                         <NavLink to="/blogs" className="nav-link text-white" onClick={scrollToTop}>Blogs</NavLink>
                                     </li>
+                                    <li className="nav-item mx-2">
+                                        <NavLink to="/" className="nav-link text-white" onClick={scrollToTop}>CSR</NavLink>
+                                    </li>
                                     <li className='nav-item mx-2 cursor-pointer'>
                                         Investors
                                         <span>
