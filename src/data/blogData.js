@@ -2,9 +2,13 @@ const blogData = [
     // Quality id:0
     {
         id: 0,
+        metaTitle: "Citi Pharma: Committed to Uncompromising Quality",
+        keywords: "quality assurance, Citi Pharma",
+        URL: "citi-pharmas-commitment-to-uncompromising-quality",
         date: "16/03/2024, 2:20:23 PM",
+        url: "Exploring the Quality of Citi Pharma Products",
         title: "Ensuring Excellence: Exploring the Quality of Citi Pharma Products",
-        shortDesc: "Citi Pharma stands out for its unwavering commitment to delivering products of the highest quality. In this blog, we delve into the core principles that underpin Citi Pharma's approach to quality and explore how they translate into tangible benefits for consumers and healthcare providers alike.",
+        shortDesc: "Discover Citi Pharma's dedication to delivering the highest quality pharmaceutical products. Learn about our stringent quality standards, state-of-the-art facilities, and customer-centric approach.",
         desc: `In the realm of healthcare, quality is paramount. Patients and healthcare professionals rely on pharmaceutical products to be safe, effective, and consistent. Amidst a plethora of pharmaceutical companies, Citi Pharma stands out for its unwavering commitment to delivering products of the highest quality. In this blog, we delve into the core principles that underpin Citi Pharma's approach to quality and explore how they translate into tangible benefits for consumers and healthcare providers alike.
 
 <h4>Upholding Stringent Standards</h4>
@@ -33,9 +37,12 @@ In a landscape where quality is non-negotiable, Citi Pharma stands as a beacon o
     // Relief id:1
     {
         id: 1,
+        metaTitle: "Citi Pharma: Making Healthcare Affordable for All",
+        keywords: "Citi Pharma, affordable healthcare",
+        URL: "citi-pharma-game-changing-approach-to-affordable-medications",
         date: "16/03/2024, 2:30:23 PM",
         title: "Empowering Health: Citi Pharma's Game-Changing Approach to Affordable Medications",
-        shortDesc: "It's time to make the switch to Citi Pharma and experience the difference for yourself! Join us on a journey through innovation, determination, and a dash of rebellion as we unveil our mission to make healing accessible to all.",
+        shortDesc: "Citi Pharma offers high-quality medications at accessible prices. Learn about our commitment to innovation, affordability, and ensuring healthcare is a right, not a privilege.",
         desc: `In a world where the cost of healthcare can sometimes feel like a barrier to wellness, Citi Pharma is rewriting the script with an exhilarating promise: high-quality medications at prices that won't break the bank. So why pay more for the same product when you can get it for less with Citi Pharma? Say goodbye to overpriced medications and hello to savings – it's time to make the switch to Citi Pharma and experience the difference for yourself! 💊💰Join us on a journey through innovation, determination, and a dash of rebellion as we unveil our mission to make healing accessible to all.
 
 <h4>Shattering Expectations: The Citi Pharma Difference</h4>
@@ -61,9 +68,12 @@ As we journey towards a brighter, more inclusive future, one thing is clear: the
     // Advancement id:2
     {
         id: 2,
+        metaTitle: "Citi Pharma: Unleashing Innovation for a Healthier Future",
+        keywords: "Citi Pharma, healthcare",
+        URL: "citi-pharma-visionary-path-to-global-healthcare-leadership",
         date: "16/03/2024, 2:50:12 PM",
         title: "Unleashing the Future of Healthcare: Citi Pharma's Global Odyssey of Innovation",
-        shortDesc: "Welcome, fellow adventurers, to a realm where science fiction meets reality, and the boundaries of healthcare are about to be shattered! Grab your gear and buckle up as we dive into the electrifying world of Citi Pharma - a powerhouse of innovation, discovery, and dare I say, a touch of magic!",
+        shortDesc: "Discover Citi Pharma's vision to revolutionize healthcare through global expansion, cutting-edge API manufacturing, and groundbreaking biotechnology. Explore our commitment to innovation, research, and patient-centric solutions.",
         desc: `Welcome, fellow adventurers, to a realm where science fiction meets reality, and the boundaries of healthcare are about to be shattered! Grab your gear and buckle up as we dive into the electrifying world of Citi Pharma - a powerhouse of innovation, discovery, and dare I say, a touch of magic!
 
 <h4>Global domination: From Pakistan to the world, Citi Pharma Goes Global</h4>
@@ -99,9 +109,12 @@ Adventure awaits - let's make history together! 🚀✨
     // id:3
     {
         id: 3,
+        metaTitle: "Citi Pharma: A Visionary Path to Global Healthcare Leadership",
+        keywords: "Citi Pharma, global healthcare",
+        URL: "citi-pharmas-visionary-path-to-global-healthcare-leadership",
         date: "12/03/2024, 1:20:13 PM",
         title: "FUTURE FUSION: CITI PHARMA'S VISIONARY PATH TO HEALTH",
-        shortDesc: "CITI Pharma stands at the forefront of innovation and progress in the pharmaceutical industry. Our vision extends far beyond the boundaries of Pakistan, reaching towards a future where CITI Pharma is a global leader in healthcare solutions.",
+        shortDesc: "Discover Citi Pharma's ambitious vision to become a global leader in healthcare solutions. Learn about our commitment to biotechnology, vaccine production, and expanding our reach worldwide.",
         desc: `As we embark on the journey towards the future, CITI Pharma stands at the forefront of innovation and progress in the pharmaceutical industry. Our vision extends far beyond the boundaries of Pakistan, reaching towards a future where CITI Pharma is a global leader in healthcare solutions.
 
 Globalization is not just a goal for us; it's a fundamental aspect of our strategy. We are committed to expanding our presence beyond borders, forging partnerships with international organizations, and bringing our high-quality pharmaceutical products to new markets around the world.Through collaboration and innovation, we aim to make a positive impact on the lives of people everywhere, ensuring access to essential healthcare solutions that improve well-being and quality of life.
@@ -127,9 +140,12 @@ By establishing a facility capable of manufacturing vaccines locally, CITI Pharm
     // id:4
     {
         id: 4,
+        metaTitle: "From Molecule to Medicine: The Paracetamol Synthesis Process",
+        keywords: "paracetamol, acetaminophen",
+        URL: "paracetamol-synthesis-process",
         date: "16/03/2024, 3:46:12 PM",
         title: "From Molecule To Medicine: The Fascinating Journey of Paracetamol Synthesis",
-        shortDesc: "A Blog-Guide to Paracetamol Manufacturing from Phenol. Paracetamol, also known as acetaminophen, is one of the most widely used for over 60 years and trusted over-the-counter pain relievers and fever reducers.",
+        shortDesc: "Discover the fascinating journey of paracetamol production from phenol. Learn about the step-by-step chemical reactions involved in creating this widely used pain reliever and fever reducer.",
         desc: `A Blog-Guide to Paracetamol Manufacturing from Phenol
 
 Paracetamol, also known as acetaminophen, is one of the most widely used for over 60 years and trusted over-the-counter pain relievers and fever reducers. Its synthesis involves several chemical reactions starting from phenol, a key raw material in the pharmaceutical industry. In this blog, we will delve into the step-by-step process of manufacturing paracetamol and explore the intermediates formed in each reaction. It all begins with the transformation of a fundamental raw material: PHENOL!!!
@@ -183,10 +199,14 @@ In this synthesis tale, where molecules transform from raw materials to medicine
     // id:5
     {
         id: 5,
+        metaTitle: "Citi Pharma Board of Directors Meeting: Strong Performance and Future Growth",
+        keywords: "Citi Pharma, board of directors",
+        URL: "board-of-directors-meeting-2024",
         date: "04/05/2024, 2:16:34 PM",
         title: "Board of Directors meeting",
         linkedinLink: "https://www.linkedin.com/posts/citipharmalimited_citipharma-citipharmaceuticals-citiboardofdirectors-activity-7192128596621111296-FPah?utm_source=share&utm_medium=member_android",
-        shortDesc: "We welcomed our esteemed directors Amjad Nadeem Chairman; Rizwan Ahmad, CEO; Dr Zamir Ul Hussan , Executive Director; Miss Saira Aslam, Non-Executive Director, Mr. Mohammad Naeem, Non-Executive Director; and Mr. Abdul Jaleel Sheikh as an Independent Director.",
+        shortDesc: "Citi Pharma's board of directors held a successful meeting, reviewing a strong quarterly performance and outlining future growth strategies. The company is committed to expanding its product line, driving innovation, and fostering global partnerships.",
+
         desc: `At our recent board meeting, we welcomed our esteemed directors Amjad Nadeem Chairman; Rizwan Ahmad, CEO; Dr Zamir Ul Hussan , Executive Director; Miss Saira Aslam, Non-Executive Director, Mr. Mohammad Naeem, Non-Executive Director; and Mr. Abdul Jaleel Sheikh as an Independent Director. 
 
 Together, they delved into the latest quarter's report, which showcased a remarkable performance surpassing all expectations. Bolstered by this success, the board passionately discussed the future trajectory of Citi Pharma. They celebrated the strong financial report as a reflection of our company's resilience and potential for sustained growth. With a renewed sense of purpose, the directors are committed to focus on key areas such as expanding our line of nutritional supplements, general formulation, driving innovation in our research lab, and fostering strategic collaborations with partners worldwide.🌎
@@ -199,11 +219,15 @@ We're poised to chart a course towards even greater success in the dynamic lands
     // id:6
     {
         id: 6,
+        metaTitle: "Citi Pharma Announces Joint Venture with Hangzhou Newsea Technology",
+        keywords: "Citi Pharma, joint venture",
+        URL: "citi-pharma-announces-joint-venture-with-hangzhou-newsea-technology",
         date: "17/05/2024, 1:50:10 PM",
         title: "Citi Pharma's Giant Leap: Introducing ETACI LIMITED",
         linkedinLink: "https://www.linkedin.com/posts/citipharmalimited_citipharma-citipharmajointventure-citipharmaceuticals-activity-7193864378717237248-VfV6?utm_source=share&utm_medium=member_android",
         imgLink:"/images/newsBanner.jpg",
-        shortDesc: "Citi Pharma Limited proudly unveils a groundbreaking milestone in our journey!  We are thrilled to announce our Joint Venture with Hangzhou Newsea Technology Co., Ltd., an alliance poised to redefine the landscape of Pakistan's pharmaceutical industry.",
+        imgAlt:"Citi Pharma joint venture",
+        shortDesc: "Citi Pharma takes a giant leap with the formation of ETACI Limited, a joint venture with Hangzhou Newsea Technology. This partnership aims to revolutionize Pakistan's pharmaceutical industry through innovation and expanded API production.",
         desc: `🎉 Exciting News Alert! 🎉
 
 In a momentous stride towards innovation and excellence, Citi Pharma Limited proudly unveils a groundbreaking milestone in our journey!  We are thrilled to announce our Joint Venture with Hangzhou Newsea Technology Co., Ltd., an alliance poised to redefine the landscape of Pakistan's pharmaceutical industry.

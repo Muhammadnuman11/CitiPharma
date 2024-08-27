@@ -6,12 +6,16 @@ import { FaLinkedin } from 'react-icons/fa';
 
 export default function BlogPage() {
 
-    const { id } = useParams();
-
-    const blog = blogData[id]
+    let { id } = useParams();
+    // console.log(id)
+    // id = id.toUpperCase().split('-').join(' ')
+    // console.log(id)
+    // console.log(blogData)
+    const blog = blogData.find(blog => blog.URL === id);
+    // console.log(blog);
 
     return (
-        <Layout title={`Blog | ${blog.title}`} description={blog.shortDesc}>
+        <Layout title={blog.metaTitle} description={blog.shortDesc} keywords={blog.keywords} image={blog.imgLink && "images/citi-logo.png"}>
             <div className="mt-5">
                 {blog ?
                     <>
@@ -21,7 +25,7 @@ export default function BlogPage() {
                                     <div className="container position-relative p-0"
                                     >
                                         <img
-                                            src={blog.imgLink} alt="News Banner" className='w-100'
+                                            src={blog.imgLink} alt={blog.imgAlt} className='w-100'
                                         />
                                         {/* <h3 className='position-absolute bottom-0 w-100 text-white fs-3 text-center mb-2 px-5'>The transformative Joint Venture between Citi Pharma and Hengzou NewSea Technology Co., Ltd. We're excited about the postive impact this will have!💫</h3> */}
                                     </div>

@@ -3,7 +3,7 @@ import Layout from '../Frontend/Layout'
 
 export default function Pipeline() {
     return (
-        <Layout title={"Pipeline - Citi Pharma"} description={"Road map of citi pharma"}>
+        <Layout title={"Citi Pharma's Growth Journey: From API to Diverse Product Portfolio"} description={"Discover Citi Pharma's impressive growth trajectory from its inception in 2012 to its diverse product portfolio today. Learn about our expansion in APIs, formulations, and new therapeutic areas."} keywords={"growth journey,Citi Pharma"}>
             <section className="pipeline">
                 <div className="pipeline-box">
                     <div className="text-center">

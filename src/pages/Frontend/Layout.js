@@ -4,8 +4,12 @@ import Footer from '../../components/Footer/Footer'
 import { Helmet } from "react-helmet";
 
 
-export default function Layout({ children, title, description, keywords, author }) {
+export default function Layout({ children, title, description, keywords, author, image, }) {
 
+    // const location = useLocation();
+    // const pageURL ="https://citipharma.com.pk" + location.pathname;
+    const canonicalUrl = window.location.href;
+    // console.log(canonicalUrl)
     return (
         <>
             <Header />
@@ -15,6 +19,8 @@ export default function Layout({ children, title, description, keywords, author 
                 <meta name="description" content={description} />
                 <meta name="keywords" content={keywords} />
                 <meta name="author" content={author} />
+                <meta property="og:image" content={image} />
+                <link rel="canonical" href={canonicalUrl} />
                 <title>{title}</title>
             </Helmet>
 
@@ -27,8 +33,9 @@ export default function Layout({ children, title, description, keywords, author 
 };
 
 Layout.defaultProps = {
-    title: 'Citi Pharma',
-    description: 'Welcome to Citi Pharma, a beacon of excellence in the realm of pharmaceuticals. Situated in Pakistan, we proudly stand as one of the largest API manufacturers in the country, boasting a state-of-the-art facility adorned with cutting-edge technology.',
-    keywords: 'citi pharma, api, pharmaceutical, citi natural, biotech, research & devlopment, Antibiotic, Penicillin, usp & bp, vitamin. citi naturals, nutraceuticals, biotecnology, molecules, annual reports',
-    author: 'Numan Irshad - Markoverment',
+    title: 'Citi Pharma: Quality APIs & Pharma Solutions',
+    description: 'Citi Pharma: Your trusted partner for high-quality APIs and pharmaceutical solutions. Leading API manufacturer in Pakistan, committed to excellence and innovation',
+    keywords: 'api manufacturer, pharmaceutical, biotecnology',
+    author: 'Citi Pharma',
+    image: 'images/citi-logo.png',
 }

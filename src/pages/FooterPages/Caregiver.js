@@ -3,7 +3,7 @@ import Layout from '../Frontend/Layout'
 
 export default function Caregiver() {
     return (
-        <Layout title={"Patients and caregivers - Citi Pharma"} description={"The Care You Want - With Best Quality Pharmaceutical Products"}>
+        <Layout title={"Citi Pharma: Dedicated to Caregiver Support"} description={"Discover Citi Pharma's commitment to caregivers. We offer high-quality pharmaceutical products and personalized support to help you provide the best care for your loved ones."} keywords={"caregiver support,Citi Pharma"} image={"images/caregiver.jpg"}>
             <div className="container py-5">
                 <div className="row">
                     <div className="col-12">

@@ -17,8 +17,11 @@ const initialState = {
 
 export default function Contact() {
 
-  const handlePhone = () => {
-    window.open('tel:924235316587');
+  const handlePhone = (value) => {
+    value = value.split(" ").join("")
+    // value = +924235316587
+    console.log(value)
+    window.open(`tel:${value}`);
   }
   const handleMail = () => {
     window.open('mailto:corporate@citipharma.com.pk');
@@ -102,7 +105,7 @@ export default function Contact() {
 
 
   return (
-    <Layout title={'Contact - Citi Pharma'} description={'3-KM, Head Balloki Road, Bhai Pheru, Distt Kasur, +92 49 4510189, 588-Q Block, M.A., Johar Town, Lahore Punjab, Pakistan, +92 42 353-16587, corporate@citipharma.com.pk'}>
+    <Layout title={'Contact Citi Pharma - Get in Touch'} description={'Need to get in touch? Contact Citi Pharma for inquiries about our APIs, pharmaceuticals, and business opportunities. Find our contact information here.'} keywords={"contact us, Citi Pharma, API manufacturer, pharmaceutical"}>
       <div className="contact">
         <div className="contact-details">
           <div className="map">
@@ -122,7 +125,7 @@ export default function Contact() {
                 <span className="contactIcon">
                   <FaPhoneAlt />
                 </span>
-                <span onClick={handlePhone}>+92 42 353-16587</span>
+                <span className='btn text-white d-flex align-items-start' onClick={()=>handlePhone("+92 4235316587")}>+92 4235316587</span>
               </p>
               <h1 className='mainHeadings w-100'>Registered Office</h1>
               <p>
@@ -135,25 +138,25 @@ export default function Contact() {
                 <span className="contactIcon">
                   <FaPhoneAlt />
                 </span>
-                <span onClick={handlePhone}> +92 49 4510189</span>
+                <span className='btn text-white d-flex align-items-start' onClick={()=>handlePhone("+92 494510189")}>+92 494510189</span>
               </p>
               <p>
                 <span className="contactIcon">
                   <FaPhoneAlt />
                 </span>
-                <span onClick={handlePhone}> +92 49 4513392</span>
+                <span className='btn text-white d-flex align-items-start' onClick={()=>handlePhone("+92 494513392")}>+92 494513392</span>
               </p>
-              <p className='btn border-0'>
+              <p>
                 <span className="contactIcon">
                   <IoMdMail />
                 </span>
-                <span onClick={handleMail}>corporate@citipharma.com.pk</span>
+                <span className='btn text-white d-flex align-items-start' onClick={handleMail}>corporate@citipharma.com.pk</span>
               </p>
               <p>
                 <span className="contactIcon">
                   <MdFax />
                 </span>
-                <span onClick={handleMail}>+92 49 4510191</span>
+                <span >+92 49 4510191</span>
               </p>
               {/* <div className='footerIcons w-50'>
                 <div className="contactIcon">

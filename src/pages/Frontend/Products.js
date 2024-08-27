@@ -21,8 +21,8 @@ export default function Products() {
 
 
     return (
-        <Layout title={'Finish Products - Citi Pharma'} description={'Citi Pharma: Registered Product List'}>
-            <Pages title={'Finish Products'} link={"images/pro.jpg"} />
+        <Layout title={'Citi Pharma: High-Quality Finished Pharmaceutical Products'} description={"Discover Citi Pharma's range of top-quality finished pharmaceutical products. We offer a diverse portfolio of effective and safe medications. Explore our product range today."} keywords={"finished products, pharmaceutical products"} image={"images/pro.jpg"}>
+            <Pages title={'Finish Products'} alt={"Pharmaceutical Products"} link={"images/pro.jpg"} />
             <Animation name={"animate__fadeInUp"}>
                 <div className="products mt-0 mt-md-5">
                     <div className="d-flex align-items-center justify-content-between flex-wrap">

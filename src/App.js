@@ -46,12 +46,12 @@ function App() {
         <Route path="/citi-natural" element={<Natural />} />
         <Route path="/research-development" element={<RD />} />
         <Route path="/biotech" element={<Biotech />} />
-        <Route path='/*' element={<PageNotFound />} />
         <Route path="/blogs" element={<Blog />} />
-        <Route path="/blogs/:id" element={<BlogPage />} />
+        <Route path="/blog/:id" element={<BlogPage />} />
         <Route path="/annual-report" element={<AnnualReport />} />
         <Route path="/first-quaterly-report" element={<FirstQuaterly />} />
         <Route path="/third-quaterly-report" element={<ThirdQuaterly />} />
+        <Route path='/*' element={<PageNotFound />} />
         {/* Footer Pages */}
         <Route path="/caregiver" element={<Caregiver />} />
         <Route path="/pipeline" element={<Pipeline />} />

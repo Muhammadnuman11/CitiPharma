@@ -4,7 +4,7 @@ import Pages from '../../components/Pages'
 
 export default function RD() {
     return (
-        <Layout title={'Research & Development - Citi Pharma'} description={'Citi Pharma, we are dedicated to pushing the boundaries of innovation in the pharmaceutical industry in Research and Development.'}>
+        <Layout title={'Citi Pharma: Driving Innovation Through R&D'} description={"Discover Citi Pharma's commitment to groundbreaking research and development in pharmaceuticals. Explore our advanced facilities and dedication to creating new solutions."} keywords={"research & development, pharmaceutical research"} image={'images/rd2.jpeg'}>
             <Pages title={'Research & Development'} link='images/rd2.jpeg' />
             <div className='dev mt-5'>
                 <div className="devItem">
@@ -19,10 +19,10 @@ export default function RD() {
                             <h1>Setting Standards for Excellence</h1>
                             <p>In addition to researching new nutraceutical molecules, our R&D lab will also play a pivotal role in establishing reference standards for pharmaceutical ingredients. By developing reference standards locally, we aim to reduce reliance on imports and empower local companies to meet international quality standards more efficiently. This initiative aligns with our vision of fostering self-sufficiency and promoting growth within the pharmaceutical industry.</p>
                         </div>
-                        <img src="images/nutra.jpg" alt="nutra img"/>
+                        <img src="images/nutra.jpg" alt="Nutraceutical Molecules"/>
                     </div>
                     <div className="devParaBox">
-                        <img src="images/rd.jpeg" alt="Research and development" />
+                        <img src="images/rd.jpeg" alt="Drug Delivery Systems" />
                         <div className='para'>
                             <h1>Enhancing Drug Delivery Systems</h1>
                             <p>Furthermore, our R&D lab will be at the forefront of research on new dosage forms and drug delivery techniques. We are committed to enhancing the efficacy, bioavailability, and patient experience of existing pharmaceutical products. Through rigorous experimentation and innovation, we will explore novel formulations and delivery methods that optimize drug performance and improve patient outcomes.</p>

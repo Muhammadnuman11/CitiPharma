@@ -44,7 +44,7 @@ export default function Home() {
                 <div className="img">
                   <img
                     src="images/api.png"
-                    alt="Api Banner"
+                    alt="Api Manufacturer Banner"
                   />
                 </div>
                 <Carousel.Caption>
@@ -63,7 +63,7 @@ export default function Home() {
                 <div className="img">
                   <img
                     src="images/natural.jpg"
-                    alt="Citi Natural"
+                    alt="Citi Natural Banner"
                   />
                 </div>
                 <Carousel.Caption>
@@ -82,7 +82,7 @@ export default function Home() {
                 <div className="img">
                   <img
                     src="images/r&d.png"
-                    alt="research-development"
+                    alt="Research Development Banner"
                   />
                 </div>
                 <Carousel.Caption>
@@ -101,7 +101,7 @@ export default function Home() {
                 <div className="img">
                   <img
                     src="images/biotech.jpg"
-                    alt="biotech"
+                    alt="Biotechnology Banner"
                   />
                 </div>
                 <Carousel.Caption>
@@ -131,13 +131,13 @@ export default function Home() {
         <div className="d-flex align-items-center justify-content-center overflow-hidden">
           <div className="dataBoxs">
             {/* <DataBoxs icon={"images/revenue.png"} title={"Revenue in 2023"} number={"44."} countNumber={"27"} suffix={"M $"} /> */}
-            <Link to="/blogs/0" onClick={scrollToTop} className="text-decoration-none">
+            <Link to="/blog/citi-pharmas-commitment-to-uncompromising-quality" onClick={scrollToTop} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
               <BlogBoxs icon={"images/quality-icon.png"} title={"Quality"} />
             </Link>
-            <Link to="/blogs/1" onClick={scrollToTop} className="text-decoration-none">
+            <Link to="/blog/citi-pharma-game-changing-approach-to-affordable-medications" onClick={scrollToTop} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
               <BlogBoxs icon={"images/relief-icon.png"} title={"Relief"} />
             </Link>
-            <Link to="/blogs/2" onClick={scrollToTop} className="text-decoration-none">
+            <Link to="/blog/citi-pharma-visionary-path-to-global-healthcare-leadership" onClick={scrollToTop} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
               <BlogBoxs icon={"images/advance-icon.png"} title={"Advancement"} />
             </Link>
           </div>
@@ -156,7 +156,7 @@ export default function Home() {
             <div className="map-img">
               <img
                 src="images/citiMap.png"
-                alt="map"
+                alt="Citi Pharma Business Locations"
               />
             </div>
           </div>
@@ -176,34 +176,34 @@ export default function Home() {
             <Animation name={"animate__fadeInUp"}>
               <div className="clients">
                 <div className="img">
-                  <img src="images/clients/abbott-icon.png" alt="abbott-icon" />
+                  <img src="images/clients/abbott-icon.png" alt="abbott icon" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/martinDow-icon.svg" alt="martinDow-icon" />
+                  <img src="images/clients/martinDow-icon.svg" alt="martinDow icon" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/lci.png" alt="Lci" />
+                  <img src="images/clients/lci.png" alt="Lci icon" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/tabros.png" alt="tabros" />
+                  <img src="images/clients/tabros.png" alt="tabros icon" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/ferozsons.png" alt="ferozsons" />
+                  <img src="images/clients/ferozsons.png" alt="ferozsons icon" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/searle.png" alt="searle" />
+                  <img src="images/clients/searle.png" alt="searle icon" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/haleon-icon.svg" alt="haleon" />
+                  <img src="images/clients/haleon-icon.svg" alt="haleon icon" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/bayer.svg" alt="bayer" />
+                  <img src="images/clients/bayer.svg" alt="bayer icon" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/ccl.png" alt="Ccl" />
+                  <img src="images/clients/ccl.png" alt="Ccl icon" />
                 </div>
                 <div className="img">
-                  <img src="images/clients/gsk.png" alt="Gsk" />
+                  <img src="images/clients/gsk.png" alt="Gsk icon" />
                 </div>
               </div>
             </Animation>

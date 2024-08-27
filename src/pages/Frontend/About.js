@@ -12,9 +12,9 @@ export default function About() {
   };
 
   return (
-    <Layout title={"About - Citi Pharma"} description={"Citi Pharma mission is to dedicate itself top adding exceptional value through creation of innovative and cost effective Pharma products and develop a corporate culture that rewards initiative, enthusiasm and ethical practices."}>
+    <Layout title={"Citi Pharma: About Us - Leading API Manufacturer"} description={"Discover Citi Pharma, a leading API manufacturer committed to quality and innovation. Learn about our mission, values, and expertise in pharmaceutical solutions."} keywords={"about us, Citi Pharma,API manufacturer, pharmaceutical"} image={"images/aboutBanner.jpg"}>
       <div className="about">
-        <Pages title={"About Us"} link={"images/aboutBanner.jpg"} />
+        <Pages title={"About Us"} alt={"Citi Pharma Workplace"} link={"images/aboutBanner.jpg"} />
 
         <div className="aboutBox">
           {/* Intro */}
@@ -35,7 +35,7 @@ export default function About() {
           <Animation name={"animate__fadeInUp"}>
             <div className="aboutDetails">
               <div className="img">
-                <img src="images/missionVision.jpg" alt="mission & vision" />
+                <img src="images/missionVision.jpg" alt="Citi Pharma limited office" />
               </div>
               <div className='w-50 px-3'>
                 <h1 className='mainHeadings'>Our Mission</h1>
@@ -132,7 +132,7 @@ export default function About() {
                 <p className='p-1 m-0'>C.E.O</p>
               </div>
               <div className="img">
-                <img src="images/members/rizwan.jpg" className='px-1 md:px-5' alt="CEOImage" />
+                <img src="images/members/rizwan.jpg" className='px-1 md:px-5' alt="CEO Rizwan Ahmad" />
               </div>
             </div>
           </Animation>

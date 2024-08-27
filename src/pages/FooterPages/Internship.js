@@ -7,7 +7,7 @@ export default function Internship() {
         window.open("https://docs.google.com/forms/d/1FWA-70sRve8TJVYY7TTLPVRVMMc2TzlhAlDR0rH2khY/edit", "_blank")
     }
     return (
-        <Layout title={"Internships - Citi Pharma"} description={"Paid Internships Open Now"}>
+        <Layout title={"Paid Internships Open Now! Launch Your Career at Citi Pharma"} description={"Join Citi Pharma's paid internship program and gain hands-on experience. Choose from exciting projects, create a 4-slide presentation, and submit your CV. Apply now to kickstart your career!"} keywords={"paid internship, internship program"} image={"images/intern.jpg"}>
             <div className="container py-5">
                 <div className="row">
                     <div className="col-12">
@@ -25,7 +25,7 @@ export default function Internship() {
                         <button className='btn btn-primary fs-6 text-uppercase border-0 rounded-0 py-2 px-4' onClick={handleApply}>Apply Now</button>
                     </div>
                     <div className="col-12 col-md-6 text-center">
-                        <img src="images/intern.jpg" alt="Internship" className='w-75 py-4' />
+                        <img src="images/intern.jpg" alt="Internship Program" className='w-75 py-4' />
                     </div>
                 </div>
 

@@ -4,8 +4,8 @@ import Pages from '../../components/Pages'
 
 export default function Biotech() {
   return (
-    <Layout title={'Biotechnology - Citi Pharma'} description={"Citi Pharma's Biotechnology Initiative: A Step Towards Self-Reliance"}>
-      <Pages title={'Biotechnology'} link='images/bio.jpeg' />
+    <Layout title={'Citi Pharma: Advancing Healthcare Through Biotechnology'} description={"Citi Pharma leverages cutting-edge biotechnology for innovative pharmaceutical solutions. Explore our R&D capabilities and commitment to advancing healthcare."} keywords={"biotechnology, pharmaceutical research"} image={'images/bio.jpeg'}>
+      <Pages title={'Biotechnology'} link={'images/bio.jpeg'} />
       <div className='dev mt-5'>
         <div className="devItem">
           <h1>Citi Pharma's Biotechnology Initiative: A Step Towards Self-Reliance</h1>
@@ -19,7 +19,7 @@ export default function Biotech() {
               <h1>Phase 2: Towards Self-Reliance</h1>
               <p>Building on the success of Phase 1, our long-term vision involves establishing a WHO-certified manufacturing facility for biologics and vaccines in Pakistan. In Phase 2, we will leverage our expertise and resources to launch local manufacturing of essential vaccines and biologics. By obtaining WHO certification, we aim to meet international quality standards and contribute to global efforts to combat infectious diseases.</p>
             </div>
-            <img src="images/bioPage.jpg" alt="" className='bio' />
+            <img src="images/bioPage.jpg" alt="Biotechnology Process" className='bio' />
           </div>
         </div>
         <div className="devItem">

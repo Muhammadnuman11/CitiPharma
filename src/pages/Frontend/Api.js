@@ -83,7 +83,7 @@ export default function Api() {
 
     return (
         <>
-            <Layout title={"Api Manufacturer - Citi Pharma"} description={"We specialize in the production of Active Pharmaceutical Ingredients (APIs) and finished products, ensuring the delivery of top-notch pharmaceutical solutions to meet the diverse needs of our valued clientele."}>
+            <Layout title={"Citi Pharma: Top API Manufacturer in Pakistan"} description={"Citi Pharma is a renowned API manufacturer offering high-quality Active Pharmaceutical Ingredients. Our state-of-the-art facility produces a wide range of APIs for the pharmaceutical industry."} keywords={"active pharmaceutical ingredients,API manufacturer, API"} image={"images/api.png"}>
                 <Pages title={'API Manufacturer'} link={"images/api.png"} />
                 <div className="api mt-5">
                     <Animation name={"animate__fadeInUp"}>
@@ -99,7 +99,7 @@ export default function Api() {
                                     </p>
                                 </div>
                                 <div className="apiImg">
-                                    <img src="images/apiPage.jpg" alt="Api Page" />
+                                    <img src="images/apiPage.jpg" alt="Citi Pharma API Manufacturer" />
                                 </div>
                             </div>
                         </div>
